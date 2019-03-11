@@ -1,0 +1,119 @@
+************************************************
+* PROGRAMMED BY : Faris Hijazi
+* CLASS         : CS1A
+* SECTION       : MW: 7:30P
+* Assignment #1 : Functions and Arrays
+************************************************
+
+What input file would you like to use:  input.txt
+What output file would you like to use: output.txt
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 1
+
+Finding the larger balance…
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 2
+
+Finding the smaller balance…
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 3
+
+Finding the larger sum…
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 4
+
+Finding the larger average…
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 5
+
+Who do you want to search for (enter done to exit): Chris Carroll
+Found
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 5
+
+Who do you want to search for (enter done to exit): Pete McBride
+Found
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 5
+
+Who do you want to search for (enter done to exit): Jean Rousseau
+Found
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 5
+
+Who do you want to search for (enter done to exit): Florence Cyr
+Florence Cyrwas not found.
+
+MENU OPTIONS
+
+1 - Find the larger balance
+2 - Find the smaller balance
+3 - Obtain the sum of all balances
+4 - Obtain the average of all balances
+5 - Find person
+0 - Exit
+Enter an option (0 to exit): 6

@@ -1,0 +1,7 @@
+************************************************
+* PROGRAMMED BY : Faris Hijazi
+* CLASS         : CS1A
+* SECTION       : MW: 7:30P
+* Assignment #1 : Functions and Arrays
+************************************************
+
