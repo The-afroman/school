@@ -1,9 +1,9 @@
 #include "header.h"
 
 int main()
-{
-	string player1[1];
-	string player2[1];
+{	
+	char player1;
+	char player2;
 	int  players;
 	char board[3][3] = {' '};
 
