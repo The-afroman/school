@@ -1,5 +1,5 @@
 /******************************************************************************
-* The following function is provided for you… please desk check it and ensure
+* The following function is provided for youï¿½ please desk check it and ensure
 * that you thoroughly understand it. MODIFY it as stated below!
 *
 * 1 - Be sure to document the following in detail!

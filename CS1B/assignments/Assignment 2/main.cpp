@@ -2,10 +2,10 @@
 
 int main()
 {
-	string player1[1];
-	string player2[1];
+	char player1;
+	char player2;
 	int  players;
-	char board[3][3] = {' '};
+	char board[3][3] = {'0'};
 
 
 	cout << "players? (1 or 2): ";
