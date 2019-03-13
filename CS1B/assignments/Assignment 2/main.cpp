@@ -16,7 +16,7 @@ int main()
 		cout << "player 2 (O, enter your name): ";
 		cin.get(player2);
 	}
-	
+	//show board
 	DisplayBoard(board);
 
 	return 0;

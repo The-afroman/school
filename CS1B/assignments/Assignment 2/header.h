@@ -14,7 +14,7 @@ using namespace std;
 * the screen.
 *
 * RETURNS: nothing
-* à Displays the instructions to the user
+*  Displays the instructions to the user
 *****************************************************************************/
 
 void OutputInstruct();
@@ -57,14 +57,14 @@ void DisplayBoard(const char boardAr[][3]); // IN - tic tac toe board
 
 /******************************************************************************
 * GetPlayers
-* This function prompts the user and gets the input for the players’ names.
+* This function prompts the user and gets the input for the playersï¿½ names.
 * playerX will always contain the name of the player that is using the X token.
 * playerO will always contain the name of the player that is using the O token.
 *
 * RETURNS: the players names through the variables playerX and playerO.
 *****************************************************************************/
-void GetPlayers(string& playerX, // OUT - player X’s name
-				string& playerO); // OUT - player O’x name
+void GetPlayers(string& playerX, // OUT - player Xï¿½s name
+				string& playerO); // OUT - player Oï¿½x name
 
 // As this was written in class - you need to document this
 
@@ -81,7 +81,7 @@ void GetAndCheckInp(char boardAr[][3], char token, string playerX, string player
 * RETURNS: the token opposite of the one in which it receives.
 *****************************************************************************/
 
-char SwitchToken(char token); // IN - current player’s token ('X' or 'O')
+char SwitchToken(char token); // IN - current playerï¿½s token ('X' or 'O')
 
 /******************************************************************************
 * CheckWin
@@ -103,11 +103,11 @@ char CheckWin(const char boardAr[][3]); // IN - tic tac toe board
 * the screen.
 *
 * RETURNS: nothing
-* à Displays the winner’s name
+* ï¿½ Displays the winnerï¿½s name
 *****************************************************************************/
 
 void OutputWinner(char whoWon, // IN - represents the winner or a value indicating a tied game.
-				  string playerX, // OUT - player X’s name
-				  string playerO); // OUT - player O’x name
+				  string playerX, // OUT - player Xï¿½s name
+				  string playerO); // OUT - player Oï¿½x name
 
 #endif /* TICTACHEADER_H_ */
