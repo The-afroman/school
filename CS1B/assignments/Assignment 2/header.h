@@ -35,19 +35,19 @@ void InitBoard(char boardAr[][3]); // OUT - tic tac toe board
 *
 * 1 2 3
 * [1][1] | [1][2] | [1][3]
-* | |
-* 1 | |
-* | |
+* 		 | 		  |
+* 1		 |		  |
+*		 |		  |
 * --------------------------
 * [2][1] | [2][2] | [2][3]
-* | |
-* 2 | |
-* | |
+* 		 |		  |
+* 2		 |		  |
+*		 |		  |
 * --------------------------
 * [3][1] | [3][2] | [3][3]
-* | |
-* 3 | |
-* | |
+*		 |		  |
+* 3		 |		  |
+*		 |		  |
 *
 * RETURNS: nothing
 * outputs the current state of the board
@@ -63,8 +63,8 @@ void DisplayBoard(const char boardAr[][3]); // IN - tic tac toe board
 *
 * RETURNS: the players names through the variables playerX and playerO.
 *****************************************************************************/
-void GetPlayers(string& playerX, // OUT - player X�s name
-				string& playerO); // OUT - player O�x name
+void GetPlayers(string& playerX, // OUT - player X's name
+				string& playerO); // OUT - player O'x name
 
 // As this was written in class - you need to document this
 
@@ -81,7 +81,7 @@ void GetAndCheckInp(char boardAr[][3], char token, string playerX, string player
 * RETURNS: the token opposite of the one in which it receives.
 *****************************************************************************/
 
-char SwitchToken(char token); // IN - current player�s token ('X' or 'O')
+char SwitchToken(char token); // IN - current player's token ('X' or 'O')
 
 /******************************************************************************
 * CheckWin
@@ -107,7 +107,7 @@ char CheckWin(const char boardAr[][3]); // IN - tic tac toe board
 *****************************************************************************/
 
 void OutputWinner(char whoWon, // IN - represents the winner or a value indicating a tied game.
-				  string playerX, // OUT - player X�s name
-				  string playerO); // OUT - player O�x name
+				  string playerX, // OUT - player X's name
+				  string playerO); // OUT - player O'x name
 
 #endif /* TICTACHEADER_H_ */

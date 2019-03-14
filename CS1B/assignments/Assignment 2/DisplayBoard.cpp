@@ -8,7 +8,7 @@
 * 3 - Use appropriate constants if necessary.
 ******************************************************************************/
 
-#include "header.h";
+#include "header.h"
 
 void DisplayBoard(const char boardAr[][3])
 {
