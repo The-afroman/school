@@ -1,19 +1,29 @@
 /******************************************************************************
-* The following function is provided for you… please desk check it and ensure
-* that you thoroughly understand it. MODIFY it as stated below!
-*
-* 1 - Be sure to document the following in detail!
-* (demonstrate that you understand this code segment).
-* 2 - Modify the variable names to something more appropriate.
-* 3 - Use appropriate constants if necessary.
-******************************************************************************/
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * ASSIGNMENT 2 : Tick Tac Toe
+ * CLASS		: CS1A
+ * SECTION 		: MW 7:30PM
+ * DUE DATE		: 03/14/19
+ *****************************************************************************/
 
-#include "header.h";
+/******************************************************************************
+ * This function will output the state of the board
+ *----------------------------------------------------------------------------
+ * INPUT:
+ *          boardAr
+ * OUTPUT:
+ *          state of board to console
+ *****************************************************************************/
+
+#include "header.h"
 
 void DisplayBoard(const char boardAr[][3])
 {
-	int i;
-	int j;
+	int i; //first dimention of array
+	int j;    //second dimention of array
+
+	system("clear");
 
 	cout << setw(10) << "1" << setw(8) << "2" << setw(9) << "3\n";
 

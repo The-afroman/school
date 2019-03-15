@@ -1,5 +1,10 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "iomanip": "cpp"
+=======
+        "*.tcc": "cpp",
+        "istream": "cpp"
+>>>>>>> ca87cca642531f9e175a73c865cdff66cd2f5538
     }
 }
