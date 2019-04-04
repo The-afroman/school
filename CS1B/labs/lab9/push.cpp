@@ -42,7 +42,6 @@ void push(perNode *&head)
         cout << setw(14) << "Enter Age:";
         cout << right;
         cin >> head->age;
-        cout << endl;
     }
     else
     {

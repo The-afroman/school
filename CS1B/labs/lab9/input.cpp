@@ -39,7 +39,13 @@ void getInput(int &menuOpt, perNode *&head)
             cout << "\n**** The number " <<  menuOpt << " is an invalid entry ****\n";
             cout << "**** Please input a number between 0 and 5 ****\n";
             invalid =  true;
+            cin.ignore(1000, '\n');
         }
+        else
+        {
+            cin.ignore(1000, '\n');
+        }
+        
     }while(invalid);
 
     switch (menuOpt)
