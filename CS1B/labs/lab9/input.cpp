@@ -39,11 +39,11 @@ void getInput(int &menuOpt, perNode *&head)
             cout << "\n**** The number " <<  menuOpt << " is an invalid entry ****\n";
             cout << "**** Please input a number between 0 and 5 ****\n";
             invalid =  true;
-            cin.ignore(1000, '\n');
         }
         else
         {
             cin.ignore(1000, '\n');
+            invalid = false;
         }
         
     }while(invalid);
@@ -75,8 +75,16 @@ void getInput(int &menuOpt, perNode *&head)
         case SIZE:
             if(head != NULL)
             {
-                cout << "\nThere are " << size(head) << " people on the stack.\n";
+                if (size(head) == 1)
+                {
+                    cout << "\nThere is one person on the stack.\n";
+                }
+                else
+                {
+                    cout << "\nThere are " << size(head) << " people on the stack.\n";
+                }
             }
+            
             else
             {
                 cout << "\nNobody is on the stack!\n";

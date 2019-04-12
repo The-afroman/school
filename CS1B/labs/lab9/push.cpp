@@ -31,9 +31,9 @@ void push(perNode *&head)
     {
         cout << "\nwho would you like to add?\n\n";
         cout << left << setw(14) << "Enter Name:";
-        getline(cin, head->name);
         do
         {
+            getline(cin, head->name);
             cout << setw(14) << "Enter Gender:";
             cin.get(head->gender);
             head->gender = toupper(head->gender);
