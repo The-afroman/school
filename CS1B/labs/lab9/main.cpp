@@ -1,10 +1,10 @@
 /******************************************************************************
- * AUTHOR 		: Faris Hijazi & Paul Abrams
- * STUDENT ID 	: 1039438 &
- * Lab 9		: Implementing a Stack
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Lab 10		: Creating an Ordered List
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/02/19
+ * DUE DATE		: 04/11/19
  *****************************************************************************/
 
 #include "header.h"

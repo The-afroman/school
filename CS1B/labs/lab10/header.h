@@ -1,10 +1,10 @@
 /******************************************************************************
- * AUTHOR 		: Faris Hijazi & Paul Abrams
- * STUDENT ID 	: 1039438 &
- * Lab 9		: Implementing a Stack
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Lab 10		: Creating an Ordered List
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/02/19
+ * DUE DATE		: 04/11/19
  *****************************************************************************/
 
 #ifndef HEADER_H_
@@ -17,6 +17,8 @@
 #include <ios> 
 #include <fstream>
 using namespace std;
+
+
 
 struct perNode
 {
@@ -44,18 +46,23 @@ void PrintHeader(ostream &output,     //output device
 				 int num,             //lab or assignment name
 				 string names);       //names of programmer(s)
 
-void isEmpty(perNode *&head);
+void isEmpty(perNode *&head);		  //head of list
 
 void outputMenu();
 
-void inputfile(perNode *&head);
+void inputfile(perNode *&head);		  //head of list
 
-void getInput(int &menuOpt, perNode *&head);
+void getInput(int &menuOpt,			  //user menu option (0-6)
+			  perNode *&head);
 
-void searchNode(perNode *&head, perNode *&searchPtr, string search);
+void searchNode(perNode *&head,       //head of list
+				perNode *&searchPtr,  //searching ptr
+				string search);		  //string to search for
 
-void displayList(perNode *&head);
+void displayList(perNode *&head);	  //head of list
 
-void clearList(perNode *&head);
+void clearList(perNode *&head);		  //head of list
+
+void removeNode(perNode *&head);	  //head of list
 
 #endif /* HEADER_H_ */

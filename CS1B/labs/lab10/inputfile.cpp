@@ -1,15 +1,36 @@
+/******************************************************************************
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Lab 10		: Creating an Ordered List
+ * CLASS		: CS1A
+ * SECTION 		: MW 7:30PM
+ * DUE DATE		: 04/11/19
+ *****************************************************************************/
+
+/******************************************************************************
+ * This function will get names, ages, genders from an infile and create a 
+ * doubly linked list which is alphabetized.
+ *----------------------------------------------------------------------------
+ * INPUT:
+ *          head - head of the new list
+ * OUTPUT:
+ *          ordered linked list
+ *****************************************************************************/
+
 #include "header.h"
 
 void inputfile(perNode *&head)
 {
-    ifstream infile;
-    perNode *searchPtr;
-    perNode *perPtr;
-    perNode *tail;
-    bool found = false;
+    ifstream infile;     //IN   - inputfile variable
+    perNode *searchPtr;  //CALC - searching ptr, for adding to middle of list
+    perNode *perPtr;     //CALC - ptr to keep track of new nodes
+    perNode *tail;       //CALC - for finding tail of list
+    bool found = false;  //CALC - determine if location to add to middle found
     
 
     infile.open("input.txt");
+
+    cout << endl;
 
     while(infile)
     {
@@ -19,9 +40,10 @@ void inputfile(perNode *&head)
         infile >> perPtr->age;
         infile.ignore(1000,'\n');
         infile.ignore(1000,'\n');
+
+        cout << "Adding : " << perPtr->name << endl;
         
         searchPtr = NULL;
-        //cout <<name<<endl<<gender<<endl<<age;
         if(head == NULL)
         {
             perPtr->next = head;
