@@ -13,6 +13,8 @@ int main()
 {
     perNode *head;  //CALC    - head of list
     int menuOpt;    //IN&CALC - user menu choice
+    ofstream ofile; //OUT     - output file variable
+    string ofileName;
 
     head = NULL;
 
@@ -21,14 +23,25 @@ int main()
                 "Creating an Ordered list",
                 10,
                 "Faris Hijazi");
+
+    inputfile(head);
     
+    cout << "which outputfile would you like to use (d for default) ?: ";
+    getline(cin, ofileName);
+    if(ofileName == "d")
+    {
+        ofileName = "outFile.txt";
+    }
+    ofile.open(ofileName);
+    
+    /*
     getInput(menuOpt, head);
     while(menuOpt != EXIT) //MAIN LOOP
     {
         getInput(menuOpt, head);
     }
-    
-
+    */
+    ofile.close;
     return 0;
 
 }

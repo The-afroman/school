@@ -55,34 +55,9 @@ void getInput(int &menuOpt, perNode *&head)
     {
         case EXIT:
             break;
-        case OUTPUTL:   
-
+        case OUTPUTL:
             break;
         case TSEARCH:
-            if(head != NULL)
-            {
-                cout << "\nwho would you like to search for?: ";
-                getline(cin, search);
-                searchNode(head, searchPtr, search);
-                cout << "\nSearching For " << search << endl << endl;
-                if(searchPtr == NULL)
-                {
-                    cout << "I'm sorry, " << "\"" << search << "\""
-                         << " was NOT found!\n";
-                }
-                else
-                {
-                    cout << left;
-                    cout << setw(8) << "Name:" << searchPtr->name <<endl;
-                    cout << setw(8) << "Gender" << searchPtr->gender << endl;
-                    cout << setw(8) << "Age" << searchPtr->age <<endl;
-                    cout << right;
-                }
-            }
-            else
-            {
-                cout << "\nCan't search empty list\n";
-            }
             break;
         case GSEARCH:
 

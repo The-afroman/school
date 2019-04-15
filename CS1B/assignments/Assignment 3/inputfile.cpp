@@ -26,77 +26,38 @@ void inputfile(perNode *&head)
     perNode *perPtr;     //CALC - ptr to keep track of new nodes
     perNode *tail;       //CALC - for finding tail of list
     bool found = false;  //CALC - determine if location to add to middle found
+    string infileName;
     
-
-    infile.open("input.txt");
+    cout << "which input file would you like to use (d for default) ?: ";
+    getline(cin, infileName);
+    if(infileName == "d")
+    {
+        infileName = "AS5 - BigInFile.txt";
+    }
+    infile.open(infileName);
 
     cout << endl;
 
     while(infile)
     {
         perPtr = new perNode;
-        getline(infile, perPtr->name);
-        infile.get(perPtr->gender);
-        infile >> perPtr->age;
-        infile.ignore(1000,'\n');
-        infile.ignore(1000,'\n');
+        getline(infile, perPtr->title);
+        getline(infile, perPtr->lActor);
+        getline(infile, perPtr->sActor);
+        getline(infile, perPtr->genre);
+        getline(infile, perPtr->sGenre);
+        infile >> perPtr->year;
+        infile >> perPtr->rating;
+        infile.ignore(1000, '\n');
+        getline(infile, perPtr->synopsis);
+        infile.ignore(1000, '\n');
 
-        cout << "Adding : " << perPtr->name << endl;
+        //cout << "Adding : " << perPtr->title << endl;
         
         searchPtr = NULL;
-        if(head == NULL)
-        {
-            perPtr->next = head;
-            perPtr->prev = NULL;
-            head = perPtr;
-            perPtr = NULL;
-        }
-        else if(head->name > perPtr->name)
-        {
-            perPtr->next = head;
-            perPtr->prev = NULL;
-            head->prev = perPtr;
-            head = perPtr;
-            perPtr = NULL;
-        }
-        else
-        {
-            searchPtr = head;
-            found = false;
-            while(searchPtr->next != NULL && !found)
-            {
-                if(searchPtr->next->name > perPtr->name)
-                {
-                    found = true;
-                }
-                else
-                {
-                    searchPtr = searchPtr->next;
-                }
-            }
-            if(searchPtr->next == NULL)
-            {
-                tail = head;
-                while(tail->next != NULL)
-                {
-                    tail = tail->next;
-                }
-                perPtr->next = NULL;
-                perPtr->prev = tail;
-                tail->next = perPtr;
-                tail = perPtr;
-                perPtr = NULL;
-            }
-            else
-            {
-                perPtr->next = searchPtr->next;
-                perPtr->prev = searchPtr;
-                searchPtr->next->prev = perPtr;
-                searchPtr->next = perPtr;
-                searchPtr = NULL;
-                perPtr = NULL;
-            }
-        }
-    }   
+        perPtr->next = head;
+        head = perPtr;
+        perPtr = NULL;
+    }
     infile.close();
 }

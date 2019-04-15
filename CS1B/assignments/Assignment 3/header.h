@@ -25,6 +25,7 @@ struct perNode
 	int age;
 	string title;
 	string genre;
+	string sGenre;
 	string lActor;
 	string sActor;
 	string synopsis;
@@ -38,35 +39,35 @@ enum menu
 	EXIT,
 	OUTPUTL,
 	TSEARCH,
-	GSEARCH,
 	ASEARCH,
+	GSEARCH,
 	YSEARCH,
 	RSEARCH
 };
 
-void PrintHeader(ostream &output,     //output device
-				 char exersize,       //lab or assignment?
-				 string exersizeName, //lab or assignment name
-				 int num,             //lab or assignment name
-				 string names);       //names of programmer(s)
-
-void isEmpty(perNode *&head);		  //head of list
+void PrintHeader(ostream &output,     	  //output device
+				 char exersize,       	  //lab or assignment?
+				 string exersizeName, 	  //lab or assignment name
+				 int num,             	  //lab or assignment name
+				 string names);           //names of programmer(s)
 
 void outputMenu();
 
-void inputfile(perNode *&head);		  //head of list
+void inputfile(perNode *&head);		      //head of list
 
-void getInput(int &menuOpt,			  //user menu option (0-6)
+void getInput(int &menuOpt,			      //user menu option (0-6)
 			  perNode *&head);
 
-void searchNode(perNode *&head,       //head of list
-				perNode *&searchPtr,  //searching ptr
-				string search);		  //string to search for
+void stringSearchNode(perNode *&head,     //head of list
+                      perNode *&searchPtr,//
+                      int menuOpt,		  //
+                      string search);	  //string to search for
 
-void displayList(perNode *&head);	  //head of list
+void intSearchNode(perNode *&head,		  //head of list
+                   perNode *&searchPtr,   //
+                   int menuOpt,			  //
+                   int search);			  //
 
-void clearList(perNode *&head);		  //head of list
-
-void removeNode(perNode *&head);	  //head of list
+void displayList(perNode *&head);	      //head of list
 
 #endif /* HEADER_H_ */
