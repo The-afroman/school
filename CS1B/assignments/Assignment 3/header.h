@@ -22,7 +22,6 @@ using namespace std;
 
 struct perNode
 {
-	int age;
 	string title;
 	string genre;
 	string sGenre;
@@ -55,17 +54,14 @@ void outputMenu();
 
 void inputfile(perNode *&head);		      //head of list
 
-void getInput(int &menuOpt,			      //user menu option (0-6)
-			  perNode *&head);
+void getInput(int &menuOpt, perNode *&head, ofstream &ofile);
 
-void stringSearchNode(perNode *&head,     //head of list
-                      perNode *&searchPtr,//
-                      int menuOpt,		  //
-                      string search);	  //string to search for
+void stringSearchNode(perNode *&head,
+                      ofstream &ofile);
 
 void intSearchNode(perNode *&head,		  //head of list
                    perNode *&searchPtr,   //
-                   int menuOpt,			  //
+                   int &menuOpt,			  //
                    int search);			  //
 
 void displayList(perNode *&head);	      //head of list

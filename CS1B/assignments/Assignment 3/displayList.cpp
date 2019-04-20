@@ -22,31 +22,19 @@ void displayList(perNode *&head)
 {
     perNode *perPtr; //CALC - pointer to display nodes in list 
     int i = 1;
-    if(head!=NULL)
+    perPtr = head;
+    while(perPtr != NULL) //MAIN LOOP
     {
+        //getInput(menuOpt, head, ofile);
+        cout << perPtr->title << endl;
+        cout << perPtr->lActor << endl;
+        cout << perPtr->sActor << endl;
+        cout << perPtr->genre << endl;
+        cout << perPtr->sGenre << endl;
+        cout << perPtr->year << endl;
+        cout << perPtr->rating << endl;
         cout << endl;
-        cout << left;
-        cout << setw(3) << '#';
-        cout << setw(25) << "NAME";
-        cout << setw(7) << "GENDER";
-        cout << "AGE\n";
-        cout <<"-- ------------------------ ------ ---\n";
-        perPtr = head;
-
-        while(perPtr != NULL)
-        {
-            cout << setw(3) << i;
-            cout << setw(25) << perPtr->name;
-            cout << setw(7) << perPtr->gender;
-            cout << perPtr->age;
-            cout << endl;
-            i++;
-            perPtr = perPtr->next;
-        }
-    }
-    else
-    {
-        cout << "\nCan't display an empty list!\n";
+        perPtr = perPtr->next;
     }
     
 }

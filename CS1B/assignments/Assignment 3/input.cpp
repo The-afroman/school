@@ -21,10 +21,9 @@
 
 #include "header.h"
 
-void getInput(int &menuOpt, perNode *&head)
+void getInput(int &menuOpt, perNode *&head, ofstream &ofile)
 {
     bool invalid; // CALC - if true input is invalid
-    perNode *searchPtr;
     string search;
 
     do
@@ -58,6 +57,7 @@ void getInput(int &menuOpt, perNode *&head)
         case OUTPUTL:
             break;
         case TSEARCH:
+            stringSearchNode(head, ofile);
             break;
         case GSEARCH:
 

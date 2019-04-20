@@ -32,7 +32,7 @@ void inputfile(perNode *&head)
     getline(cin, infileName);
     if(infileName == "d")
     {
-        infileName = "AS5 - BigInFile.txt";
+        infileName = "infile.txt";
     }
     infile.open(infileName);
 
@@ -47,12 +47,13 @@ void inputfile(perNode *&head)
         getline(infile, perPtr->genre);
         getline(infile, perPtr->sGenre);
         infile >> perPtr->year;
+        infile.ignore(1000, '\n');
         infile >> perPtr->rating;
         infile.ignore(1000, '\n');
         getline(infile, perPtr->synopsis);
         infile.ignore(1000, '\n');
 
-        //cout << "Adding : " << perPtr->title << endl;
+        cout << "Adding : " << perPtr->title << endl;
         
         searchPtr = NULL;
         perPtr->next = head;

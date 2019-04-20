@@ -21,55 +21,69 @@
 #include "header.h"
 
 void stringSearchNode(perNode *&head,
-                      perNode *&searchPtr,
-                      int menuOpt,
-                      string search)
+                      ofstream &ofile)
 {
-    searchPtr = head;
+    perNode *searchPtr;
+    string search;
+    const int COL_SIZE_TITLE = 18;
+    const int MAX_WIDTH_TITLE = 75;   
     bool found = false;
+    int i;
+    int j;
+    int n = 1;
 
+    searchPtr = head;
+
+    cout << "Enter a title: ";
+    getline(cin, search, '\n');
+    cout << search;
     while(!found  && searchPtr != NULL)
     {
-        switch(menuOpt)
+        cout << endl <<endl;
+        cout << "START:";
+        cout << searchPtr->title;
+        if(search == searchPtr->title)
         {
-        case TSEARCH:  
-            if(searchPtr->title == search)
+            cout << "\nTITLEFOUND\n";
+            found = true;
+            ofile << left;
+            ofile << setfill('*') << setw(MAX_WIDTH_TITLE)
+                    << endl;
+            ofile << searchPtr->title << endl;
+            ofile << setfill('-') << setw(MAX_WIDTH_TITLE);
+            ofile << setfill(' ') << setw(COL_SIZE_TITLE) 
+                    << "Year: " << searchPtr->year;
+            ofile << setw(COL_SIZE_TITLE) << "Rating: " 
+                    << searchPtr->rating << endl;
+            ofile << setfill('-') << setw(MAX_WIDTH_TITLE)
+                    << endl;
+            ofile << setfill(' ') << setw(COL_SIZE_TITLE)
+                    << "Leading Actor:" << setw(COL_SIZE_TITLE)
+                    << searchPtr->lActor << setw(COL_SIZE_TITLE)
+                    << "Genre 1: " << searchPtr->genre << endl;
+            ofile << setw(COL_SIZE_TITLE)
+                    << "Supporting Actor:" << setw(COL_SIZE_TITLE)
+                    << searchPtr->sActor << setw(COL_SIZE_TITLE)
+                    << "Genre 2: " << searchPtr->sGenre << endl;
+            ofile << setfill('-') <<setw(MAX_WIDTH_TITLE);
+            ofile << "PLOT:\n";
+
+            i = 1;
+            while(i <= searchPtr->synopsis.size())
             {
-                found = true;
+                j = 1;
+                while(j <= 75 && i <= searchPtr->synopsis.size())
+                {
+                    ofile << searchPtr->synopsis[i-1];
+                    i++;
+                    j++;
+                }
+                ofile << endl;
             }
-            else
-            {
-                searchPtr = searchPtr->next;
-            }
-            break;
-        case ASEARCH:  
-            if(searchPtr->lActor == search)
-            {
-                found = true;
-            }
-            else if(searchPtr->sActor == search)
-            {
-                found = true;
-            }
-            else
-            {
-                searchPtr = searchPtr->next;
-            }
-            break;
-        case GSEARCH:  
-            if(searchPtr->genre == search)
-            {
-                found = true;
-            }
-            else if(searchPtr->sGenre == search)
-            {
-                found = true;
-            }
-            else
-            {
-                searchPtr = searchPtr->next;
-            }
-            break;
+        }
+        else
+        {
+            searchPtr = searchPtr->next;
         }
     }
 }

@@ -12,6 +12,7 @@
 int main()
 {
     perNode *head;  //CALC    - head of list
+    perNode *perPtr;
     int menuOpt;    //IN&CALC - user menu choice
     ofstream ofile; //OUT     - output file variable
     string ofileName;
@@ -25,7 +26,7 @@ int main()
                 "Faris Hijazi");
 
     inputfile(head);
-    
+
     cout << "which outputfile would you like to use (d for default) ?: ";
     getline(cin, ofileName);
     if(ofileName == "d")
@@ -33,15 +34,14 @@ int main()
         ofileName = "outFile.txt";
     }
     ofile.open(ofileName);
-    
-    /*
-    getInput(menuOpt, head);
-    while(menuOpt != EXIT) //MAIN LOOP
+
+    getInput(menuOpt, head, ofile);
+    while(menuOpt != EXIT)
     {
-        getInput(menuOpt, head);
+        getInput(menuOpt, head, ofile);
     }
-    */
-    ofile.close;
+
+    ofile.close();
     return 0;
 
 }
