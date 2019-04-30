@@ -20,16 +20,14 @@
 
 #include "header.h"
 
-void stringSearchNode(perNode *&head,
+void titleSearchNode(movNode *&head,
                       ofstream &ofile)
 {
-    perNode *searchPtr;
+    movNode *searchPtr;
     string search;
     const int COL_SIZE_TITLE = 18;
     const int MAX_WIDTH_TITLE = 75;   
     bool found = false;
-    int i;
-    int j;
     int n = 1;
 
     searchPtr = head;
@@ -48,15 +46,15 @@ void stringSearchNode(perNode *&head,
             found = true;
             ofile << left;
             ofile << setfill('*') << setw(MAX_WIDTH_TITLE)
-                    << endl;
+                  << '*' << endl;
             ofile << searchPtr->title << endl;
-            ofile << setfill('-') << setw(MAX_WIDTH_TITLE);
-            ofile << setfill(' ') << setw(COL_SIZE_TITLE) 
-                    << "Year: " << searchPtr->year;
+            ofile << setfill('-') << setw(MAX_WIDTH_TITLE) << '-' << endl;
+            ofile << setfill(' ') << "Year: " << setw(COL_SIZE_TITLE-6) 
+                  << searchPtr->year;
             ofile << setw(COL_SIZE_TITLE) << "Rating: " 
                     << searchPtr->rating << endl;
             ofile << setfill('-') << setw(MAX_WIDTH_TITLE)
-                    << endl;
+                  << '-' << endl;
             ofile << setfill(' ') << setw(COL_SIZE_TITLE)
                     << "Leading Actor:" << setw(COL_SIZE_TITLE)
                     << searchPtr->lActor << setw(COL_SIZE_TITLE)
@@ -65,21 +63,11 @@ void stringSearchNode(perNode *&head,
                     << "Supporting Actor:" << setw(COL_SIZE_TITLE)
                     << searchPtr->sActor << setw(COL_SIZE_TITLE)
                     << "Genre 2: " << searchPtr->sGenre << endl;
-            ofile << setfill('-') <<setw(MAX_WIDTH_TITLE);
-            ofile << "PLOT:\n";
-
-            i = 1;
-            while(i <= searchPtr->synopsis.size())
-            {
-                j = 1;
-                while(j <= 75 && i <= searchPtr->synopsis.size())
-                {
-                    ofile << searchPtr->synopsis[i-1];
-                    i++;
-                    j++;
-                }
-                ofile << endl;
-            }
+            ofile << setfill('-') << setw(MAX_WIDTH_TITLE) << '-';
+            ofile << "\nPLOT:\n";
+            wordWrap(ofile, searchPtr);
+            ofile << setfill('*') << setw(MAX_WIDTH_TITLE)
+                  << '*' << endl << endl << endl;
         }
         else
         {

@@ -19,12 +19,12 @@
 
 #include "header.h"
 
-void inputfile(perNode *&head)
+void inputfile(movNode *&head)
 {
     ifstream infile;     //IN   - inputfile variable
-    perNode *searchPtr;  //CALC - searching ptr, for adding to middle of list
-    perNode *perPtr;     //CALC - ptr to keep track of new nodes
-    perNode *tail;       //CALC - for finding tail of list
+    movNode *searchPtr;  //CALC - searching ptr, for adding to middle of list
+    movNode *perPtr;     //CALC - ptr to keep track of new nodes
+    movNode *tail;       //CALC - for finding tail of list
     bool found = false;  //CALC - determine if location to add to middle found
     string infileName;
     
@@ -40,7 +40,7 @@ void inputfile(perNode *&head)
 
     while(infile)
     {
-        perPtr = new perNode;
+        perPtr = new movNode;
         getline(infile, perPtr->title);
         getline(infile, perPtr->lActor);
         getline(infile, perPtr->sActor);

@@ -11,8 +11,8 @@
 
 int main()
 {
-    perNode *head;  //CALC    - head of list
-    perNode *perPtr;
+    movNode *head;  //CALC    - head of list
+    movNode *perPtr;
     int menuOpt;    //IN&CALC - user menu choice
     ofstream ofile; //OUT     - output file variable
     string ofileName;

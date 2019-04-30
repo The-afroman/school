@@ -20,8 +20,8 @@
 
 #include "header.h"
 
-void intSearchNode(perNode *&head,
-                   perNode *&searchPtr,
+void intSearchNode(movNode *&head,
+                   movNode *&searchPtr,
                    int menuOpt,
                    int search)
     {

@@ -1,10 +1,52 @@
-
-Zodiac*********************************************************************
-Year:             2007Rating:           8
-
+***************************************************************************
+Zodiac
+---------------------------------------------------------------------------
+Year: 2007        Rating:           8
+---------------------------------------------------------------------------
 Leading Actor:    Jake Gyllenhaal   Genre 1:          Drama
 Supporting Actor: Mark Ruffalo      Genre 2:          Crime
+---------------------------------------------------------------------------
 PLOT:
----------------------------------------------------------------------Based on the Robert Graysmith books about the real life notorious Zodiac, a
- serial killer who terrorized San Francisco with a string of seemingly rand
-om murders during the 1960s and 1970s.
+Based on the Robert Graysmith books about the real life notorious Zodiac, a 
+serial killer who terrorized San Francisco with a string of seemingly 
+random murders during the 1960s and 1970s.
+***************************************************************************
+
+
+***************************************************************************
+X-Men 2
+---------------------------------------------------------------------------
+Year: 2003        Rating:           8
+---------------------------------------------------------------------------
+Leading Actor:    Hugh Jackman      Genre 1:          Action
+Supporting Actor: Patrick Stewart   Genre 2:          Action
+---------------------------------------------------------------------------
+PLOT:
+Several months had passed since The X-Men defeated Magneto and imprisoned 
+him in a plastic chamber. One day, a mutant going by the name of 
+Nightcrawler infiltrates The White House and attempts to assassinate The 
+President. Meanwhile, Logan is trying to discover his past, and wonder why 
+he became a mutant. However, the friction between the humans and mutants is 
+grinding much harder. As a scientist named William Stryker is assigned to 
+discover about Professor X's secret school and his chamber called Cerebro. 
+Meanwhile, Magneto's partner, Mystique, is planning to break her leader out 
+of prison. Then, Professor X's school is attacked by Stryker's forces. 
+Logan, Rougue, Iceman and others escaped. The rest of The X-Men meet in 
+Boston along with Magneto, who escaped from prison. They must work together 
+to stop Stryker and rescue Professor X.
+***************************************************************************
+
+
+***************************************************************************
+Hollywoodland
+---------------------------------------------------------------------------
+Year: 2006        Rating:           7
+---------------------------------------------------------------------------
+Leading Actor:    Ben Affleck       Genre 1:          Drama
+Supporting Actor: Diane Lane        Genre 2:          Crime
+---------------------------------------------------------------------------
+PLOT:
+A detective examines the mysterious death of George Reeves, TV's Superman.
+***************************************************************************
+
+

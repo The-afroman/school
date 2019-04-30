@@ -20,7 +20,7 @@ using namespace std;
 
 
 
-struct perNode
+struct movNode
 {
 	string title;
 	string genre;
@@ -30,7 +30,7 @@ struct perNode
 	string synopsis;
 	int year;
 	int rating;
-	perNode *next;
+	movNode *next;
 };
 
 enum menu
@@ -52,18 +52,20 @@ void PrintHeader(ostream &output,     	  //output device
 
 void outputMenu();
 
-void inputfile(perNode *&head);		      //head of list
+void inputfile(movNode *&head);		      //head of list
 
-void getInput(int &menuOpt, perNode *&head, ofstream &ofile);
+void getInput(int &menuOpt, movNode *&head, ofstream &ofile);
 
-void stringSearchNode(perNode *&head,
+void titleSearchNode(movNode *&head,
                       ofstream &ofile);
 
-void intSearchNode(perNode *&head,		  //head of list
-                   perNode *&searchPtr,   //
-                   int &menuOpt,			  //
+void intSearchNode(movNode *&head,		  //head of list
+                   movNode *&searchPtr,   //
+                   int &menuOpt,
                    int search);			  //
 
-void displayList(perNode *&head);	      //head of list
+void displayList(movNode *&head);	      //head of list
+
+void wordWrap(ostream &output, movNode *&searchPtr);
 
 #endif /* HEADER_H_ */
