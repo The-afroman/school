@@ -91,6 +91,7 @@ int main()
 					break;
 
 				case ValueChange:animalOption = InputAnimalSelected('V');
+					newValue = InputNewValue();
 					cout << "\nChanging ";
 					switch(animalOption)
 					{
