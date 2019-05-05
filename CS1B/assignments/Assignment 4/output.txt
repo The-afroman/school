@@ -1,0 +1,109 @@
+************************************************
+* PROGRAMMED BY : Faris Hijazi
+* CLASS         : CS1A
+* SECTION       : MW: 7:30P
+* Assignment #4 : Recursion Performance
+************************************************
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 1
+
+Enter a number n: 9
+calculating...
+Factorial of 9 is: 362880
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 2
+
+Enter a number n: 15
+Fibonachi series: 
+0,
+1,
+1,
+2,
+3,
+5,
+8,
+13,
+21,
+34,
+55,
+89,
+144,
+233,
+377
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 3
+
+Enter a number n: 8
+
+Measuring exicution time for recursive...
+It took the program 7 microseconds to execute.
+
+Measuring execution time for non recursive...
+It took the program 3 microseconds to execute.
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 3
+
+Enter a number n: 15
+
+Measuring exicution time for recursive...
+It took the program 14 microseconds to execute.
+
+Measuring execution time for non recursive...
+It took the program 11 microseconds to execute.
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 4
+
+Enter a number n: 15
+
+Measuring exicution time for recursive...
+It took the program 1786 microseconds to execute.
+
+Measuring execution time for non recursive...
+It took the program 647 microseconds to execute.
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 4
+
+Enter a number n: 30
+
+Measuring exicution time for recursive...
+It took the program 735198 microseconds to execute.
+
+Measuring execution time for non recursive...
+It took the program 351 microseconds to execute.
+
+1 - Calculate and Display Factorial of a Number
+2 - Calculate and Display Fibonachi Series of a Number
+3 - Compare Performance for Factorial Implementations
+4 - Compare Performance for Fibonachi Implementations
+0 - Exit
+enter a command (0 to exit): 0
