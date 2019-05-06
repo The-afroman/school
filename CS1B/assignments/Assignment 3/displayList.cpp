@@ -18,23 +18,53 @@
 
 #include "header.h"
 
-void displayList(perNode *&head)
+void displayList(movNode *&head, ostream &output)
 {
-    perNode *perPtr; //CALC - pointer to display nodes in list 
+    movNode *perPtr; //CALC - pointer to display nodes in list 
     int i = 1;
-    perPtr = head;
+    perPtr = head->next;
+    
+    output << left << "COMPLETE MOVIE LISTING\n";
+    output << setw(8) << "MOVIE #";
+    output << setw(49) << "TITLE";
+    output << setw(5) << "YEAR";
+    output << setw(7) << "RATING";
+    output << setw(18) << "GENRE";
+    output << setw(18) << "ALT GENRE";
+    output << setw(20) << "LEAD ACTOR";
+    output << setw(20) << "SUPPORTING ACTOR";
+    output << endl;
+
+    output << left << setfill('-') << setw(7) << '-';
+    output << ' ';
+    output << setw(48) << '-';
+    output << ' ';
+    output << setw(4) << '-';
+    output << ' ';
+    output << setw(6) << '-';
+    output << ' ';
+    output << setw(17) << '-';
+    output << ' ';
+    output << setw(17) << '-';
+    output << ' ';
+    output << setw(19) << '-'; 
+    output <<  ' ';
+    output << setw(19) << '-';
+    output << endl;
+    output << setfill(' ');
     while(perPtr != NULL) //MAIN LOOP
     {
         //getInput(menuOpt, head, ofile);
-        cout << perPtr->title << endl;
-        cout << perPtr->lActor << endl;
-        cout << perPtr->sActor << endl;
-        cout << perPtr->genre << endl;
-        cout << perPtr->sGenre << endl;
-        cout << perPtr->year << endl;
-        cout << perPtr->rating << endl;
-        cout << endl;
+        output << setw(8) << i;
+        output << setw(49) << perPtr->title;
+        output << setw(5) << perPtr->year;
+        output << setw(7) <<perPtr->rating;
+        output << setw(18) << perPtr->genre;
+        output << setw(18) <<perPtr->sGenre;
+        output << setw(20) << perPtr->lActor;
+        output << setw(20) << perPtr->sActor << endl;
+        i++;
         perPtr = perPtr->next;
     }
-    
+    output << endl << endl;
 }

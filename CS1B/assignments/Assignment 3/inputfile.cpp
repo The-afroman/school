@@ -52,9 +52,6 @@ void inputfile(movNode *&head)
         infile.ignore(1000, '\n');
         getline(infile, perPtr->synopsis);
         infile.ignore(1000, '\n');
-
-        cout << "Adding : " << perPtr->title << endl;
-        
         searchPtr = NULL;
         perPtr->next = head;
         head = perPtr;

@@ -21,7 +21,7 @@
 #include "header.h"
 
 void titleSearchNode(movNode *&head,
-                      ofstream &ofile)
+                      ostream &output)
 {
     movNode *searchPtr;
     string search;
@@ -44,34 +44,35 @@ void titleSearchNode(movNode *&head,
         {
             cout << "\nTITLEFOUND\n";
             found = true;
-            ofile << left;
-            ofile << setfill('*') << setw(MAX_WIDTH_TITLE)
+            output << left;
+            output << setfill('*') << setw(MAX_WIDTH_TITLE)
                   << '*' << endl;
-            ofile << searchPtr->title << endl;
-            ofile << setfill('-') << setw(MAX_WIDTH_TITLE) << '-' << endl;
-            ofile << setfill(' ') << "Year: " << setw(COL_SIZE_TITLE-6) 
+            output << searchPtr->title << endl;
+            output << setfill('-') << setw(MAX_WIDTH_TITLE) << '-' << endl;
+            output << setfill(' ') << "Year: " << setw(COL_SIZE_TITLE-6) 
                   << searchPtr->year;
-            ofile << setw(COL_SIZE_TITLE) << "Rating: " 
+            output << setw(COL_SIZE_TITLE) << "Rating: " 
                     << searchPtr->rating << endl;
-            ofile << setfill('-') << setw(MAX_WIDTH_TITLE)
+            output << setfill('-') << setw(MAX_WIDTH_TITLE)
                   << '-' << endl;
-            ofile << setfill(' ') << setw(COL_SIZE_TITLE)
+            output << setfill(' ') << setw(COL_SIZE_TITLE)
                     << "Leading Actor:" << setw(COL_SIZE_TITLE)
                     << searchPtr->lActor << setw(COL_SIZE_TITLE)
                     << "Genre 1: " << searchPtr->genre << endl;
-            ofile << setw(COL_SIZE_TITLE)
+            output << setw(COL_SIZE_TITLE)
                     << "Supporting Actor:" << setw(COL_SIZE_TITLE)
                     << searchPtr->sActor << setw(COL_SIZE_TITLE)
                     << "Genre 2: " << searchPtr->sGenre << endl;
-            ofile << setfill('-') << setw(MAX_WIDTH_TITLE) << '-';
-            ofile << "\nPLOT:\n";
-            wordWrap(ofile, searchPtr);
-            ofile << setfill('*') << setw(MAX_WIDTH_TITLE)
+            output << setfill('-') << setw(MAX_WIDTH_TITLE) << '-';
+            output << "\nPLOT:\n";
+            wordWrap(output, searchPtr);
+            output << setfill('*') << setw(MAX_WIDTH_TITLE)
                   << '*' << endl << endl << endl;
         }
         else
         {
             searchPtr = searchPtr->next;
         }
+        output << setfill(' ');
     }
 }

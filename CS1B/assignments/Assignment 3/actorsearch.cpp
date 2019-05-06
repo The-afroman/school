@@ -21,32 +21,64 @@
 #include "header.h"
 
 void actorSearchNode(movNode *&head,
-                    ofstream &ofile)
+                    ostream &output)
 {
     movNode *searchPtr;
     string search;
-    const int COL_SIZE_TITLE = 18;
-    const int MAX_WIDTH_TITLE = 75;   
-    bool found = false;
-    int n = 1;
+    int i = 1;
 
     searchPtr = head;
 
-    cout << "Enter a title: ";
+    cout << "Enter an actor: ";
     getline(cin, search, '\n');
-    cout << search;
-    while(!found  && searchPtr != NULL)
+    output << left << "ACTOR SEARCH\n";
+    output << setw(8) << "MOVIE #";
+    output << setw(49) << "TITLE";
+    output << setw(5) << "YEAR";
+    output << setw(7) << "RATING";
+    output << setw(18) << "GENRE";
+    output << setw(18) << "ALT GENRE";
+    output << setw(20) << "LEAD ACTOR";
+    output << setw(20) << "SUPPORTING ACTOR";
+    output << endl;
+
+    output << left << setfill('-') << setw(7) << '-';
+    output << ' ';
+    output << setw(48) << '-';
+    output << ' ';
+    output << setw(4) << '-';
+    output << ' ';
+    output << setw(6) << '-';
+    output << ' ';
+    output << setw(17) << '-';
+    output << ' ';
+    output << setw(17) << '-';
+    output << ' ';
+    output << setw(19) << '-'; 
+    output <<  ' ';
+    output << setw(19) << '-';
+    output << endl;
+    output << setfill(' ');
+
+    while(searchPtr != NULL)
     {
-        if(search == searchPtr->title)
+        if(search == searchPtr->lActor || search == searchPtr->sActor)
         {
-            found = true;
-            ofile << left;
-            ofile << setw(8) << "MOVIE #";
-            ofile setw(50) << "TITLE";
+            output << setw(8) << i;
+            output << setw(49) << searchPtr->title;
+            output << setw(5) << searchPtr->year;
+            output << setw(7) <<searchPtr->rating;
+            output << setw(18) << searchPtr->genre;
+            output << setw(18) <<searchPtr->sGenre;
+            output << setw(20) << searchPtr->lActor;
+            output << setw(20) << searchPtr->sActor << endl;
+            i++;
+            searchPtr = searchPtr->next;
         }
         else
         {
             searchPtr = searchPtr->next;
         }
     }
+    cout << endl << endl;
 }

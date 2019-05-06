@@ -38,8 +38,8 @@ enum menu
 	EXIT,
 	OUTPUTL,
 	TSEARCH,
-	ASEARCH,
 	GSEARCH,
+	ASEARCH,
 	YSEARCH,
 	RSEARCH
 };
@@ -57,15 +57,27 @@ void inputfile(movNode *&head);		      //head of list
 void getInput(int &menuOpt, movNode *&head, ofstream &ofile);
 
 void titleSearchNode(movNode *&head,
-                      ofstream &ofile);
+                      ostream &output);
 
 void intSearchNode(movNode *&head,		  //head of list
                    movNode *&searchPtr,   //
                    int &menuOpt,
                    int search);			  //
 
-void displayList(movNode *&head);	      //head of list
+void displayList(movNode *&head, ostream &output);	      //head of list	
 
 void wordWrap(ostream &output, movNode *&searchPtr);
+
+void actorSearchNode(movNode *&head,
+                    ostream &output);
+
+void genreSearchNode(movNode *&head,
+                    ostream &output);
+
+void yearSearchNode(movNode *&head,
+                    ostream &output);
+
+void ratingSearchNode(movNode *&head,
+                    ostream &output);
 
 #endif /* HEADER_H_ */

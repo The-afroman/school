@@ -55,21 +55,22 @@ void getInput(int &menuOpt, movNode *&head, ofstream &ofile)
         case EXIT:
             break;
         case OUTPUTL:
+            displayList(head, ofile);
             break;
         case TSEARCH:
             titleSearchNode(head, ofile);
             break;
         case GSEARCH:
-
+            genreSearchNode(head, ofile);
             break;
         case ASEARCH:
-            
+            actorSearchNode(head, ofile);
             break;
         case YSEARCH:
-
+            yearSearchNode(head, ofile);
             break;
         case RSEARCH:
-
+            ratingSearchNode(head, ofile);
             break;
     }
 }

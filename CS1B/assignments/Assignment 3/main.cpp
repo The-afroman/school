@@ -36,6 +36,7 @@ int main()
     ofile.open(ofileName);
 
     getInput(menuOpt, head, ofile);
+    
     while(menuOpt != EXIT)
     {
         getInput(menuOpt, head, ofile);
