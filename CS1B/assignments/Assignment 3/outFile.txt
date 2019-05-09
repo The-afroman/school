@@ -487,65 +487,276 @@ MOVIE # TITLE                                            YEAR RATING GENRE      
 
 
 ***************************************************************************
-Zodiac
+Men in Black
 ---------------------------------------------------------------------------
-Year: 2007        Rating:           8
+Year: 1997        Rating:           7
 ---------------------------------------------------------------------------
-Leading Actor:    Jake Gyllenhaal   Genre 1:          Drama
-Supporting Actor: Mark Ruffalo      Genre 2:          Crime
+Leading Actor:    Tommy Lee Jones   Genre 1:          Comedy
+Supporting Actor: Will Smith        Genre 2:          Comedy
 ---------------------------------------------------------------------------
 PLOT:
-Based on the Robert Graysmith books about the real life notorious Zodiac, a 
-serial killer who terrorized San Francisco with a string of seemingly 
-random murders during the 1960s and 1970s.
+Two men who keep an eye on aliens in New York City must try to save the 
+world after the aliens threaten to blow it up.
 ***************************************************************************
 
-
 GENRE SEARCH
-MOVIE #*TITLE********************************************YEAR*RATING*GENRE*************ALT GENRE*********LEAD ACTOR**********SUPPORTING ACTOR****
-------- ------------------------------------------------ ---- ------ ----------------- ----------------- ------------------- -------------------
-ACTOR SEARCH
 MOVIE # TITLE                                            YEAR RATING GENRE             ALT GENRE         LEAD ACTOR          SUPPORTING ACTOR    
 ------- ------------------------------------------------ ---- ------ ----------------- ----------------- ------------------- -------------------
 1       50 First Dates                                   2004 7      Romantic Comedy   Comedy            Adam Sandler        Drew Barrymore      
-2       Funny People                                     2009 7      Comedy            Drama             Adam Sandler        Seth Rogen          
-3       Reign Over Me                                    2007 8      Drama             Drama             Adam Sandler        Don Cheadle         
-4       Spanglish                                        2004 7      Romantic Comedy   Comedy            Adam Sandler        Tia Leone           
-5       Wedding Singer, The                              1999 7      Comedy            Comedy            Adam Sandler        Drew Barrymore      
-6       You Don't Mess with the Zohan                    2008 6      Comedy            Action            Adam Sandler        John Turturro       
+2       Alfie                                            2004 6      Romantic Comedy   Comedy            Jude Law            Renee Taylor        
+3       Always                                           1989 6      Romantic Comedy   Romance           Richard Dryfus      Holly Hunter        
+4       American President, The                          1995 7      Romantic Comedy   Comedy            Michael Douglas     Annette Bening      
+5       Benny & Joon                                     1993 7      Romantic Comedy   Comedy            Mary Stuart MastersonJohnny Depp         
+6       Break-up, The                                    2006 6      Romantic Comedy   Romantic Comedy   Jennifer Aniston    Vince Vaughn        
+7       Bridget Jones 2: The Edge of Reason              2004 6      Romantic Comedy   Drama             Renee Zellweger     Colin Firth         
+8       Bridget Jones's Diary w. BJ2                     2001 7      Romantic Comedy   Drama             Renee Zellweger     Hugh Grant          
+9       Casanova                                         2005 7      Romantic Comedy   Comedy            Heath Ledger        Oliver Platt        
+10      Couples Retreat                                  2009 6      Romantic Comedy   Comedy            Vince Vaughn        Jon Favreau         
+11      Crocodile Dundee                                 1986 6      Romantic Comedy   Adventure         Paul Hogan          Linda Kozlowski     
+12      Crocodile Dundee 2                               1988 5      Romantic Comedy   Adventure         Paul Hogan          Linda Kozlowski     
+13      Dave                                             1993 7      Romantic Comedy   Comedy            Kevin Kline         Sigourney Weaver    
+14      Definitely, Maybe                                2008 7      Romantic Comedy   Comedy            Ryan Reynolds       Abigail Breslin     
+15      Emma                                             1996 7      Romantic Comedy   Romance           Gweneth Paltrow     James Cosmo         
+16      Fever Pitch                                      2005 6      Romantic Comedy   Comedy            Drew Barrymore      Jimmy Fallon        
+17      Forgetting Sarah Marshall                        2008 8      Romantic Comedy   Comedy            Jason Segel         Kristen Bell        
+18      French Kiss                                      1995 6      Romantic Comedy   Romance           Meg Ryan            Kevin Kline         
+19      Ghosts of Girlfriends Past                       2009 6      Romantic Comedy   Romantic Comedy   Matthew McConaughey Jennifer Garner     
+20      Guess Who                                        2005 6      Romantic Comedy   Comedy            Bernie Mac          Ashton Kutcher      
+21      Heartbreak Kid, The                              2007 6      Romantic Comedy   Romantic Comedy   Ben Stiller         Malin Akerman       
+22      He's Just Not that into You                      2009 7      Romantic Comedy   Romantic Comedy   Jennifer Aniston    Ben Affleck         
+23      Hitch                                            2005 7      Romantic Comedy   Comedy            Will Smith          Eva Mendes          
+24      Holiday, The                                     2006 7      Romantic Comedy   Comedy            Kate Winslet        Cameron Diaz        
+25      How to Lose a Guy in 10 Days                     2003 6      Romantic Comedy   Comedy            Kate Hudson         Matthew McConaughey 
+26      It's Complicated                                 2009 7      Romantic Comedy   Romantic Comedy   Meryl Streep        Alec Baldwin        
+27      Jerry Maguire                                    1996 7      Romantic Comedy   Comedy            Tom Cruise          Renee Zellweger     
+28      Knights Tale, A                                  2001 7      Comedy            Romantic Comedy   Heath Ledger        Mark Addy           
+29      Leap Year                                        2010 6      Romantic Comedy   Comedy            Amy Adams           Matthew Goode       
+30      Mirror has Two Faces, The                        1996 6      Romantic Comedy   Drama             Barbara Streisand   Jeff Bridges        
+31      Must Love Dogs                                   2005 6      Romantic Comedy   Romantic Comedy   Diane Lane          John Cusack         
+32      My Best Friend's Wedding                         1997 6      Romantic Comedy   Comedy            Julia Roberts       Dermot Mulroney     
+33      My Big Fat Greek Wedding                         2002 7      Romantic Comedy   Comedy            Nia Vardalos        Michael Constantine 
+34      Never Been Kissed                                1999 6      Romantic Comedy   Comedy            Drew Barrymore      David Arquette      
+35      One Fine Day                                     1996 6      Romantic Comedy   Comedy            Michelle Pfeiffer   George Clooney      
+36      Shakespeare in Love                              1999 7      Romantic Comedy   Drama             Joseph Fiennes      Gwyneth Paltrow     
+37      Shallow Hal                                      2001 6      Romantic Comedy   Comedy            Jack Black          Gwyneth Paltrow     
+38      Spanglish                                        2004 7      Romantic Comedy   Comedy            Adam Sandler        Tia Leone           
+39      Sweet Home Alabama                               2002 6      Romantic Comedy   Comedy            Reese Witherspoon   Josh Lucas          
+40      Truth About Cats & Dogs, The                     1996 6      Romantic Comedy   Comedy            Uma Thurman         Janeane Garofalo    
+41      Two Weeks Notice                                 2002 6      Romantic Comedy   Comedy            Sandra Bullock      Hugh Grant          
+42      Under the Tuscan Sun                             2003 7      Romantic Comedy   Comedy            Diane Lane          Sandra Oh           
+43      Wedding Crashers                                 2005 7      Comedy            Romantic Comedy   Owen Wilson         Vince Vaughn        
+44      What Happens in Vegas                            2008 6      Romantic Comedy   Romantic Comedy   Ashton Kutcher      Cameron Diaz        
+45      Wimbleton                                        2004 6      Romantic Comedy   Comedy            Kirsten Dunst       Paul Bettany        
+
+
+ACTOR SEARCH
+MOVIE # TITLE                                            YEAR RATING GENRE             ALT GENRE         LEAD ACTOR          SUPPORTING ACTOR    
+------- ------------------------------------------------ ---- ------ ----------------- ----------------- ------------------- -------------------
+1       Bobby                                            2006 7      Biography         Drama             Anthony Hopkins     Harry Belafonte     
+2       Legends of the Fall                              1995 7      Drama             Drama             Brad Pitt           Anthony Hopkins     
+3       Meet Joe Black                                   1998 7      Drama             Drama             Brad Pitt           Anthony Hopkins     
+4       Proof                                            2005 7      Drama             Drama             Gweneth Paltrow     Anthony Hopkins     
+5       Shadowlands                                      1994 7      Biography         Drama             Anthony Hopkins     Debra Winger        
+6       World's Fastest Indian, The                      2005 8      Biography         Drama             Anthony Hopkins     Iain Rea            
+
+
 YEAR SEARCH
 MOVIE # TITLE                                            YEAR RATING GENRE             ALT GENRE         LEAD ACTOR          SUPPORTING ACTOR    
 ------- ------------------------------------------------ ---- ------ ----------------- ----------------- ------------------- -------------------
-1       Bagger Vance, The Legend of                      2000 6      Drama             Drama             Will Smith          Matt Damon          
-2       Contender, The                                   2000 7      Drama             Thriller          Joan Allen          Gary Oldman         
-3       Erin Brockovich                                  2000 7      Biography         Drama             Julia Roberts       Albert Finney       
-4       Finding Forrester                                2000 7      Drama             Drama             Sean Connery        Rob Brown           
-5       Frequency                                        2000 7      Action            Crime             Dennis Quaid        James Caviezel      
-6       Gladiator                                        2000 8      Drama             Action            Russell Crowe       Joaquin Phoenix     
-7       Men of Honor                                     2000 7      Biography         Drama             Robert De Niro      Cuba Gooding, Jr.   
-8       Pay it Forward                                   2000 7      Drama             Romance           Kevin Spacey        Helen Hunt          
-9       Proof of Life                                    2000 6      Action            Drama             Meg Ryan            Russell Crowe       
-10      Remember the Titans                              2000 8      Biography         Sport             Denzel Washington   Will Patton         
-11      Shanghai Noon                                    2000 7      Action            Comedy            Jackie Chan         Owen Wilson         
-12      Snatch                                           2000 8      Comedy            Crime             Jason Statham       Stephen Graham      
-13      Tigerland                                        2000 7      Action            Action            Colin Farrell       Matthew Davis       
-14      U-571                                            2000 6      Drama             Action            Matthew McConaughey Harvey Keitel       
-15      Wonder Boys, The                                 2000 8      Drama             Comedy            Michael Douglas     Toby Maguire        
-16      X-Men                                            2000 7      Action            Action            Hugh Jackman        Patrick Stewart     
+1       3:10 to Yuma                                     2007 8      Drama             Crime             Russell Crowe       Christian Bale      
+2       88 Minutes                                       2007 6      Action            Crime             Al Pacino           Alicia Witt         
+3       A Mighty Heart                                   2007 7      Biography         Drama             Dan Futterman       Angelina Joile      
+4       Across the Universe                              2007 8      Musical           Drama             Evan Rachel Wood    Jim Sturgess        
+5       August Rush                                      2007 8      Drama             Music             Freddie  Highmore   Keri Russell        
+6       Before the Devil Knows You're Dead               2007 7      Drama             Crime             Philip Seymore HoffmanEthan Hawke         
+7       Bourne Ultimatum                                 2007 8      Action            Adventure         Matt Damon          Joan Allen          
+8       Breach                                           2007 7      Biography         Crime             Chris Cooper        Ryan Phillippe      
+9       Breakfast with Scot                              2007 7      Comedy            Drama             Cameron Anzel       Benz Antoine        
+10      Charlie Wilson's War                             2007 7      Biography         Drama             Tom Hanks           Julia Roberts       
+11      Daddy's Little Girls                             2007 4      Drama             Romantic          Gabrielle Union     Idris Elba          
+12      Eastern Promises                                 2007 8      Drama             Crime             Naomi Watts         Viggo Mortensen     
+13      Freedom Writers                                  2007 8      Biography         Drama             Hilary Swank        Patrick Dempsey     
+14      Georgia Rule                                     2007 6      Comedy            Drama             Jane Fonda          Lindsay Lohan       
+15      Great Debaters, The                              2007 8      Biography         Drama             Denzel Washington   Nate Parker         
+16      Harry Potter and the Order of the Phoenix        2007 7      Action            Drama             Daniel Radcliffe    Rupert Grint        
+17      Heartbreak Kid, The                              2007 6      Romantic Comedy   Romantic Comedy   Ben Stiller         Malin Akerman       
+18      I'm Not There                                    2007 7      Musical           Biography         Cate Blanchett      Christian Bale      
+19      Into the Wild                                    2007 8      Biography         Drama             Emile Hirsch        William Hurt        
+20      Invisible, The                                   2007 6      Drama             Crime             Justin Chatwin      Margarita Levieva   
+21      Jimmy Carter, The Man from the Plains            2007 7      Documentary       Biography         Jimmy Carter        Jimmy Carter        
+22      Juno                                             2007 8      Comedy            Comedy            Ellen Page          Michael Cera        
+23      Kite Runner, The                                 2007 8      Drama             Drama             Khalid Abdalla      Atossa Leoni        
+24      La Vie en Rose                                   2007 8      Biography         Drama             Marion Cotillard    Sylvie Tstud        
+25      Lions for Lambs                                  2007 6      Drama             War               Robert Redford      Meryl Streep        
+26      Live Free or Die Hard                            2007 8      Action            Adventure         Bruce Willis        Justin Long         
+27      Margot at the Wedding                            2007 6      Comedy            Drama             Nicole Kidman       Jack Black          
+28      Michael Clayton                                  2007 8      Drama             Crime             George Clooney      Tom Wilkenson       
+29      Mr. Brooks                                       2007 8      Action            Thriller          Kevin Costner       Demi Moore          
+30      Mr. Woodcock                                     2007 5      Comedy            Comedy            Billy Bob Thornton  Seann William Scott 
+31      Ocean's 13                                       2007 7      Action            Comedy            Brad Pitt           George Clooney      
+32      Pirates of the Caribbean 3: At Worlds End        2007 7      Action            Adventure         Johnny Depp         Orlando Bloom       
+33      Premonition                                      2007 6      Drama             Mystery           Sandra Bullock      Julian McMahon      
+34      Pride                                            2007 5      Drama             Sport             Terrence Howard     Bernie Mac          
+35      Ratatouille                                      2007 8      Family/Animation  Animation         Patton Oswalt       Lou Romano          
+36      Reign Over Me                                    2007 8      Drama             Drama             Adam Sandler        Don Cheadle         
+37      Rendition                                        2007 7      Drama             War               Jake Gyllenhaal     Reese Witherspoon   
+38      Rescue Dawn                                      2007 8      Biography         War               Christian Bale      Zach Grenier        
+39      Resurrecting the Champ                           2007 7      Drama             Sport             Samuel L. Jackson   Josh Hartnett       
+40      Rush Hour 3                                      2007 6      Action            Comedy            Jackie Chan         Chris Tucker        
+41      Savages, The                                     2007 7      Comedy            Drama             Philip Seymore HoffmanLaura Linney        
+42      Shooter                                          2007 7      Action            Action            Mark Wahlberg       Michael Pena        
+43      Shrek 3                                          2007 6      Family/Animation  Animation         Mike Myers          Eddie Murphy        
+44      Sicko                                            2007 8      Documentary       Documentary       Michael Moore       Michael Moore       
+45      Spiderman 3                                      2007 7      Action            Action            Toby Maguire        Kirsten Dunst       
+46      Things We Lost in the Fire                       2007 7      Drama             Drama             Benicio Del Toro    Halle Berry         
+47      Trade                                            2007 8      Drama             Drama             Kevin Kline         Cesar Ramos         
+48      Visitor, The                                     2007 8      Drama             Drama             Richard Jenkins     Haaz Sleiman        
+49      Waitress                                         2007 7      Comedy            Drama             Keri Russell        Nathan Fillion      
+50      War                                              2007 6      Action            Action            Jet Li              Jason Straham       
+51      We are Marshall                                  2007 7      Biography         Sport             Matthew McConaughey Matthew Fox         
+52      Wild Hogs                                        2007 6      Comedy            Action            Tim Allen           John Travolta       
+53      Zodiac                                           2007 8      Drama             Crime             Jake Gyllenhaal     Mark Ruffalo        
+
+
 RATING SEARCH
 MOVIE # TITLE                                            YEAR RATING GENRE             ALT GENRE         LEAD ACTOR          SUPPORTING ACTOR    
 ------- ------------------------------------------------ ---- ------ ----------------- ----------------- ------------------- -------------------
-1       Batman - The Dark Knight                         2008 9      Action            Action            Christian Bale      Heath Ledger        
-2       Bob Dylan: No Direction Home                     2005 9      Musical           Biography         Bob Dylan           Dick Kangas         
-3       Braveheart                                       1995 9      Action            Biography         Mel Gibson          James Robinson      
-4       Departed, The                                    2006 9      Drama             Crime             Leonardo DiCaprio   Matt Damon          
-5       Goodfellas                                       1990 9      Drama             Drama             Robert De Niro      Ray Liotta          
-6       Indiana Jones and the Raiders of the Lost Arc    1981 9      Action            Action            Harrison Ford       Karen Allen         
-7       Lost Season 1                                    2002 9      Drama             T.V. Series       Matthew Fox         Naveen Andrews      
-8       Lost Season 2                                    2003 9      Drama             T.V. Series       Matthew Fox         Naveen Andrews      
-9       Lost Season 3                                    2004 9      Drama             T.V. Series       Matthew Fox         Naveen Andrews      
-10      Matrix, The                                      1999 9      Action            Action            Keanu Reeves        Laurence Fishburne  
-11      Pianist, The                                     2003 9      Biography         Drama             Adrien Brody        Thomas Kreschmann   
-12      Saving Private Ryan                              1998 9      Drama             War               Tom Hanks           Matt Damon          
-13      Shawshank Redemption, The                        1994 9      Drama             Crime             Tim Robbins         Morgan Freeman      
-14      Terminator 2                                     1991 9      Action            Action            Arnold SchwarzeneggerLinda Hamilton      
+1       007 - Casino Royale                              2006 8      Action            Adventure         Daniel Craig        Eva Green           
+2       25th Hour                                        2002 8      Drama             Drama             Edward Norton       Philip Seymour Hoffman
+3       3:10 to Yuma                                     2007 8      Drama             Crime             Russell Crowe       Christian Bale      
+4       A Beautiful Mind                                 2001 8      Biography         Drama             Russell Crowe       Ed Harris           
+5       Across the Universe                              2007 8      Musical           Drama             Evan Rachel Wood    Jim Sturgess        
+6       August Rush                                      2007 8      Drama             Music             Freddie  Highmore   Keri Russell        
+7       Back to the Future (1)                           1985 8      Action            Comedy            Michael J. Fox      Christopher Lloyd   
+8       Bank Job, The                                    2008 8      Drama             Crime             Jason Straham       Saffron Burrows     
+9       Batman Begins                                    2005 8      Action            Action            Christian Bale      Michael Caine       
+10      Beauty and the Beast                             1991 8      Family/Animation  Animation         Paige O'Hara        Robby Benson        
+11      Big Fish                                         2003 8      Drama             Comedy            Ewan McGregor       Albert Finney       
+12      Bill Engvall - Here's Your Sign Live             2004 8      Comedy            Comedy            Bill Engvall        Bill Engvall        
+13      Black Hawk Down                                  2001 8      Drama             Action            Josh Hartnett       Ewan McGregor       
+14      Blind Side, The                                  2009 8      Biography         Sports            Quinton Aaron       Sandra Bullock      
+15      Blood Diamond                                    2006 8      Drama             Adventure         Leonardo DiCaprio   Djimon Hounsou      
+16      Bonnie and Clyde                                 1967 8      Biography         Drama             Warren Beatty       Faye Dunaway        
+17      Bourne Identity w. Supremacy                     2002 8      Action            Action            Matt Damon          Franka Potente      
+18      Bourne Supremacy w. Identity                     2004 8      Action            Action            Matt Damon          Franka Potente      
+19      Bourne Ultimatum                                 2007 8      Action            Adventure         Matt Damon          Joan Allen          
+20      Boys Don't Cry                                   1999 8      Biography         Drama             Hilary Swank        Chloe Sevigny       
+21      Brokeback Mountain                               2005 8      Drama             Drama             Heath Ledger        Jake Gyllenhaal     
+22      Butch Cassidy and the Sundance Kid               1969 8      Biography         Action            John Newman         Robert Redford      
+23      Carlito's Way                                    1993 8      Drama             Drama             Al Pacino           Sean Penn           
+24      Catch Me if you Can                              2002 8      Comedy            Biography         Leonardo DiCaprio   Tom Hanks           
+25      Changeling                                       2008 8      Biography         Drama             Angelina Jolie      John  Malkovich     
+26      Cinderella Man                                   2005 8      Biography         Drama             Russell Crowe       Renee Zellweger     
+27      Cool Hand Luke                                   1967 8      Drama             Drama             Paul Newman         George Kennedy      
+28      Corpse Bride                                     2005 8      Family/Animation  Animation         Johnny Depp         Helena Bonham Carter
+29      Crazy Heart                                      2009 8      Drama             Music             Jeff Bridges        Maggie Gyllenhaal   
+30      Dead Man Walking                                 1996 8      Drama             Drama             Susan Sarandon      Sean Penn           
+31      Die Hard                                         1988 8      Action            Action            Bruce Willis        Reginald Vel Johnson
+32      Door to Door                                     2002 8      Biography         Drama             William H. Macy     Kyra Sedgwick       
+33      Eastern Promises                                 2007 8      Drama             Crime             Naomi Watts         Viggo Mortensen     
+34      Edward Scissorhands                              1990 8      Family/Animation  Comedy            Johnny Depp         Winona Ryder        
+35      Elizabeth, The Golden Age                        1998 8      Biography         Drama             Kate Blanchett      Geoffrey Rush       
+36      Farenheit 911                                    2004 8      Documentary       Documentary       Michael Moore       George Bush         
+37      Field of Dreams                                  1989 8      Drama             Drama             Kevin Costner       Amy Madigan         
+38      Finding Nemo                                     2003 8      Family/Animation  Animation         Albert Brooks       Ellen DeGeneres     
+39      Finding Neverland                                2004 8      Biography         Drama             Johnny Depp         Kate Winslet        
+40      Forgetting Sarah Marshall                        2008 8      Romantic Comedy   Comedy            Jason Segel         Kristen Bell        
+41      Freedom Writers                                  2007 8      Biography         Drama             Hilary Swank        Patrick Dempsey     
+42      Frost Nixon                                      2009 8      Biography         Drama             Frank Langella      Michael Sheen       
+43      Fugitive, The                                    1993 8      Action            Mystery           Harrison Ford       Tommy Lee Jones     
+44      Ghost Busters                                    1994 8      Comedy            Comedy            Bill Murray         Dan Aykroyd         
+45      Gladiator                                        2000 8      Drama             Action            Russell Crowe       Joaquin Phoenix     
+46      Good Night, Good Luck                            2005 8      Biography         Drama             David Strathairn    George Clooney      
+47      Good Will Hunting                                1997 8      Drama             Drama             Matt Damon          Ben Affleck         
+48      Graduate, The                                    1967 8      Drama             Romance           Anne Bancroft       Dustin Hoffman      
+49      Gran Torino                                      2008 8      Drama             Drama             Clint Eastwood      Walt Kowalski       
+50      Great Debaters, The                              2007 8      Biography         Drama             Denzel Washington   Nate Parker         
+51      Green Hornet, The                                1966 8      Action            Crime             Bruce Lee           Van Williams        
+52      Green Mile, The                                  1999 8      Drama             Crime             Tom Hanks           Michael Clarke Duncan
+53      Hangover, The                                    2009 8      Comedy            Comedy            Justin Bartha       Bradley Cooper      
+54      Hard Day's Night, A                              1964 8      Musical           Musical           The Beatles         Wilfred Brambell    
+55      Harry Potter and the Prisoner of Azkaban         2004 8      Action            Adventure         Daniel Radcliffe    Rupert Grint        
+56      Harry Potter and the Goblet of Fire              2005 8      Action            Adventure         Daniel Radcliffe    Emma Watson         
+57      History of Violence, A                           2005 8      Action            Crime             Viggo Mortensen     Maria Bello         
+58      Hotel Rwanda                                     2004 8      Biography         Drama             Don Cheadle         Xolani Mali         
+59      Hours, The                                       2002 8      Drama             Drama             Nicole Kidman       Julianne Moore      
+60      Hurt Locker, The                                 2008 8      Action            War               Jeremy Renner       Anthony Mackie      
+61      Incredibles, The                                 2004 8      Family/Animation  Animation         Craig T. Nelson     Holly Hunter        
+62      Indiana Jones and the Temple of Doom             1984 8      Action            Action            Harrison Ford       Kate Capshaw        
+63      Indiana Jones and the Last Crusade               1989 8      Action            Action            Harrison Ford       Sean Connery        
+64      Inside Man                                       2006 8      Drama             Crime             Denzel Washington   Clive Owen          
+65      Into the Wild                                    2007 8      Biography         Drama             Emile Hirsch        William Hurt        
+66      Invictus                                         2009 8      Biography         Drama             Morgan Freeman      Matt Damon          
+67      Jolson Story, The                                1946 8      Musical           Biography         Larry Parks         Evelyn Keys         
+68      Juno                                             2007 8      Comedy            Comedy            Ellen Page          Michael Cera        
+69      King Kong                                        2005 8      Drama             Adventure         Naomi Watts         Jack Black          
+70      Kite Runner, The                                 2007 8      Drama             Drama             Khalid Abdalla      Atossa Leoni        
+71      La Vie en Rose                                   2007 8      Biography         Drama             Marion Cotillard    Sylvie Tstud        
+72      Last of the Mohicans, The                        1992 8      Action            Adventure         Daniel Day-Lewis    Madeleine Stow      
+73      Last Samurai. The                                2003 8      Drama             Action            Ken Watanabe        Tom Cruise          
+74      Lethal Weapon                                    1987 8      Action            Action            Mel Gibson          Danny Glover        
+75      Live Free or Die Hard                            2007 8      Action            Adventure         Bruce Willis        Justin Long         
+76      March of the Penguins                            2005 8      Documentary       Documentary       Charles Berling     Romane Bohringer    
+77      Master and Commander                             2003 8      Action            Action            Russell Crowe       Paul Bettany        
+78      Michael Clayton                                  2007 8      Drama             Crime             George Clooney      Tom Wilkenson       
+79      Milk                                             2008 8      Biography         Drama             Sean Penn           Emile Hirsch        
+80      Million Dollar Baby                              2005 8      Drama             Drama             Clint Eastwood      Hilary Swank        
+81      Miracle                                          2004 8      Biography         Drama             Kurt Russell        Patricia Clarkson   
+82      Monsters, Inc.                                   2001 8      Family/Animation  Animation         John Goodman        Billy Crystal       
+83      Motorcycle Diaries, The                          2004 8      Biography         Drama             Gael Garcia Bernal  Rodrigo De La Serna 
+84      Mr. Brooks                                       2007 8      Action            Thriller          Kevin Costner       Demi Moore          
+85      Munich                                           2005 8      Biography         Drama             Eric Bana           Daniel Craig        
+86      Nightmare Before Christmas, The                  1993 8      Family/Animation  Animation         Danny Elfman        Chris Sarandon      
+87      Notebook, The                                    2004 8      Drama             Drama             Ryan Gosling        Rachel McAdams      
+88      Notes on a Scandal                               2006 8      Drama             Drama             Judi Dench          Cate Blanchett      
+89      Ocean's 11                                       2001 8      Action            Comedy            George Clooney      Brad Pitt           
+90      On Golden Pond                                   1981 8      Drama             Drama             Katharine Hepburn   Henry Fonda         
+91      Painted Veil, The                                2006 8      Drama             Drama             Edward Norton       Naomi Watts         
+92      Pirates of the Caribbean 1: The Curse of the Black Pearl2003 8      Action            Action            Johnny Depp         Orlando Bloom       
+93      Planes, Trains, & Automobiles                    1987 8      Comedy            Comedy            Steve Martin        John Candy          
+94      Pleasantville                                    1998 8      Drama             Fantasy           Toby Maguire        Reese Witherspoon   
+95      Precious                                         2009 8      Drama             Drama             Gabourey Sidibe     Mo'Nique            
+96      Prestige, The                                    2006 8      Drama             Thriller          Hugh Jackman        Christian Bale      
+97      Pride & Prejudice                                2005 8      Drama             Romance           Kiera Knightly      Alulah Riley        
+98      Pursuit of Happyness                             2008 8      Biography         Drama             Will Smith          Jaden Smith         
+99      Queen, The                                       2006 8      Biography         Drama             Helen Mirren        James Cromwell      
+100     Ratatouille                                      2007 8      Family/Animation  Animation         Patton Oswalt       Lou Romano          
+101     Ray                                              2004 8      Drama             Biography         Jamie Foxx          Kerry Washington    
+102     Reader, The                                      2009 8      Drama             Romance           Ralph Fiennes       Kate Winslet        
+103     Reign Over Me                                    2007 8      Drama             Drama             Adam Sandler        Don Cheadle         
+104     Remember the Titans                              2000 8      Biography         Sport             Denzel Washington   Will Patton         
+105     Rescue Dawn                                      2007 8      Biography         War               Christian Bale      Zach Grenier        
+106     Revolutionary Road                               2009 8      Drama             Romance           Leonardo DiCaprio   Kate Winslet        
+107     Right Stuff, The                                 1983 8      Drama             Adventure         Ed Harris           Sam Shepard         
+108     Scarface                                         1983 8      Action            Crime             Al Pacino           Michelle Pfeiffer   
+109     Scent of a Woman                                 1992 8      Drama             Comedy            Al Pacino           Chris O'Donnell     
+110     Secondhand Lions                                 2003 8      Comedy            Comedy            Haley Joel Osmet    Robert Duvall       
+111     Sense and Sensibility                            1995 8      Drama             Comedy            Hugh Grant          Kate Winslet        
+112     Seven Pounds                                     2008 8      Drama             Drama             Will Smith          Rosario Dawson      
+113     Shackelton                                       2002 8      Biography         Drama             Kenneth Branagh     John Grillo         
+114     Shackleton's Antarctic Adventure                 2001 8      Documentary       Documentary       Kevin Spacey        Conrad Anker        
+115     Sherlock Holmes                                  2009 8      Action            Adventure         Robert Downey Jr.   Jude Law            
+116     Shrek                                            2001 8      Family/Animation  Animation         Mike Myers          Eddie Murphy        
+117     Shrek 2                                          2004 8      Family/Animation  Animation         Mike Myers          Eddie Murphy        
+118     Sicko                                            2007 8      Documentary       Documentary       Michael Moore       Michael Moore       
+119     Sideways                                         2005 8      Comedy            Drama             Paul Giamatti       Thomas Haden Church 
+120     Sixth Sense, The                                 1999 8      Drama             Drama             Haley Joel Osmet    Bruce Willis        
+121     Snatch                                           2000 8      Comedy            Crime             Jason Statham       Stephen Graham      
+122     Sound of Music, The                              1965 8      Musical           Biography         Julie Andrews       Christopher Plummer 
+123     Spiderman 2                                      2004 8      Action            Action            Toby Maguire        Kirsten Dunst       
+124     Supersize Me                                     2004 8      Documentary       Documentary       Morgan Spurlock     Dr. Daryl Isaacs    
+125     Taken                                            2008 8      Action            Crime             Liam Neeson         Famke Jannsen       
+126     Terminator, The                                  1984 8      Action            Action            Arnold SchwarzeneggerLinda Hamilton      
+127     Tracker, The                                     2002 8      Drama             History           David Gulilpil      Gary Sweet          
+128     Trade                                            2007 8      Drama             Drama             Kevin Kline         Cesar Ramos         
+129     Transamerica                                     2006 8      Drama             Adventure         Andrea James        Felicity Huffman    
+130     Visitor, The                                     2007 8      Drama             Drama             Richard Jenkins     Haaz Sleiman        
+131     Walk the Line                                    2005 8      Musical           Biography         Joaquin Phoenix     Reese Witherspoon   
+132     Wonder Boys, The                                 2000 8      Drama             Comedy            Michael Douglas     Toby Maguire        
+133     World's Fastest Indian, The                      2005 8      Biography         Drama             Anthony Hopkins     Iain Rea            
+134     Wrestler, The                                    2008 8      Drama             Sport             Mickey Rourke       Marissa Tomei       
+135     X-Men 2                                          2003 8      Action            Action            Hugh Jackman        Patrick Stewart     
+136     Yankee Doodle Dandee                             1942 8      Musical           Biography         James Cagney        Joan Leslie         
+137     Zodiac                                           2007 8      Drama             Crime             Jake Gyllenhaal     Mark Ruffalo        
+
+

@@ -1,20 +1,20 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 /******************************************************************************
- * This function will get names, ages, genders from an infile and create a 
- * doubly linked list which is alphabetized.
+ * This function will get information from an infile and create a 
+ * linked list.
  *----------------------------------------------------------------------------
  * INPUT:
  *          head - head of the new list
  * OUTPUT:
- *          ordered linked list
+ *          linked list
  *****************************************************************************/
 
 #include "header.h"

@@ -1,10 +1,10 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 #include "header.h"

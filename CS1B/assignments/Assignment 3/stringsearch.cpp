@@ -1,21 +1,20 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 /******************************************************************************
- * This function will search the list for the name specified and change
- * searchPtr
+ * This function will search the list for the movie specified and output it to output
  *----------------------------------------------------------------------------
  * INPUT:
  *          head      - head of the list
- *          searchPtr - search pointer
+ *          output    - output device to use
  * OUTPUT:
- *          NA
+ *          movie listing
  *****************************************************************************/
 
 #include "header.h"
@@ -34,15 +33,12 @@ void titleSearchNode(movNode *&head,
 
     cout << "Enter a title: ";
     getline(cin, search, '\n');
-    cout << search;
+    cout << "\nSearching for " << search << endl;
     while(!found  && searchPtr != NULL)
     {
-        cout << endl <<endl;
-        cout << "START:";
-        cout << searchPtr->title;
         if(search == searchPtr->title)
         {
-            cout << "\nTITLEFOUND\n";
+            //cout << "\nTITLEFOUND\n";
             found = true;
             output << left;
             output << setfill('*') << setw(MAX_WIDTH_TITLE)
@@ -67,12 +63,20 @@ void titleSearchNode(movNode *&head,
             output << "\nPLOT:\n";
             wordWrap(output, searchPtr);
             output << setfill('*') << setw(MAX_WIDTH_TITLE)
-                  << '*' << endl << endl << endl;
+                  << '*' << endl << endl;
         }
         else
         {
             searchPtr = searchPtr->next;
         }
         output << setfill(' ');
+    }
+    if(!found)
+    {
+        cout << search << " was not found.\n";
+    }
+    else
+    {
+        cout << search << " found!\n";
     }
 }

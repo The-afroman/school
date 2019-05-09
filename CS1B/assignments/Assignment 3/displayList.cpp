@@ -1,10 +1,10 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 /******************************************************************************
@@ -12,8 +12,9 @@
  *----------------------------------------------------------------------------
  * INPUT:
  *          head - head of linked list
+ *          output - where to output list
  * OUTPUT:
- *          the contents of linked list to console
+ *          contents of linked list
  *****************************************************************************/
 
 #include "header.h"
@@ -24,6 +25,8 @@ void displayList(movNode *&head, ostream &output)
     int i = 1;
     perPtr = head->next;
     
+    cout << "\nListing all movies...\n";
+
     output << left << "COMPLETE MOVIE LISTING\n";
     output << setw(8) << "MOVIE #";
     output << setw(49) << "TITLE";

@@ -1,0 +1,251 @@
+************************************************
+* PROGRAMMED BY : Faris Hijazi
+* CLASS         : CS1A
+* SECTION       : MW: 7:30P
+* Assignment #10: Creating an Ordered list
+************************************************
+which input file would you like to use (d for default) ?: d
+
+which outputfile would you like to use (d for default) ?: d
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 1
+
+Listing all movies...
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 2
+Enter a title: Men in Black
+
+Searching for Men in Black
+Men in Black found!
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 2
+Enter a title: Shawshank Redemption
+
+Searching for Shawshank Redemption
+Shawshank Redemption was not found.
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 3
+Enter a genre: Romantic Comedy
+
+Searching for Romantic Comedy
+45 movies found for Romantic Comedy found
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 3
+Enter a genre: Horror
+
+Searching for Horror
+No movies for Horror found.
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 4
+Enter an actor: Anthony Hopkins
+
+Searching for Anthony Hopkins
+6 movies found for Anthony Hopkins found
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 4
+Enter an actor: Doe Johnson
+
+Searching for Doe Johnson
+No movies for Doe Johnson found.
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 5
+Enter year: 2007
+
+Searching for 2007
+53 movies found for 2007 found
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 5
+Enter year: 1800
+
+**** The number 1800 is an invalid entry ****
+**** Please input a number between 1876 and 3000 ****
+Enter year: 5
+
+**** The number 5 is an invalid entry ****
+**** Please input a number between 1876 and 3000 ****
+Enter year: 3001
+
+**** The number 3001 is an invalid entry ****
+**** Please input a number between 1876 and 3000 ****
+Enter year: a
+
+**** Please input a number between 1876 and 3000 ****
+Enter year: 1900
+
+Searching for 1900
+No movies for 1900 found.
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 6
+Enter rating: -1
+
+**** The number -1 is an invalid entry ****
+**** Please input a number between 0 and 9 ****
+Enter rating: 10
+
+**** The number 10 is an invalid entry ****
+**** Please input a number between 0 and 9 ****
+Enter rating: x
+
+**** Please input a number between 0 and 9 ****
+Enter rating: 8
+
+Searching for 8
+137 movies found for 8 found
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): -1
+
+**** The number -1 is an invalid entry ****
+**** Please input a number between 0 and 5 ****
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 7
+
+**** The number 7 is an invalid entry ****
+**** Please input a number between 0 and 5 ****
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): a
+
+**** Please input a number between 0 and 6 ****
+
+1 - Output Entire List
+2 - Title Search
+
+**** Please input a number between 0 and 9 ****
+Enter rating: 8
+
+Searching for 8
+137 movies found for 8 found
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): -1
+
+**** The number -1 is an invalid entry ****
+**** Please input a number between 0 and 5 ****
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 7
+
+**** The number 7 is an invalid entry ****
+**** Please input a number between 0 and 5 ****
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): a
+
+**** Please input a number between 0 and 6 ****
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - Exit
+enter a command (0 to exit): 0

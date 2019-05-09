@@ -1,10 +1,10 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 #ifndef HEADER_H_
@@ -54,30 +54,29 @@ void outputMenu();
 
 void inputfile(movNode *&head);		      //head of list
 
-void getInput(int &menuOpt, movNode *&head, ofstream &ofile);
+void getInput(int &menuOpt,				  //user menu option
+			  movNode *&head,		      //head of list
+			  ofstream &ofile);           //output file variable
 
-void titleSearchNode(movNode *&head,
-                      ostream &output);
+void titleSearchNode(movNode *&head,	  //head of list
+                    ostream &output);	  //where to display output
 
-void intSearchNode(movNode *&head,		  //head of list
-                   movNode *&searchPtr,   //
-                   int &menuOpt,
-                   int search);			  //
+void displayList(movNode *&head,		  //head of list
+				ostream &output);	      //where to display output
 
-void displayList(movNode *&head, ostream &output);	      //head of list	
+void wordWrap(ostream &output,			  //where to display output
+			  movNode *&searchPtr);		  //node for word wrap
 
-void wordWrap(ostream &output, movNode *&searchPtr);
+void actorSearchNode(movNode *&head,	  //head of list
+                    ostream &output);	  //where to display output
 
-void actorSearchNode(movNode *&head,
-                    ostream &output);
+void genreSearchNode(movNode *&head,	  //head of list
+                    ostream &output);	  //where to display output
 
-void genreSearchNode(movNode *&head,
-                    ostream &output);
+void yearSearchNode(movNode *&head,		  //head of list
+                    ostream &output);	  //where to display output
 
-void yearSearchNode(movNode *&head,
-                    ostream &output);
-
-void ratingSearchNode(movNode *&head,
-                    ostream &output);
+void ratingSearchNode(movNode *&head,     //head of list
+                    ostream &output);	  //where to display output
 
 #endif /* HEADER_H_ */

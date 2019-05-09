@@ -1,10 +1,10 @@
 /******************************************************************************
- * AUTHOR 		: Faris Hijazi & Paul Abrams
- * STUDENT ID 	: 1039438 &
- * Lab 9		: Implementing a Stack
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Assignment 3 : Searching Linked Lists 
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/02/19
+ * DUE DATE		: 04/15/19
  *****************************************************************************/
 
 /******************************************************************************
@@ -14,7 +14,7 @@
  * INPUT:
  *          menuOpt - user menu input
  *          head    - head of list
- *          perNode - search ptr for outputing searchPtr->name
+ *          ofile   - output file to use 
  * OUTPUT:
  *          NA
  *****************************************************************************/
