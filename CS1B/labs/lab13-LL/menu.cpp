@@ -20,7 +20,6 @@
 
 void outputMenu()
 {
-
     cout << "\n1 - Add Sheep\n";
     cout << "2 - Output first sheep\n";
     cout << "3 - Find sheep\n";
