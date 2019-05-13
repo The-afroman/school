@@ -1,11 +1,12 @@
 /******************************************************************************
  * AUTHOR 		: Faris Hijazi
  * STUDENT ID 	: 1039438
- * Lab 10		: Creating an Ordered List
+ * Lab 14		: Arrays and Linked Lists of Sheep
  * CLASS		: CS1A
  * SECTION 		: MW 7:30PM
- * DUE DATE		: 04/11/19
+ * DUE DATE		: 05/09/19
  *****************************************************************************/
+
 
 #include "header.h"
 
