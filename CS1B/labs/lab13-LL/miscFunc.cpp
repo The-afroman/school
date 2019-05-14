@@ -56,7 +56,7 @@ int menuInput()
         else if(menuOpt < 0 || menuOpt > 6)
         {
             cout << "\n**** The number " <<  menuOpt << " is an invalid entry ****\n";
-            cout << "**** Please input a number between 0 and 5 ****\n";
+            cout << "**** Please input a number between 0 and 6 ****\n";
             invalid =  true;
         }
         else

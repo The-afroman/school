@@ -21,7 +21,7 @@ int main()
     Sheep newSheep;
     int menuOpt;
 
-    PrintHeader(cout, 'l',"Arrays and Linked Lists of Sheep - Linked List", 13, "Faris Hijazi");
+    PrintHeader(cout, 'l',"Arrays and Linked Lists of Sheep - Array", 13, "Faris Hijazi");
 
     menuOpt = menuInput();
     while(menuOpt!=0)
@@ -46,7 +46,7 @@ int main()
                         else if(sheepAge < 0 || sheepAge > 9)
                         {
                             cout << "\n**** The number " <<  sheepAge << " is an invalid entry ****\n";
-                            cout << "**** Please input a number between 0 and 4 ****\n";
+                            cout << "**** Please input a number between 0 and 9 ****\n";
                             invalid =  true;
                         }
                         else

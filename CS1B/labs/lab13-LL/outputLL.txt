@@ -1,0 +1,225 @@
+************************************************
+* PROGRAMMED BY : Faris Hijazi
+* CLASS         : CS1A
+* SECTION       : MW: 7:30P
+* Assignment #13: Arrays and Linked Lists of Sheep - LL
+************************************************
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 1
+
+Sheep Name: Fluffy
+Sheep Age:  1
+
+The sheep...
+Sheep Name: Fluffy
+Sheep Age:  1
+Has been added
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 2
+
+NAME          AGE
+------------- ---
+Fluffy        1
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 1
+
+Sheep Name: Maa
+Sheep Age:  3
+
+The sheep...
+Sheep Name: Maa
+Sheep Age:  3
+Has been added
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 4
+
+There are 2 sheep in the list
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 5
+
+NAME          AGE
+------------- ---
+Fluffy        1
+Maa           3
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 1
+
+Sheep Name: Baa Baa
+Sheep Age:  2
+
+The sheep...
+Sheep Name: Baa Baa
+Sheep Age:  2
+Has been added
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 5
+
+NAME          AGE
+------------- ---
+Fluffy        1
+Maa           3
+Baa Baa       2
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 4
+
+There are 3 sheep in the list
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 3
+
+who are you looking for? Baa Baa
+
+NAME          AGE
+------------- ---
+Baa Baa       2
+
+has been found
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 6
+
+the list has been cleared!
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 6
+
+the list has been cleared!
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 5
+
+no sheep
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 4
+
+There are 0 sheep in the list
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 3
+
+no sheep to search
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 2
+
+no sheep in list
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 7
+
+**** The number 7 is an invalid entry ****
+**** Please input a number between 0 and 6 ****
+
+1 - Add Sheep
+2 - Output first sheep
+3 - Find sheep
+4 - List size
+5 - Output list
+6 - Clear list
+0 - Exit
+enter a command ? 0

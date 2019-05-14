@@ -117,11 +117,25 @@ Farm ::~Farm()
 void Farm::AddSheep(Sheep newSheep)
 {
     SheepNode *sheepPtr;
+    SheepNode *tail;
 
     sheepCount++;
     sheepPtr = new SheepNode;
-    sheepPtr->next = head;
-    head = sheepPtr;
+    if(head!=NULL)
+    {
+        tail = head;
+        while(tail->next != NULL)
+        {
+            tail = tail->next;
+        }
+        sheepPtr->next = NULL;
+        tail->next = sheepPtr;
+    }
+    else
+    {
+        sheepPtr->next = head;
+        head = sheepPtr;
+    }
     sheepPtr->currentSheep = newSheep;
     sheepPtr = NULL;
 }
