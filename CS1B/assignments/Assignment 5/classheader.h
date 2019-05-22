@@ -51,7 +51,7 @@ class MovieList: public StackList // Derrived Class
          * CONSTRUCTOR
          **/
         MovieList();
-        /**
+        /*
          * DESTRUCTOR
          **/
         ~MovieList();
@@ -59,15 +59,18 @@ class MovieList: public StackList // Derrived Class
         /**
          * ACCESSORS
          **/
-        void OutputList(string outFileName);    
+        void OutputList(string outFileName) const;    
         /**
          * MUTATORS
          **/
         void CreateList(string inFileName);
     private:
-        void wordwrap();
-        void classheader();
-
+        void wordwrap(ostream &output, DVDNode *&DVDPtr) const;
+        void PrintHeader(ostream &output,   //output device to use
+                        char exersize,		//assignment or lab
+                        string exersizeName,//name of exersize
+                        int num,			//as or lab number
+                        string names) const;//names;
 };
 
 #endif
