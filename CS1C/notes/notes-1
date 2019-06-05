@@ -1,0 +1,22 @@
+## lecture 02 06/04/19
+
+OOP-review:
+
+# inline function
+member function definition given completely in the definition of the class
+saves overhead of a function invocation
+very short definitions
+
+# static members
+keyword static is used, global variable or member
+static member functions can be accessed without an object ever being created class::memberFunction()
+
+private:
+  static int y; //will be shared by all object instances
+
+# scope resolution operator
+::
+
+# In class exersize
+
+ 
