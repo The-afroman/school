@@ -54,4 +54,4 @@ Shape is a pointer of base class and                          can point to Circl
 
 \pagebreak
 
-# lecture 04 06//19
+# lecture 04 06/10/19
