@@ -9,11 +9,12 @@ public:
     ~deckClass();
 
     void printDeck();
+    bool compareDecks(const deckClass& otherDeck) const;
     void perfectShuffle();
-
+    static const int deck_size = 52;
 
 private:
-    static const int deck_size = 52;
+    
 
     typedef enum
     {
@@ -27,9 +28,10 @@ private:
         NINE,
         TEN,
         JOKER,
+        QUEEN,
         KING,
         ACE
-    }rank;
+    }erank;
 
     typedef enum
     {
@@ -37,15 +39,15 @@ private:
         hearts,
         diamonds,
         clubs
-    }suit;
+    }esuit;
 
     typedef struct
     {
-        rank rank[deck_size];
-        suit suit[deck_size];
+        erank rank[deck_size];
+        esuit suit[deck_size];
 
     }cards;
 
-    cards deck;
+    cards deck; 
 };
 

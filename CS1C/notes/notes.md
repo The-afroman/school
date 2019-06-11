@@ -45,7 +45,7 @@ must call base class constructor in deriv.
 
 > ex) pShape->draw();  
 
-Shape is a pointer of base class and                          can point to Circle obj or Square or                           etc.. each have different virtual draw
+Shape is a pointer of base class and can point to Circle obj or Square or etc.. each have different virtual draw
 
 ## Access levels
 - public
@@ -55,3 +55,26 @@ Shape is a pointer of base class and                          can point to Circl
 \pagebreak
 
 # lecture 04 06/10/19
+
+## Operator Overloading
+- most existing **not scope resolution or member access** C++ operators can be overloaded
+- New operators cannot be created
+- an operator function is a function that overloads an operator
+
+> binary operator with two operands 
+
+>> Deck a,b;  
+>> bool isEqual a == b  
+
+> a.operator==(b) same as a == b
+
+### overloading example
+
+*bool operator\<=(const clockType& otherClock const);*
+
+>                                     ^ otherClock is being passed in 
+>                                       as if (clock <= otherClock) rhs 
+>                                       operator always passed in
+>                                       with lhs considered as invoking
+>                                       object
+
