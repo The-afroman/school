@@ -10,5 +10,6 @@
 .history
 
 ### etc
-.out
-.tar
+*.out
+*.o
+*.tar

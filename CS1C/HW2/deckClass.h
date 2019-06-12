@@ -4,50 +4,49 @@
 
 class deckClass
 {
-public:
-    deckClass();
-    ~deckClass();
-
-    void printDeck();
-    bool compareDecks(const deckClass& otherDeck) const;
-    void perfectShuffle();
     static const int deck_size = 52;
-
-private:
-    
-
     typedef enum
     {
-        TWO,
-        THREE,
-        FOUR,
-        FIVE,
-        SIX,
-        SEVEN,
-        EIGHT,
-        NINE,
-        TEN,
-        JOKER,
-        QUEEN,
+        ACE,
         KING,
-        ACE
+        QUEEN,
+        JACK,
+        TEN,
+        NINE,
+        EIGHT,
+        SEVEN,
+        SIX,
+        FIVE,
+        FOUR,
+        THREE,
+        TWO
     }erank;
 
     typedef enum
     {
-        spades,
-        hearts,
+        clubs,
         diamonds,
-        clubs
+        hearts,
+        spades
     }esuit;
 
+    
+public:
+    deckClass();
+    ~deckClass();
+ 
     typedef struct
     {
         erank rank[deck_size];
         esuit suit[deck_size];
-
     }cards;
 
+    void printDeck() const;
+    bool compareDecks(const deckClass& otherDeck) const;
+    cards makeCopy() const;
+    void perfectShuffle();
+
+private:
     cards deck; 
 };
 
