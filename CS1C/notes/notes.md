@@ -77,4 +77,25 @@ Shape is a pointer of base class and can point to Circle obj or Square or etc.. 
 >                                       operator always passed in
 >                                       with lhs considered as invoking
 >                                       object
+\pagebreak
+# lecture 05 06/11/19
 
+## Operator overloading contd.
+Pre and post inc
+
+>++c **vs** c++
+
+- Pre has slightly less overhead and **++** happens before assignment
+- **++** is a unary opperation ***one*** operand
+
+**IC exersize**
+
+~~~~~~
+clockType clockType::operator(int x)
+{
+  clockType temp = *this; // this is a copy operation using copy constructor
+  {//incriment code}
+  return *temp; // will return original clock value but still incriment
+                // the operand
+}
+~~~~~~

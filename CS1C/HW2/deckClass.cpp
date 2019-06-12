@@ -27,6 +27,15 @@ void deckClass::printDeck()
     int i = 0;
     while(i < deck_size)
     {
+        std::string outR;
+        std::string outS;
+
+        switch(deck.rank[i])
+        {
+            case TWO: outR = "Two"; break;
+            case THREE: outR = "Three"; break;
+            
+        }
         std::cout << std::endl;
         std::cout << deck.rank[i];
         std::cout << deck.suit[i];
