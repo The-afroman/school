@@ -77,7 +77,9 @@ Shape is a pointer of base class and can point to Circle obj or Square or etc.. 
 >                                       operator always passed in
 >                                       with lhs considered as invoking
 >                                       object
+
 \pagebreak
+
 # lecture 05 06/11/19
 
 ## Operator overloading contd.
@@ -90,7 +92,7 @@ Pre and post inc
 
 **IC exersize**
 
-~~~~~~
+~~~~~~{c++}
 clockType clockType::operator(int x)
 {
   clockType temp = *this; // this is a copy operation using copy constructor
@@ -99,3 +101,39 @@ clockType clockType::operator(int x)
                 // the operand
 }
 ~~~~~~
+
+\pagebreak
+
+# lecture 06 06/12/19
+
+## Pointer and Reference review
+
+~~~~~~{c++}
+int count = 100;             //initialized on the stack
+int* pCount = nullptr        //same as NULL;
+
+pCount = &count;             //pointer set to the address of count
+Clock* pClock = new Clock(); //allocates on the heap and returns a
+                             //pointer which is assigned to pClock
+
+void* voidPtr; //can be used to point to any type
+
+std::cout << pCount;   //returns address pointer is pointing to
+std::cout << *pCount;  //returns data pointer is pointing to
+~~~~~~
+
+> in reality a reference is a **specialized const pointer**
+
+~~~~~~{.cpp}
+int& rCount = count;   //If declaring a reference,
+                       //must say what it refers to
+~~~~~~
+
+> a reference can be used **interchangably** with the object its self
+
+~~~~~~{.cpp .numberLines}
+std:cout << &rCount;   //will output address of object rCount
+                       //refers to, in this case the address
+                       //of count
+~~~~~~
+

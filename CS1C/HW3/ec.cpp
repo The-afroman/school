@@ -62,13 +62,13 @@ ostream& operator<<(ostream& os, const Time& t)
        << ':';
     os << t.minutes
        << ':';
-    os << t.seconds
-       << ", ";
+    os << t.seconds;
     return os;
 }
 
 ostream& operator<<(ostream& os, const ExtendedTime& et)
 {
+    os << ", ";
     os << Time(et);
     os << et.time_zone;
     return os;
@@ -76,9 +76,9 @@ ostream& operator<<(ostream& os, const ExtendedTime& et)
 
 int main()
 {
-    ExtendedTime *timePtr;
     ExtendedTime timeObj(2,3,4,TimeZone(2));
-
+    Time tObj(2,3,4);
+    cout << tObj;
     cout << timeObj;
     return 0;
 }

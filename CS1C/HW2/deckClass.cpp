@@ -62,7 +62,7 @@ void deckClass::printDeck() const
 void deckClass::perfectShuffle()
 {
     cards shuffDeck;
-    for(int i, j = 0; i < deck_size/2; i++, j+=2)
+    for(int i = 0, j = 0; i < deck_size/2; i++, j+=2)
     {
         shuffDeck.rank[j] = deck.rank[i]; 
         shuffDeck.suit[j] = deck.suit[i];

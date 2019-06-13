@@ -1,0 +1,199 @@
+Script started on 2019-06-12 17:10:09-07:00 [TERM="st-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="47"]
+]4;0;#222013\]4;1;#16688B\]4;2;#50708F\]4;3;#41A1AF\]4;4;#60A8B3\]4;5;#99B4B7\]4;6;#B7B7AE\]4;7;#cddadb\]4;8;#8f9899\]4;9;#16688B\]4;10;#50708F\]4;11;#41A1AF\]4;12;#60A8B3\]4;13;#99B4B7\]4;14;#B7B7AE\]4;15;#cddadb\]10;#cddadb\]11;#222013\]12;#cddadb\]13;#cddadb\]17;#cddadb\]19;#222013\]4;232;#222013\]4;256;#cddadb\]708;#222013\[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ date
+Wed 12 Jun 2019 05:10:14 PM PDT
+[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
+total 24K
+drwxrwxr-x 2 f f 4.0K Jun 12 17:09 [0m[01;34m.[0m
+drwxrwxr-x 6 f f 4.0K Jun 11 15:56 [01;34m..[0m
+-rw-rw-r-- 1 f f 2.3K Jun 12 16:46 deckClass.cpp
+-rw-rw-r-- 1 f f  751 Jun 12 14:07 deckClass.h
+-rw-rw-r-- 1 f f  545 Jun 12 16:49 hw02.cpp
+-rw-rw-r-- 1 f f    0 Jun 12 17:10 hw02.scr
+-rw-rw-r-- 1 f f  281 Jun 12 17:03 Makefile
+[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ make all
+g++ -std=c++14 -Wall -c deckClass.cpp -o deck.o
+g++ -std=c++14 -Wall hw02.cpp -o hw02.out deck.o
+[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
+total 52K
+drwxrwxr-x 2 f f 4.0K Jun 12 17:10 [0m[01;34m.[0m
+drwxrwxr-x 6 f f 4.0K Jun 11 15:56 [01;34m..[0m
+-rw-rw-r-- 1 f f 2.3K Jun 12 16:46 deckClass.cpp
+-rw-rw-r-- 1 f f  751 Jun 12 14:07 deckClass.h
+-rw-rw-r-- 1 f f 7.6K Jun 12 17:10 deck.o
+-rw-rw-r-- 1 f f  545 Jun 12 16:49 hw02.cpp
+-rwxrwxr-x 1 f f  19K Jun 12 17:10 [01;32mhw02.out[0m
+-rw-rw-r-- 1 f f    0 Jun 12 17:10 hw02.scr
+-rw-rw-r-- 1 f f  281 Jun 12 17:03 Makefile
+[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ make[K[K[K[K./hw02.out
+
+initial deck:
+
+Ace of clubs
+King of clubs
+Queen of clubs
+Jack of clubs
+Ten of clubs
+Nine of clubs
+Eight of clubs
+Seven of clubs
+Six of clubs
+Five of clubs
+Four of clubs
+Three of clubs
+Two of clubs
+Ace of diamonds
+King of diamonds
+Queen of diamonds
+Jack of diamonds
+Ten of diamonds
+Nine of diamonds
+Eight of diamonds
+Seven of diamonds
+Six of diamonds
+Five of diamonds
+Four of diamonds
+Three of diamonds
+Two of diamonds
+Ace of hearts
+King of hearts
+Queen of hearts
+Jack of hearts
+Ten of hearts
+Nine of hearts
+Eight of hearts
+Seven of hearts
+Six of hearts
+Five of hearts
+Four of hearts
+Three of hearts
+Two of hearts
+Ace of spades
+King of spades
+Queen of spades
+Jack of spades
+Ten of spades
+Nine of spades
+Eight of spades
+Seven of spades
+Six of spades
+Five of spades
+Four of spades
+Three of spades
+Two of spades
+
+shuffling...
+
+Ace of clubs
+Ace of hearts
+King of clubs
+King of hearts
+Queen of clubs
+Queen of hearts
+Jack of clubs
+Jack of hearts
+Ten of clubs
+Ten of hearts
+Nine of clubs
+Nine of hearts
+Eight of clubs
+Eight of hearts
+Seven of clubs
+Seven of hearts
+Six of clubs
+Six of hearts
+Five of clubs
+Five of hearts
+Four of clubs
+Four of hearts
+Three of clubs
+Three of hearts
+Two of clubs
+Two of hearts
+Ace of diamonds
+Ace of spades
+King of diamonds
+King of spades
+Queen of diamonds
+Queen of spades
+Jack of diamonds
+Jack of spades
+Ten of diamonds
+Ten of spades
+Nine of diamonds
+Nine of spades
+Eight of diamonds
+Eight of spades
+Seven of diamonds
+Seven of spades
+Six of diamonds
+Six of spades
+Five of diamonds
+Five of spades
+Four of diamonds
+Four of spades
+Three of diamonds
+Three of spades
+Two of diamonds
+Two of spades
+
+final deck:
+
+Ace of clubs
+King of clubs
+Queen of clubs
+Jack of clubs
+Ten of clubs
+Nine of clubs
+Eight of clubs
+Seven of clubs
+Six of clubs
+Five of clubs
+Four of clubs
+Three of clubs
+Two of clubs
+Ace of diamonds
+King of diamonds
+Queen of diamonds
+Jack of diamonds
+Ten of diamonds
+Nine of diamonds
+Eight of diamonds
+Seven of diamonds
+Six of diamonds
+Five of diamonds
+Four of diamonds
+Three of diamonds
+Two of diamonds
+Ace of hearts
+King of hearts
+Queen of hearts
+Jack of hearts
+Ten of hearts
+Nine of hearts
+Eight of hearts
+Seven of hearts
+Six of hearts
+Five of hearts
+Four of hearts
+Three of hearts
+Two of hearts
+Ace of spades
+King of spades
+Queen of spades
+Jack of spades
+Ten of spades
+Nine of spades
+Eight of spades
+Seven of spades
+Six of spades
+Five of spades
+Four of spades
+Three of spades
+Two of spades
+
+it took 8 shuffle(s) to restore deck
+
+[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ exit
+exit
+
+Script done on 2019-06-12 17:11:02-07:00 [COMMAND_EXIT_CODE="0"]

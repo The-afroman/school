@@ -10,6 +10,7 @@ int main()
     deck1.printDeck();
     std::cout << "\nshuffling...\n\n";
     deck1.perfectShuffle();
+    numShuffles++;
     deck1.printDeck();
 
     while(!deck1.compareDecks(deck2))
