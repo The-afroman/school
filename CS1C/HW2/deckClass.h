@@ -1,4 +1,12 @@
-#include <stdio.h>
+/******************************************************************************
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Hw 02		:
+ * CLASS		: CS1C
+ * SECTION 		: M,T,W,TH 3:00PM
+ * DUE DATE		: 06/13/19
+ *****************************************************************************/
+
 #include <iostream>
 #include <string>
 
@@ -41,9 +49,12 @@ public:
         esuit suit[deck_size];
     }cards;
 
+    /* ACCESSORS*/
     void printDeck() const;
     bool compareDecks(const deckClass& otherDeck) const;
     cards makeCopy() const;
+    
+    /* MUTATORS */
     void perfectShuffle();
 
 private:

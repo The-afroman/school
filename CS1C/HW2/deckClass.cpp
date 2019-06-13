@@ -1,8 +1,20 @@
+/******************************************************************************
+ * AUTHOR 		: Faris Hijazi
+ * STUDENT ID 	: 1039438
+ * Hw 02		:
+ * CLASS		: CS1C
+ * SECTION 		: M,T,W,TH 3:00PM
+ * DUE DATE		: 06/13/19
+ *****************************************************************************/
+#ifndef DECK_CLASS
+#define DECK_CLASS
 #include "deckClass.h"
+
 /* Constructor */
+/* will initialze a deck of 52 unique cards one suit at a time in decending rank*/
 deckClass::deckClass()
 {
-    int i = 0;
+    int i = 0; //CALC - incriments after rank and suit are set
 
     for(int j = 0;j <= spades;j++)
     {
@@ -20,14 +32,14 @@ deckClass::deckClass()
 deckClass::~deckClass()
 {}
 
+/* will print out all cards in deck data member to console */
 void deckClass::printDeck() const
 {
-    int i = 0;
+    int i = 0;        //CALC - LCV in while loop
+    std::string outR; //OUT - used to output rank string 
+    std::string outS; //OUT - used to output suit string
     while(i < deck_size)
     {
-        std::string outR;
-        std::string outS;
-
         switch(deck.rank[i])
         {
             case TWO: outR = "Two"; break;
@@ -59,9 +71,10 @@ void deckClass::printDeck() const
     }
 }
 
+/* performs one perfect shuffle on deck data member */
 void deckClass::perfectShuffle()
 {
-    cards shuffDeck;
+    cards shuffDeck; //CALC - stores shuffled deck to be coppied to main deck
     for(int i = 0, j = 0; i < deck_size/2; i++, j+=2)
     {
         shuffDeck.rank[j] = deck.rank[i]; 
@@ -72,18 +85,23 @@ void deckClass::perfectShuffle()
     deck = shuffDeck;
 }
 
+/*returns a copy of the deck data member*/
 deckClass::cards deckClass::makeCopy() const
 {return deck;}
 
+/* returns a bool t/f if decks are equal or not */
 bool deckClass::compareDecks(const deckClass& otherDeck) const
 {
-    cards deck2;
-    bool decksEqual = true;
-    int i = 0;
+    cards deck2;            //CALC - struct to make coppy of deck being compared
+    bool decksEqual = true; //CALC & OUT - stays true if decks are equ.
+    int i = 0;              //CALC - LCV in whil/e loop
+
+    //copy cards struct of other deck into deck2
     deck2 = otherDeck.makeCopy();
 
     while(decksEqual && i < deck_size)
     {
+        //compare deck elements
         if(deck2.rank[i] == deck.rank[i] && deck2.suit[i] == deck.suit[i])
         {
             i++;
@@ -96,8 +114,4 @@ bool deckClass::compareDecks(const deckClass& otherDeck) const
 
     return decksEqual;
 }
-
-
-
-
-
+#endif

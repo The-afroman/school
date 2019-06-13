@@ -1,30 +1,30 @@
-Script started on 2019-06-12 17:10:09-07:00 [TERM="st-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="47"]
-]4;0;#222013\]4;1;#16688B\]4;2;#50708F\]4;3;#41A1AF\]4;4;#60A8B3\]4;5;#99B4B7\]4;6;#B7B7AE\]4;7;#cddadb\]4;8;#8f9899\]4;9;#16688B\]4;10;#50708F\]4;11;#41A1AF\]4;12;#60A8B3\]4;13;#99B4B7\]4;14;#B7B7AE\]4;15;#cddadb\]10;#cddadb\]11;#222013\]12;#cddadb\]13;#cddadb\]17;#cddadb\]19;#222013\]4;232;#222013\]4;256;#cddadb\]708;#222013\[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ date
-Wed 12 Jun 2019 05:10:14 PM PDT
-[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
+Script started on 2019-06-13 10:41:43-07:00 [TERM="xterm-termite" TTY="/dev/pts/0" COLUMNS="73" LINES="24"]
+]4;0;#3B3228\]4;1;#cb6077\]4;2;#beb55b\]4;3;#f4bc87\]4;4;#8ab3b5\]4;5;#a89bb9\]4;6;#7bbda4\]4;7;#d0c8c6\]4;8;#7e705a\]4;9;#cb6077\]4;10;#beb55b\]4;11;#f4bc87\]4;12;#8ab3b5\]4;13;#a89bb9\]4;14;#7bbda4\]4;15;#f5eeeb\]10;#d0c8c6\]11;#3B3228\]12;#d0c8c6\]13;#d0c8c6\]17;#d0c8c6\]19;#3B3228\]4;232;#3B3228\]4;256;#d0c8c6\]708;#3B3228\]4;0;#3B3228\]4;1;#cb6077\]4;2;#beb55b\]4;3;#f4bc87\]4;4;#8ab3b5\]4;5;#a89bb9\]4;6;#7bbda4\]4;7;#d0c8c6\]4;8;#7e705a\]4;9;#cb6077\]4;10;#beb55b\]4;11;#f4bc87\]4;12;#8ab3b5\]4;13;#a89bb9\]4;14;#7bbda4\]4;15;#f5eeeb\]10;#d0c8c6\]11;#3B3228\]12;#d0c8c6\]13;#d0c8c6\]17;#d0c8c6\]19;#3B3228\]4;232;#3B3228\]4;256;#d0c8c6\]708;#3B3228\]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ date
+Thu 13 Jun 2019 10:41:48 AM PDT
+]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
 total 24K
-drwxrwxr-x 2 f f 4.0K Jun 12 17:09 [0m[01;34m.[0m
-drwxrwxr-x 6 f f 4.0K Jun 11 15:56 [01;34m..[0m
--rw-rw-r-- 1 f f 2.3K Jun 12 16:46 deckClass.cpp
--rw-rw-r-- 1 f f  751 Jun 12 14:07 deckClass.h
--rw-rw-r-- 1 f f  545 Jun 12 16:49 hw02.cpp
--rw-rw-r-- 1 f f    0 Jun 12 17:10 hw02.scr
--rw-rw-r-- 1 f f  281 Jun 12 17:03 Makefile
-[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ make all
+drwxr-xr-x 2 f users 4.0K Jun 13 10:41 [0m[01;34m.[0m
+drwxr-xr-x 6 f users 4.0K Jun 11 18:14 [01;34m..[0m
+-rw-r--r-- 1 f users 3.3K Jun 13 10:37 deckClass.cpp
+-rw-r--r-- 1 f users 1.1K Jun 13 10:19 deckClass.h
+-rw-r--r-- 1 f users 1.2K Jun 13 10:39 hw02.cpp
+-rw-r--r-- 1 f users    0 Jun 13 10:41 hw02.scr
+-rw-r--r-- 1 f users  281 Jun 12 19:04 Makefile
+]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ make all
 g++ -std=c++14 -Wall -c deckClass.cpp -o deck.o
 g++ -std=c++14 -Wall hw02.cpp -o hw02.out deck.o
-[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
+]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ ls -alh
 total 52K
-drwxrwxr-x 2 f f 4.0K Jun 12 17:10 [0m[01;34m.[0m
-drwxrwxr-x 6 f f 4.0K Jun 11 15:56 [01;34m..[0m
--rw-rw-r-- 1 f f 2.3K Jun 12 16:46 deckClass.cpp
--rw-rw-r-- 1 f f  751 Jun 12 14:07 deckClass.h
--rw-rw-r-- 1 f f 7.6K Jun 12 17:10 deck.o
--rw-rw-r-- 1 f f  545 Jun 12 16:49 hw02.cpp
--rwxrwxr-x 1 f f  19K Jun 12 17:10 [01;32mhw02.out[0m
--rw-rw-r-- 1 f f    0 Jun 12 17:10 hw02.scr
--rw-rw-r-- 1 f f  281 Jun 12 17:03 Makefile
-[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ make[K[K[K[K./hw02.out
+drwxr-xr-x 2 f users 4.0K Jun 13 10:41 [0m[01;34m.[0m
+drwxr-xr-x 6 f users 4.0K Jun 11 18:14 [01;34m..[0m
+-rw-r--r-- 1 f users 3.3K Jun 13 10:37 deckClass.cpp
+-rw-r--r-- 1 f users 1.1K Jun 13 10:19 deckClass.h
+-rw-r--r-- 1 f users 7.6K Jun 13 10:41 deck.o
+-rw-r--r-- 1 f users 1.2K Jun 13 10:39 hw02.cpp
+-rwxr-xr-x 1 f users  19K Jun 13 10:41 [01;32mhw02.out[0m
+-rw-r--r-- 1 f users    0 Jun 13 10:41 hw02.scr
+-rw-r--r-- 1 f users  281 Jun 12 19:04 Makefile
+]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ ./hw02.out [K
 
 initial deck:
 
@@ -193,7 +193,7 @@ Two of spades
 
 it took 8 shuffle(s) to restore deck
 
-[01;32mf@local[00m:[01;34m~/school/CS1C/HW2[00m$ exit
+]0;f@main:~/school/CS1C/HW2[01;32mf@main[00m:[01;34m~/school/CS1C/HW2[00m$ exit
 exit
 
-Script done on 2019-06-12 17:11:02-07:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2019-06-13 10:42:31-07:00 [COMMAND_EXIT_CODE="0"]
