@@ -92,11 +92,11 @@ Pre and post inc
 
 **IC exersize**
 
-~~~~~~{c++}
+~~~~~~ {.cpp startFrom="100"}
 clockType clockType::operator(int x)
 {
   clockType temp = *this; // this is a copy operation using copy constructor
-  {//incriment code}
+  {/* incriment code */}
   return *temp; // will return original clock value but still incriment
                 // the operand
 }
@@ -108,32 +108,141 @@ clockType clockType::operator(int x)
 
 ## Pointer and Reference review
 
-~~~~~~{c++}
-int count = 100;             //initialized on the stack
-int* pCount = nullptr        //same as NULL;
+~~~~~~ {.cpp startFrom="100"}
+int count = 100;             // initialized on the stack
+int* pCount = nullptr        // same as NULL;
 
-pCount = &count;             //pointer set to the address of count
-Clock* pClock = new Clock(); //allocates on the heap and returns a
-                             //pointer which is assigned to pClock
+pCount = &count;             // pointer set to the address of count
+Clock* pClock = new Clock(); // allocates on the heap and returns a
+                             // pointer which is assigned to pClock
 
 void* voidPtr; //can be used to point to any type
 
-std::cout << pCount;   //returns address pointer is pointing to
-std::cout << *pCount;  //returns data pointer is pointing to
+std::cout << pCount;   // returns address pointer is pointing to
+std::cout << *pCount;  // returns data pointer is pointing to
 ~~~~~~
 
 > in reality a reference is a **specialized const pointer**
 
-~~~~~~{.cpp}
-int& rCount = count;   //If declaring a reference,
-                       //must say what it refers to
+~~~~~~ {.cpp startFrom="100"}
+int& rCount = count;   // If declaring a reference,
+                       // must say what it refers to
 ~~~~~~
 
 > a reference can be used **interchangably** with the object its self
 
-~~~~~~{.cpp .numberLines}
-std:cout << &rCount;   //will output address of object rCount
-                       //refers to, in this case the address
-                       //of count
+~~~~~~ {.cpp startFrom="100"}
+std::cout << &rCount;  // will output address of object rCount
+                       // refers to, in this case the address
+                       // of count
 ~~~~~~
 
+\pagebreak
+
+# lecture 07 06/13/19
+
+## Pointers and Dynamic variables
+
+~~~~~~ {.cpp}
+int *p;
+p = new int[10]
+
+*p = 25;  // stores 25 in first mem location
+p++;      // moves pointer to next array component
+*p = 35;  // sets next array component to 35
+~~~~~~
+
+## copy constructor
+
+~~~~~~ {.cpp}
+/* both call copy constructor */
+ptrM objB = objA;
+ptrM objB(objA);
+~~~~~~
+
+> shallow copy (_default copy constructor_) **will not work** if object contains pointers that point to data such as the array on heap above.
+
+> deep copy constructor ***makes complete copy of object***, can allocate new array on heap
+
+~~~~~~ {.cpp}
+/* deep copy constructor */
+ptrMemVarType::ptrMemVarType(const ptrMemVarType &otherObj)
+{
+  maxSize = otherObj.size;
+  length = otherObj.length;
+
+  p = new int[maxSize];
+  
+  for(int i = 0; i < length; i++)
+    p[i] = otherObj.p[i];
+}
+~~~~~~
+
+\pagebreak
+
+# lecture 08 06/17/19
+
+## Copy Constructor for derived class Example
+
+~~~~~~ {.cpp}
+//calling the base class copy constructor in the member init list
+CityTempLatitudeLongitude(const CityTempLatitudeLongitude &otherObj) : CityTemp(otherObj)  // shallow copy will work for B-class data (no )
+{
+  latitude = new float[NUM_ROW]
+  longitude = new float[NUM_ROW]
+  for(int i = 0; i < NUM_ROW; i++;)
+  {
+    latitude = otherObj.latitude[i]
+    longitude = otherObj.longitude[i]
+  }
+}
+~~~~~~
+
+\pagebreak
+
+# lecture 09 06/18/19
+
+## vector copy constructor example
+
+~~~~~~ {.cpp}
+/* pt 1: copy automatic data (not pointed to) first */
+vector(const vector &otherObj) : size_v{otherObj.size_v}, elem{new double[otherObj.size]}, space{otherObj.space}
+{
+  /* pt 2: dynamically alocate pointed to data (array of doubles) */
+  std::copy(otherObj.elem, otherObj.elem + size_v, elem)
+}
+~~~~~~
+
+## copy assignment
+ 
+similar to the copy constructor however information needs to be copied into an existing object
+
+~~~~~~ {.cpp}
+vector &operator=(const vector &otherObj)
+{
+  /* pt 1: release pointed to data which obj has ownership of */
+  
+  /* code... */
+
+  /* pt 2: pt1 & 2 from copy constructor */ 
+}
+~~~~~~
+
+
+## recursion
+
+factorial example:
+
+~~~~~~ {.cpp}
+float fact(int n)
+{
+  //factorial of n = n * (n-1) * (n-2) ... * 1
+  return n > 1? n* fact(n-1) : 1;
+}
+~~~~~~
+
+\pagebreak
+
+Albert:
+
+The Cookie

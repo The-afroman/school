@@ -1,5 +1,5 @@
 CC = g++
-FLAGS =  -std=c++14 -Wall
+FLAGS =  -std=c++14 -Wall -g
 OBJS = deck.o
 
 all: hw02
