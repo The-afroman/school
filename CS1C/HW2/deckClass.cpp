@@ -79,7 +79,7 @@ void deckClass::perfectShuffle()
     {
         shuffDeck.rank[j] = deck.rank[i]; 
         shuffDeck.suit[j] = deck.suit[i];
-        shuffDeck.rank[j+1] = deck.rank[i+deck_size/2]; 
+        shuffDeck.rank[j+1] = deck.rank[i+deck_size/2];
         shuffDeck.suit[j+1] = deck.suit[i+deck_size/2];
     }
     deck = shuffDeck;
