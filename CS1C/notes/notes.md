@@ -243,6 +243,26 @@ float fact(int n)
 
 \pagebreak
 
+# lecture 10 06/19/19
+
+## recursion cotd...
+
+solving a problem by reducing it to a smaller version of its self
+
+constexpr declares a an expresion as const
+
+## polymorphism
+
+> pure virtual function used in interface inheritance
+
+## Exam 1
+
+- use **friend** function with mixed types and ex) << and >>
+- know order of constructors and destructors called in derived classes
+- 
+
+\pagebreak
+
 Albert:
 
 The Cookie
