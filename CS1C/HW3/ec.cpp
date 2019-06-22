@@ -34,27 +34,30 @@ class ExtendedTime: public Time
         TimeZone time_zone;
 };
 
-Time::Time()
-{hours=0;minutes=0;seconds=0;}
-
-Time::Time(int h,int m,int s)
+class Invoice
 {
-    hours = h;
-    minutes = m;
-    seconds = s;
-}
+    public:
+        Invoice();
+        Invoice(Time pTime);
+        friend ostream& operator<<(ostream& os, const Invoice& i);
+    private:
+        Time purchase_time;
+};
 
-ExtendedTime::ExtendedTime()
-{
-    Time();
-    time_zone = TimeZone(0);
-}
+Time::Time() : hours{0}, minutes{0}, seconds{0}
+{}
+Time::Time(int h,int m,int s) : hours{h}, minutes{m}, seconds{s}
+{}
 
-ExtendedTime::ExtendedTime(int h, int m, int s, TimeZone z)
-{
-   Time(h,m,s);
-   time_zone = z;
-}
+ExtendedTime::ExtendedTime() : Time(), time_zone{TimeZone(0)}
+{}
+ExtendedTime::ExtendedTime(int h, int m, int s, TimeZone z) : Time(h,m,s), time_zone{z}
+{}
+
+Invoice::Invoice() : purchase_time{Time()}
+{}
+Invoice::Invoice(Time purchase_time) : purchase_time{purchase_time}
+{}
 
 ostream& operator<<(ostream& os, const Time& t)
 {
@@ -68,17 +71,23 @@ ostream& operator<<(ostream& os, const Time& t)
 
 ostream& operator<<(ostream& os, const ExtendedTime& et)
 {
-    os << ", ";
     os << Time(et);
+    os << ", ";
     os << et.time_zone;
+    return os;
+}
+
+ostream& operator<<(ostream& os, const Invoice& i)
+{
+    os << i.purchase_time;
     return os;
 }
 
 int main()
 {
     ExtendedTime timeObj(2,3,4,TimeZone(2));
-    Time tObj(2,3,4);
-    cout << tObj;
-    cout << timeObj;
+    Invoice Invoice(Time(2,3,4));
+    cout << Invoice << endl;
+    cout << timeObj << endl;
     return 0;
 }
