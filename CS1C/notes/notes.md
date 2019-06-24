@@ -152,7 +152,7 @@ p++;      // moves pointer to next array component
 *p = 35;  // sets next array component to 35
 ~~~~~~
 
-## copy constructor
+1## copy constructor
 
 ~~~~~~ {.cpp}
 /* both call copy constructor */
