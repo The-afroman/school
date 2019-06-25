@@ -307,20 +307,6 @@ using namespace name_space
 using name_space::member
 ```
 
-example: in-class
-
-```
-
-```
-
-
-
-
-
-
-
-
-
 \pagebreak
 
 Albert:
