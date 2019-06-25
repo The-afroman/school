@@ -263,6 +263,66 @@ constexpr declares a an expresion as const
 
 \pagebreak
 
+# lecture 11 06/24/19
+
+## Virtual Functions, ABCs and Namespaces
+
+Virtual function - **dynamic** binding occurs at run time, not compile time.
+
+Non virtual functions are bound **statially** at compile time.
+
+- virtual only needs to be declared in base class, automatically virtual in derived.
+- Object slicing can occur if passing base class object by value, results in extra derived class data being sliced off (base class copy constructor is called on the derived class object)
+- can be avoided be by using references or pointers
+- c++11 keyword override can be used to indicate if overiding virtual functions from the base class
+
+> pure virtual and ABC
+
+``` {.cpp}
+virtual pureVirtual() = 0;
+```
+
+- expression is any logical expression
+- if true next expression evaluates prgm continues
+- if false prgm terminates and indicates where error occured
+
+``` {.cpp}
+#include <cassert>
+assert(expression)
+```
+
+> namespaces syntax
+> members are variable declarations etc.
+
+```
+namespace nsp_name
+{
+  members
+}
+
+//using namespaces
+
+using namespace name_space
+/* or */
+using name_space::member
+```
+
+example: in-class
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+\pagebreak
+
 Albert:
 
 The Cookie
