@@ -152,7 +152,7 @@ p++;      // moves pointer to next array component
 *p = 35;  // sets next array component to 35
 ~~~~~~
 
-1## copy constructor
+## copy constructor
 
 ~~~~~~ {.cpp}
 /* both call copy constructor */
@@ -369,6 +369,41 @@ catch (...) // catch all, catches any error
   //err handling code
 }
 ```
+
+\pagebreak
+
+# lecture 13 06/26/19
+
+**Exception Handling contd..**
+
+## noexcept specifier
+
+noexcept will guarentee that no exeption can be thrown in a function
+
+`
+noexcept(expression); //if evals to true the function is declared not to throw any exceptions
+`
+
+## stack unwinding
+
+when an exception is thrown and execution jumps to catch block, automatic variables from try block must be deleted to avoid mem leaks.
+
+## static casting
+
+C-like casting
+
+## up and down casting
+
+- up cast - moving up in heirarchy (always allowed/safe)
+- down cast moving down in heirarchy (not always possible/safe)
+
+## dynamic casting
+
+`
+Child *p = dynamic_cast<Child *>(pParent); //returns pointer if able to perform cast
+                                           , if unable returns null ptr
+`
+
 
 \pagebreak
 
