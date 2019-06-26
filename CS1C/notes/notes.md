@@ -307,19 +307,68 @@ using namespace name_space
 using name_space::member
 ```
 
-example: in-class
+```
+//ec practice inclass
+
+void Rectangle::Print()
+{
+  cout << l << endl;
+  cout << w << endl;
+  cout << x << endl;
+  cout << y << endl;
+}
+
+void Circle::Print()
+{
+  cout << l << endl;
+  cout << w << endl;
+  cout << r << endl;
+}
+
+void Rectangle::UpdateDimentions(int l, int w, int r) : l{l}, w{w}
+{}
+
+void Circle::UpdateDimentions(int l, int w, int r) : r{r}
+{}
+```
+\pagebreak
+
+
+# lecuture 12 06/25/19
+
+## In class initalizer
+
+> `
+> int r {100} // in-class declaration and initialization
+> `
+
+## Exception Handling
+
+> **basics**
+
+- try/catch block
+- errors are handled in the catch block 
+- assert keyword (older C style way, not needed)
 
 ```
-
+try
+{
+  //statements
+  throw somethingToThrow
+}
+catch (dataType1 identifier)
+{
+  //err handling code
+}
+catch (dataTypeN identifier)
+{
+  //err handling code
+}
+catch (...) // catch all, catches any error
+{
+  //err handling code
+}
 ```
-
-
-
-
-
-
-
-
 
 \pagebreak
 
