@@ -5,8 +5,6 @@
 #include <ctime>
 #include <cstdlib>
 
-const int VECT_S = 52;
+const int VECT_S = 51;
 
-std::vector<VECT_S>;
-
-
+std::vector<int> (VECT_S);
