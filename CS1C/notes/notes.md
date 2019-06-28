@@ -334,7 +334,7 @@ void Circle::UpdateDimentions(int l, int w, int r) : r{r}
 \pagebreak
 
 
-# lecuture 12 06/25/19
+# lecture 12 06/25/19
 
 ## In class initalizer
 
@@ -392,6 +392,14 @@ when an exception is thrown and execution jumps to catch block, automatic variab
 
 C-like casting
 
+> and
+
+down casting is allowed in static_cast
+
+`
+Child *p = static_cast<Child *>(&Parent);
+`
+
 ## up and down casting
 
 - up cast - moving up in heirarchy (always allowed/safe)
@@ -399,11 +407,22 @@ C-like casting
 
 ## dynamic casting
 
+> **can occur at runtime**
+> must be an up-cast
 `
 Child *p = dynamic_cast<Child *>(pParent); //returns pointer if able to perform cast
-                                           , if unable returns null ptr
+                                           //, if unable returns null ptr (this occurs when trying a down-cast)
 `
 
+
+
+\pagebreak
+
+# lecture 14 06/27/19
+
+## casting contd...
+
+casting, both dynamic and static must occur between objects in an inheritance hierarchy
 
 \pagebreak
 
