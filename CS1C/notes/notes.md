@@ -638,3 +638,66 @@ public:
   - as X gets large the + X becomes insignificant
 
 
+# lecture 19 07/09/19
+
+## stacks and queues
+
+> **queue** 
+
+- FIFO (first in first out)
+- operations
+  - initialize
+  - isempty
+  - front
+  - back
+  - add
+  - delete
+- enqueue to back
+- dequeue from front
+
+> **enqueue example**
+
+~~~
+nodeType<Type> *enqueue = new nodeType<Type>;
+enqueue->data = newElem;
+enqueue->link = nulptr;
+if (queueFront == nullptr)
+{
+  queueFront = enqueue;
+  queueRear = enqueue;
+}
+else
+{
+  queueRear->link = enqueue;
+  queueRear = queueRear->link;
+}
+~~~
+
+## ring buffer
+
+```
+queueRear = (queueRear + 1) % maxQueueSize   // when enqueuing
+queueFront = (queueFront + 1) % maxQueueSize // when dequeuing
+```
+
+# lecture 20 07/10/19
+
+## review for test
+
+- polymorphism
+- templates
+- stacks and queue
+- testing
+- uml
+- typecasting (not detailed)
+
+## testing
+
+unit testing - whitebox testing
+
+- technical level of early testing
+
+## UML (Unified Modeling Language)
+
+- used for diagrams
+- way to represent a class, interface, data type, component, etc...
