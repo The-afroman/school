@@ -691,6 +691,14 @@ queueFront = (queueFront + 1) % maxQueueSize // when dequeuing
 - uml
 - typecasting (not detailed)
 
+copy assignment
+T& operator=(const T& obj);
+
+move assignment
+T& operator=(T&& obj);
+
+
+
 ## testing
 
 unit testing - whitebox testing
