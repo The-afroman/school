@@ -10,7 +10,8 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 // function definitions go into hw08.cpp:
 
@@ -29,19 +30,21 @@ const int TIC_TAC_TOE_SIZE = 3;
 int  increment_value(int x)
     // pass a value, compute a new value by adding 5 to x and return it
 {
-    return x+5; 
+    return x+5;
 }
 
 void increment_pointer(int* p)
     // pass a pointer, increment value of p by 1
 {
-    *p++;
+    ++*p;
+    cout << *p << endl;
 }      
 
 void increment_reference(int& r)
     // pass a reference, increment value of r by 1
 {
     r++;
+    cout << r << endl;
 }
 
 //------------------------------------------------------------------------------
@@ -69,7 +72,7 @@ void print_2darray_pointer(double* twoDD, int row, int col)
 
             // to compute the offset using pointer math
             // offset from twoDD: #row (i) * #col + #col (j), result: pointer to array element
-            // ...
+            cout << *(twoDD + (i * col + j)) << " ";
         }
         cout << endl;
     }
@@ -103,7 +106,7 @@ void print_2darray_dynamic_pointer(int** twoDD, int row, int col)
             // to compute the offset using pointer math
             // offset from twoDD: move to the correct row, add #row (i), dereference to obtain pointer to row
             //                    next, add #col (j), result: pointer to array element
-            // ...
+            cout << *(*(twoDD + i) + j) << " ";
         }
         cout << endl;
     }
@@ -120,7 +123,10 @@ double* dynamic_allocation_array_doubles(int array_size)
     // function responsible for cleaning up (i.e. deleting) memory allocated for pi_array
     // do stuff here with pi_array
     double* pd_array = new double[array_size];
-    // ...    // dynamic memory allocated for pi_array not needed any longer, free it
+    //    // dynamic memory allocated for pi_array not needed any longer, free it
+
+    delete [] pi_array;
+
     return pd_array;
 }
 
@@ -145,13 +151,26 @@ int main()
     // indicate if the requested operation is not allowed, why not?
 	// Q#1 - pointer examples
     int x = 10;
-    // allowed, p will point to value of x  // [1.1] variable p of type pointer to int points to x (i.e. int* p = ?;), use & to get the address of x
-    //  // [1.2] variable q of type pointer to double is points to x
+    // ... // [1.1] variable p of type pointer to int points to x (i.e. int* p = ?;), use & to get the address of x
+    // ... // [1.2] variable q of type pointer to double is points to x
+                    /* invalid because data types are mismatched */
     // ... // [1.3] update the value of p to 5, use * to assign to x through p
     // ... // [1.4] store the value of p in variable x2 of type int, use * to read x through p
     // ... // [1.5] variable p2 of type pointer to int points to x2, use & to get a pointer to x2
     // ... // [1.6] assign p to p2, p2 and p both point to x
     // ... // [1.7] point p to x2, what does p2 point to now?
+    int* p = &x; // 1.1
+    cout << *p << endl;
+    int x2 = *p; // 1.2
+    cout << x2 << endl;
+    *p = 5; // 1.3
+    cout << x << endl;
+    x2 = *p; // 1.4
+    cout << x2 << endl;
+    int* p2 = &x2; // 1.5
+    cout << *p2 << endl;
+    p2 = p; // 1.6 both point to x
+    p = &x2; // 1.7 now p2 points to x2
 
 	// complete the following reference examples
     // indicate if the requested operation is not allowed, why not?
@@ -159,12 +178,24 @@ int main()
     int y = 50;
     // ... // [1.8] variable r of type reference to int refers to x (i.e. int& p = ?;), nothing special to do here in the initializer
     // ... // [1.9] variable s of type reference to double is refers to x
+                    /* invalid mismatch data type */
     // ... // [1.10] update the value of r to 10, assign to y through r (notice * is not needed)
     // ... // [1.11] store the value of r in variable y2 of type int, read y through r (notice * is not needed)
     // ... // [1.12] variable r2 of type reference to int refers to y2, get a reference to int y2
     // ... // [1.13] assign r to r2, the value of y is assigned to y2 
     // ... // [1.14] assign y2 to r, r2 and r both point to y2
     // ... // [1.15] variable r3 of type reference to int is defined but not initialized (i.e. does not refer to an int)
+                     /* invalid a reference must point be initialized with a value */
+
+    int& r = x; // 1.8
+    r = 10; // 1.10
+    r = y; //1.11
+    int y2 = r; // 1.11
+    cout << r << endl; //1.11
+    int& r2 = y2; //1.12
+    r2 = r; // 1.13
+    r = y2; // 1,14
+
 
 	// Q#1 - pointer vs reference: increment functions
     // implementation the function definitions for the following increment operations
@@ -203,26 +234,57 @@ int main()
     pd[-3] = 5;
     pd2[5] = 6;
 
+    cout << "\n\npointer arithmetic\n\n";
+
     // ... // [2.1] move pd three elements to the right
+    pd[3] = *pd;
+    *pd = 0;
+    //cout << * << endl;
     // ... // [2.2] move pd six elements to the left
+    double temp;
+    temp = pd[3];
+    pd[3] = pd[3-6];
+    pd[3-6] = temp;
+    
     //pd += 1000;    // [2.3] // ... error explain
+    //out of bounds of array
+    
     //double d = *pd;// [2.4] // ... error explain
+    //*pd is an uninitialized value now
+    
     //*pd = 12.34;   // [2.5] // ... error explain
+    // int get truncated when assigned to double
 
     // ... // [2.6] compute the number of elements between pd and pd2 by taking the difference between pd2 and pd
+    cout << "diff in elements: " << pd2 - pd;
+
     //int dif2 = pd + pd2; // [2.7] // ... error explain
+    //need to subtract to find diff
+
     //int dif3 = pd2 - pd3;// [2.8] // ... error explain
+    //need to sub pd3 - pd2, because pd3 was initialized after, therefore it has a higher address on the stack
 
     cout << endl << "print array of doubles forward and backward" << endl << endl;
 
     // [2.9] print array going forwards
     // p starts at address aDoubles[0], ends at address &aDoubles[9], increment p, cout value pointed to by p
     //for (double* p = // ... ) cout << // ...  << '\n';
+    for(double* p = aDoubles; p <= &aDoubles[9]; p++)
+    {
+        cout << "elem " << p - aDoubles << ": " << *p << endl;
+        cout << p << endl;
+    }
     cout << endl;
 
     // [2.10] print array going backwards
     // p starts at address aDoubles[9], ends at address &aDoubles[0], decrement p, cout value pointed to by p
     //for (double* p = // ... ) cout << // ...  << '\n';
+
+    for(double* p = &aDoubles[9]; p >= aDoubles; p--)
+    {
+        cout << "elem " << p - aDoubles << ": " << *p << endl;
+        cout << p << endl;
+    }
     cout << endl;
 
     double* pd4 = &aDoubles[0];
@@ -231,8 +293,11 @@ int main()
     double* pd7 = &aDoubles2[5];
     // [2.11] using the equality operator, compare pointers to array elements
     //if (// ...) cout << "pointers point to the same element of the array" << endl;
+    pd5 == pd6 ? cout << "pointers point to the same element of the array\n" : cout << "not same elems\n";
+    
     // [2.12] ... error explain
     //if (pd6 != pd7) cout << "pointers point to the different elements of the array" << endl;
+    // pointers address different arrays entirely
 
 	// complete the following function implementations
 	// Q#3 - pointer arithmetic, indexing multidimensional arrays
@@ -261,12 +326,18 @@ int main()
 
         //pi = pd;  // [4.5] pi points to pd
                     // ... error explain
+                    // must delete pi first or mem leak will occur & different data types
+
         //pd = pi;  // [4.6] pd points to pi
                     // ... error explain
-
+                    // different data types 
+        
         double x = *pd;       // read the (first) object pointed to by pd
+        cout << x;
         double y = qd[5];     // read the sixth object pointed to by qd
+        cout << y;
         double z = *(qd+10);  // read the tenth object pointed to by qd
+        cout << z;
 
         delete pd;
         delete [] qd;
@@ -278,7 +349,11 @@ int main()
         cout << ri3 << endl;  // ri3 refers to qi
 
         delete pi;            // [4.7] how are the values of ri, ri2, ri3 affected by delete statement?
+                              // pi now points to an uninitialized value ri references that value
+
         delete [] ri3;        // [4.8] how are the values of ri, ri2, ri3 affected by delete statement?
+                              // dynamically alocated array is deleted cand ri3 points to qi (does not change) which points to null
+                              // value r2 is referencing is deleted now (some uninitialized value)
 
         cout << endl << "ri, ri2, ri3 after delete" << endl << endl;
 
@@ -290,6 +365,7 @@ int main()
     double* array_of_doubles = hw08::dynamic_allocation_array_doubles(1000);
     // use array_of_doubles here
     // ... // [4.9] free array, no longer needed
+    delete [] array_of_doubles;
 
 	// Q#5 - dynamic 2d arrays, indexing via subscript operator, pointer arithmetic
 
@@ -299,9 +375,11 @@ int main()
     // declare a pointer to an array of int pointers (i.e. a pointer to a pointer of type int)
     int** p_p_tictactoe = new int*[hw08::TIC_TAC_TOE_SIZE];
     // ...  // [5.1] row1: dynamically allocate int[TIC_TAC_TOE_SIZE], use initializer list to init to {1,0,0}
+    p_p_tictactoe[0] = new int[hw08::TIC_TAC_TOE_SIZE]{1,0,0};
     // ...  // [5.2] row2: dynamically allocate int[TIC_TAC_TOE_SIZE], use initializer list to init to {0,1,0}
+    p_p_tictactoe[1] = new int[hw08::TIC_TAC_TOE_SIZE]{0,1,0};
     // ...  // [5.3] row3: dynamically allocate int[TIC_TAC_TOE_SIZE], use initializer list to init to {0,0,1}
-
+    p_p_tictactoe[2] = new int[hw08::TIC_TAC_TOE_SIZE]{0,0,1};
     // print 2dints via subscript operator
     hw08::print_2darray_dynamic_subscript(p_p_tictactoe, hw08::TIC_TAC_TOE_SIZE, hw08::TIC_TAC_TOE_SIZE);
     // print 2dints via pointer arithmetic
@@ -311,8 +389,12 @@ int main()
 
     // [5.4] delete individual rows (i.e. rows are int arrays, use delete [])
     //for(// ...) // ...
+    delete [] p_p_tictactoe[2];
+    delete [] p_p_tictactoe[1];
+    delete [] p_p_tictactoe[0];
     // [5.5] delete board (board is an array of int pointers, use delete [])
     // ...
+    delete [] p_p_tictactoe;
 
 
     return 0;
@@ -323,3 +405,29 @@ int main()
 // WRITTEN ANSWERS
 
 // add written answers here ... Q#1 Q#3 Q#5
+
+/* Q1 */
+
+/* a pointer can hold a memory location the data in that memory location can be read using the dereference *ptr
+ * a reference is similar in that it refers to a location in memory but by default reads the value it is referencing without the dereference *
+ * a reference must be initialized with a value, a pointer can be declared uninitialized
+ */
+
+
+/* Q3 */
+
+/* twoDDoubles is layed out linearly in memory
+ * one mem location after another              row1: {{item1, item2, item3, item4, item5}
+ *                                             row2: {item6, item7, item8, item9, item10}
+ *                                             rowN: {itemN, itemN+1, ...}}
+ * inorder to use pointer arithmetic the array must be passed in as a pointer.
+ */
+
+
+/* Q5 */
+
+/* since the 2d array is composed of dynamically alocated 1d arrays, 
+ * the items within the 1d arrays are allocated linearly but the 1d 
+ * array mem locations are not contiguous since each is allocated seperately 
+ * using the new operator.
+ */
