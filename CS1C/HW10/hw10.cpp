@@ -74,6 +74,9 @@ vector::vector(const vector& source) // copy constructor
     // : ...
 {
     // ... // use class defined copy operation
+    this->vsize = source.vsize;
+    elem = new double[vsize];
+    vector::copy(source);
 }
 
 //--Q#3-------------------------------------------------------------------------
@@ -82,8 +85,13 @@ vector::vector(vector&& source) // move constructor
 	// copy source elem and vsize only, no need for copy operation
     // : ...
 {
-	// ... // now that source vector contents have been moved, empty the vector
-	// ... 
+    this->vsize = source.vsize;
+    this->elem = source.elem;
+
+    // ... // now that source vector contents have been moved, empty the vector
+	// ...
+    source.elem = nullptr;
+    source.vsize = 0;
 }
 
 //--Q#2-------------------------------------------------------------------------
@@ -91,12 +99,20 @@ vector::vector(vector&& source) // move constructor
 vector& vector::operator=(const vector& rhs) // copy assignment
     // make this vector a copy of the rhs (i.e. source)
 {
-    //double* pD = // ...               // allocate new space for double[]
-    //std::copy(rhs.elem, rhs.elem + rhs.vsize, pD); // use std::copy algorithm to copy rhs elements into pD double[]
-    // ...                              // deallocate old space
-    // ...                              // now that we've copied new, deallocated old elems, reset elem pointer
-    // ...                              // reset vector size
-    return *this;                       // return a self-reference
+    if(this != &rhs)
+    {
+        //double* pD = // ...               // allocate new space for double[]
+        this->vsize = rhs.vsize;
+        double* pD = new double[vsize];
+        //std::copy(rhs.elem, rhs.elem + rhs.vsize, pD); // use std::copy algorithm to copy rhs elements into pD double[]
+        std::copy(rhs.elem, rhs.elem + rhs.vsize, pD);
+        // ...                              // deallocate old space
+        delete [] this->elem;
+        // ...                              // now that we've copied new, deallocated old elems, reset elem pointer
+        this->elem = pD;
+    }
+        return *this;                       // return a self-reference
+    
 }
 
 //--Q#4-------------------------------------------------------------------------
@@ -104,11 +120,19 @@ vector& vector::operator=(const vector& rhs) // copy assignment
 vector& vector::operator=(vector&& rhs) // move assignment
 	// move rhs (i.e. source) to this vector
 {
+    if (this != &rhs)
+    {
 	// ...                // deallocate old space
+    delete [] this->elem;
 	// ...                // copy rhs’s elements and size, move implies copying element pointer only
+    this->vsize = rhs.vsize;
+    this->elem = rhs.elem;
 	// ... 
     // ...                // empty the rhs vector
 	// ... 
+    rhs.elem = nullptr;
+    rhs.vsize = 0;
+    }
 	return *this;         // return a self-reference
 }
 
@@ -164,6 +188,7 @@ int main()
     v.set(1,100.5);     // set v[1] to 100.5
 
     vector v2 = v;      // [1.1] copy v to v2: what happens here?
+                        // the copy constructor overload is called
     v2.set(0,25);       // set v2[0] to 25
     
     cout << "v  double values: ";
@@ -186,6 +211,8 @@ int main()
     cout << endl;
 
     v3 = v4;            // [2.1] assign v4 to v3: what happens here?
+                        // the copy assignment overload is called
+
     
     cout << "v3 double values (after assignment): ";
     print(cout,v3);
@@ -193,7 +220,7 @@ int main()
 
     vector v5{10};
     v5 = v5;            // [2.2] self assignment: what happens here, any problems?
-
+                        // nothing happens here because a check is made aginst self assignment
 	// Q#5 - move assignment
 
     cout << "fill up v6 with five doubles" << endl;
@@ -201,7 +228,6 @@ int main()
     cout << "v6 double values: ";
     print(cout,v6);
     cout << endl;
-
 
     return 0;
 }
@@ -211,3 +237,8 @@ int main()
 // WRITTEN ANSWERS
 
 // add written answers here ... Q#5
+
+/* Q5 */
+// a copy operation makes a seperate copy of all values, a move operation involves moving pointers to the rvalue data, no copies are made.
+// the move constructor is invoked because a temp vector (rvalue) is returned from the fill_doubles function.
+// a move operation is faster because updating a pointer is much more resource friendly than making a seperate copy of pointed to data.
