@@ -709,3 +709,17 @@ unit testing - whitebox testing
 
 - used for diagrams
 - way to represent a class, interface, data type, component, etc...
+
+# lecture 21 07/1/19
+
+## containers/iterators
+
+- container holds pointed to data
+- iterator is a pointer to data
+
+
+## STL
+
+- containers
+- iterators
+- algorythms
