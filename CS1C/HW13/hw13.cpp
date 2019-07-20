@@ -218,5 +218,17 @@ int main()
         qS.dequeue();
     }
     qS.dequeue();
+
+    /* Testing assert */
+
+    queue<int> qI2;
+    
+    qI2.enqueue(100);
+    cout << "Does not trigger assert: " << qI2.getFront() << endl << endl;
+    qI2.dequeue();
+
+
+    cout << "Assert triggered: " << qI2.getFront();
+
     return 0;
 }

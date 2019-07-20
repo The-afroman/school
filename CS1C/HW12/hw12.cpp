@@ -218,5 +218,16 @@ int main()
         qS.dequeue();
     }
     qS.dequeue();
+
+    /* testing front */
+
+    queue<int> qI2;
+    
+    qI2.enqueue(100);
+    cout << "Front test: " << qI2.getFront() << endl << endl;
+    qI2.enqueue(200);
+    cout << "dequeueing: " << qI2.dequeue() << endl << endl;
+    cout << "Front test #2: " << qI2.getFront() << endl << endl;
+
     return 0;
 }

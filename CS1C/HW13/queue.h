@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cassert>
 template <typename T>
 class queue
 {
@@ -15,35 +15,42 @@ public:
     }
     void enqueue(T obj)
     {
-        if(!isFull())
+        try{
+        if(back >= maxSize)
         {
-            pQueue[back] = obj;
-            back++;
+            std::cerr << "exception: out of bounds, tried to add to full queue\n\n";
+            throw 1;
         }
-        else
-        {
-            std::cout << "the queue is full can't enqueue\n\n";
+        pQueue[back] = obj;
+        back++;
         }
+        
+        catch(int)
+            {back = maxSize-1;}
+        
         
     }
 
     T dequeue() //from front
     {
-        if(!isEmpty())
-        {
+        try{
             front++;
+            if(back == front-1)
+            {
+                std::cout << "exception: the queue is empty can't dequeue\n\n";
+                throw 2;
+            }
             size--; //size decreases when item is dequeued, because queue is non circular
         }
-        else
-        {
-            std::cout << "the queue is empty can't dequeue\n\n";
-        }
+        catch(int)
+            {front--;}
+                
         return(pQueue[front-1]);
-        
     }
 
     T getFront() //returns from front
     {
+        assert(!isEmpty());     //assert statement evals false when nothing in front
         return(pQueue[front]);
     }
 
