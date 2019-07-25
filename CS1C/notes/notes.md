@@ -723,3 +723,5 @@ unit testing - whitebox testing
 - containers
 - iterators
 - algorythms
+  - return pointers (iterators)
+
