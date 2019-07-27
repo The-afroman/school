@@ -2,10 +2,10 @@
 // to illustrate stl algorithms & function objects
 
 /*************************************************************************
- * AUTHOR     : First Last
+ * AUTHOR     : Faris Hijazi
  * hw16       : stl algorithms & function objects
  * CLASS      : CS 1C
- * SECTION    : Date & Time
+ * SECTION    : Mon-Thurs
 *************************************************************************/
 
 #include <iostream>
@@ -89,7 +89,7 @@ class Less_than
     int v;
 public:
 Less_than(int v ) : v{v} {}
-bool operator()(int x) const {x < v}
+bool operator()(int x) const {return x < v;}
 };
 
 //--Q#4-------------------------------------------------------------------------
@@ -136,20 +136,24 @@ struct Square : public Shape
 
 struct Cmp_by_id {
     bool operator()(const Shape* s1, const Shape* s2) const
-    { /* temp, replace when defining function... */ return false; } // dereference pointer, compare ids
+    { return s1->id < s2->id; } // dereference pointer, compare ids
 };
 
 //------------------------------------------------------------------------------
 
 // Cmp_by_perimeter function object struct definition goes here
-// ... dereference pointer, compare perimeters
-//struct Cmp_by_per
+struct Cmp_by_perimeter {
+    bool operator()(const Shape* s1, const Shape* s2) const
+    { return s1->calc_perimeter() < s2->calc_perimeter();} // dereference pointer, compare ids
+};
 
 //------------------------------------------------------------------------------
 
 // Cmp_by_area function object struct definition goes here
-// ... dereference pointer, compare areas
-
+struct Cmp_by_area {
+    bool operator()(const Shape* s1, const Shape* s2) const
+    { return s1->calc_area() < s2->calc_area();} // dereference pointer, compare ids
+};
 //--Q#5-------------------------------------------------------------------------
 //                           Q#5 not required
 template<typename In, typename Out>
@@ -179,7 +183,7 @@ Out copy_if(In first, In last, Out result, Pred pred)
 }
 
 //--Q#5-------------------------------------------------------------------------
-
+/*
 template<typename Val>
     // requires LessThan_comparable<Val>
 class Range_low_to_high {
@@ -198,17 +202,20 @@ using namespace hw16;
 // algorithm, function object example code adapted from Chapter 21
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
-
+*/
+}
 int main()
 {
     // console header
 	cout << endl;
 	cout << "************************************** " << endl;
 	cout << "*            Running hw16            * " << endl;
-	cout << "*      Programmed by First Last      * " << endl;
-	cout << "*          CS1C Date & Time          * " << endl;
+	cout << "*      Programmed by Faris Hijazi    * " << endl;
+	cout << "*          CS1C 07/26/19             * " << endl;
 	cout << "************************************** " << endl;
 	cout << endl;
+
+    using namespace hw16;
 
     // NOTE: uncomment code below once algorithm definitions Q#1-5 are complete
 
@@ -228,70 +235,70 @@ int main()
     else
         cout << "find alg: can't find value in vector v" << endl << endl;
 
-	// // Q#2 - find_if algorithm with predicates
+	// Q#2 - find_if algorithm with predicates
     //                                                 // find first even int in v
-    // auto q = hw16::find_if(v.begin(),v.end(),even); // use auto-type deduction for output iterator q
-    // if (q!=v.end())                                 // (q is a vector<int>::iterator)
-    //     cout << "find_if alg: found even value of in vector v " << *q << endl;
-    // else
-    //     cout << "find_if alg: can't find even value in vector v" << endl;
+    auto q = hw16::find_if(v.begin(),v.end(),even); // use auto-type deduction for output iterator q
+    if (q!=v.end())                                 // (q is a vector<int>::iterator)
+       cout << "find_if alg: found even value of in vector v " << *q << endl;
+    else
+        cout << "find_if alg: can't find even value in vector v" << endl;
 
-    // p = hw16::find_if(v.begin(),v.end(),less_than_31); // find first int in v less than 31
-    // if (p!=v.end())
-    //     cout << "find_if alg: found less_than_31 value of in vector v " << *p << endl;
-    // else
-    //     cout << "find_if alg: can't find less_than_31 value in vector v" << endl;
+    p = hw16::find_if(v.begin(),v.end(),less_than_31); // find first int in v less than 31
+    if (p!=v.end())
+        cout << "find_if alg: found less_than_31 value of in vector v " << *p << endl;
+    else
+        cout << "find_if alg: can't find less_than_31 value in vector v" << endl;
 
-    // global_value = -100;
-    // p = hw16::find_if(v.begin(),v.end(),less_than_v); // find first int in v less than -100
-    // if (p!=v.end())
-    //     cout << "find_if alg: found less_than_v value of in vector v " << *p << endl << endl;
-    // else
-    //     cout << "find_if alg: can't find less_than_v value in vector v" << endl << endl;
+    global_value = -100;
+    p = hw16::find_if(v.begin(),v.end(),less_than_v); // find first int in v less than -100
+    if (p!=v.end())
+         cout << "find_if alg: found less_than_v value of in vector v " << *p << endl << endl;
+    else
+        cout << "find_if alg: can't find less_than_v value in vector v" << endl << endl;
 
-	// // Q#3 - find_if algorithm with function objects
+	// Q#3 - find_if algorithm with function objects
 
-    // p = hw16::find_if(v.begin(),v.end(),Less_than(4)); // find first int in v less than 4
-    // if (p!=v.end())
-    //     cout << "find_if alg: found Less_than(4) value of in vector v " << *p << endl << endl;
-    // else
-    //     cout << "find_if alg: can't find Less_than(4) value in vector v" << endl << endl;
+    p = hw16::find_if(v.begin(),v.end(),Less_than(4)); // find first int in v less than 4
+    if (p!=v.end())
+        cout << "find_if alg: found Less_than(4) value of in vector v " << *p << endl << endl;
+    else
+        cout << "find_if alg: can't find Less_than(4) value in vector v" << endl << endl;
 
-	// // Q#4 - sort algorithm + Shape class, function objects
+	// Q#4 - sort algorithm + Shape class, function objects
 
-    // vector<Shape*> vs;
-    // vs.push_back(new Line{10,5,-1});       // store pointer to line1 in vs
-    // vs.push_back(new Line{5,10,-1});       // store pointer to line2 in vs
-    // vs.push_back(new Line{1,15,-1});       // store pointer to line3 in vs
-    // vs.push_back(new Square{100,400,625}); // store pointer to square1 in vs
-    // vs.push_back(new Square{101,40,100});  // store pointer to square2 in vs
-    // vs.push_back(new Square{102,60,225});  // store pointer to square3 in vs
+    vector<Shape*> vs;
+    vs.push_back(new Line{10,5,-1});       // store pointer to line1 in vs
+    vs.push_back(new Line{5,10,-1});       // store pointer to line2 in vs
+    vs.push_back(new Line{1,15,-1});       // store pointer to line3 in vs
+    vs.push_back(new Square{100,400,625}); // store pointer to square1 in vs
+    vs.push_back(new Square{101,40,100});  // store pointer to square2 in vs
+    vs.push_back(new Square{102,60,225});  // store pointer to square3 in vs
 
-    // std::sort(vs.begin(),vs.end(),Cmp_by_id()); // sort shapes by id (using std sort algorithm)
-    // cout << "shapes sorted by id: ";
-    // for (const auto x : vs) cout << *x << " "; // use auto type deduction (x is a Shape*),
-    // cout << endl << endl;                      // range-for-loop to print vs
+    std::sort(vs.begin(),vs.end(),Cmp_by_id()); // sort shapes by id (using std sort algorithm)
+    cout << "shapes sorted by id: ";
+    for (const auto x : vs) cout << *x << " "; // use auto type deduction (x is a Shape*),
+    cout << endl << endl;                      // range-for-loop to print vs
 
-    // std::sort(vs.begin(),vs.end(),Cmp_by_perimeter()); // sort shapes by perimeter
-    // cout << "shapes sorted by perimeter: " << endl;
-    // for (const auto x : vs)
-    // {
-    //     cout << "id " << *x;
-    //     cout << ", perimeter " << x->calc_perimeter() << endl;
-    // }
-    // cout << endl;
+    std::sort(vs.begin(),vs.end(),Cmp_by_perimeter()); // sort shapes by perimeter
+    cout << "shapes sorted by perimeter: " << endl;
+    for (const auto x : vs)
+    {
+        cout << "id " << *x;
+        cout << ", perimeter " << x->calc_perimeter() << endl;
+    }
+    cout << endl;
 
-    // std::sort(vs.begin(),vs.end(),Cmp_by_area()); // sort shapes by area
-    // cout << "shapes sorted by area: " << endl;
-    // for (const auto x : vs)
-    // {
-    //     cout << "id " << *x;
-    //     cout << ", area " << x->calc_area() << endl;
-    // }
-    // cout << endl;
+    std::sort(vs.begin(),vs.end(),Cmp_by_area()); // sort shapes by area
+    cout << "shapes sorted by area: " << endl;
+    for (const auto x : vs)
+    {
+        cout << "id " << *x;
+        cout << ", area " << x->calc_area() << endl;
+    }
+    cout << endl;
 
-    // // free all shapes
-    // for (Shape* pS : vs) delete pS; // delete all shape objects, otherwise memory will leak
+    // free all shapes
+    for (Shape* pS : vs) delete pS; // delete all shape objects, otherwise memory will leak
 
 	// // Q#5 - copy_if algorithm with function objects
 
@@ -315,7 +322,7 @@ int main()
     // catch (...) {
     //     cerr << "Oops: unknown exception!" << endl; 
     //     return 2;
-    // }
+    //}
 
 
     return 0;
@@ -326,6 +333,7 @@ int main()
 // WRITTEN ANSWERS
 
 // Q#1
+// the requirements for find to work are an (input iterator which allows for using overload ++ and *) and an quality comparable
+// which supports direct comparison == with the dereferenced input iterator
 
-// Q#5
-
+// Q#5 not required

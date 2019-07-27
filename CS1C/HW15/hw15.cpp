@@ -65,10 +65,12 @@ public:
     iterator end();     // iterator to one beyond last element
 
     // add missing const iterators begin, end here
-
+    iterator begin() const;
+    iterator end() const;
+    const const_iterator begin_const() const;
+    const const_iterator end_const() const;
     // ...  // constant iterator to first element
     // ...  // constant iterator to one beyond last element
-
     iterator insert(iterator p, const Elem& v); // insert v into list after p
     iterator erase(iterator p);                 // remove p from the list
 
@@ -94,34 +96,29 @@ public:
     iterator(Link<Elem>* p) : curr{p} { }
     iterator& operator++() // forward
     {
-        // ...
-                        // temp, replace when defining function
-        return nullptr; // included so that incomplete lab code will compile
+        curr = curr->succ;
+        return *this;
+        // included so that incomplete lab code will compile
     }
     iterator& operator--() // backwards
     {
-        // ...
-                        // temp, replace when defining function
-        return nullptr; // included so that incomplete lab code will compile
+        curr = curr->prev;
+        return *this;
+        // included so that incomplete lab code will compile
+    
     }
     Elem& operator*() // get value (dereference)
     {
-        // ...
-                        // temp, replace when defining function
-        return nullptr; // included so that incomplete lab code will compile
+        return curr->val; // included so that incomplete lab code will compile
     }
 
     bool operator==(const iterator& rhs) const // lhs, rhs iterators point to the same node (equal)
     {
-        // ...
-                      // temp, replace when defining function
-        return false; // included so that incomplete lab code will compile
+        return curr == rhs.curr; // included so that incomplete lab code will compile
     }
     bool operator!=(const iterator& rhs) const // lhs, rhs iterators do not point to the same node (not equal)
     {
-        // ...
-                      // temp, replace when defining function
-        return false; // included so that incomplete lab code will compile
+        return curr != rhs.curr; // included so that incomplete lab code will compile
     }
 };
 
@@ -135,10 +132,36 @@ class list<Elem>::const_iterator // definition for class const_iterator
                               // fine to modify curr pointer itself (i.e. pointer value stored in curr)
                               // refer to const correctness reading
 public:
+    const_iterator(const Link<Elem>* p) : curr{p} { }
 
     // add missing constructor, overloaded ++, --, *, ==, != operators here
+    const const_iterator& operator++() const // forward
+    {
+        curr = curr->succ;
+        return curr;
+        // included so that incomplete lab code will compile
+    }
+    const const_iterator& operator--() const// backwards
+    {
+        curr = curr->prev;
+        return curr;
+        // included so that incomplete lab code will compile
+    }
+    const Elem& operator*() const// get value (dereference)
+    {
+        return *curr; // included so that incomplete lab code will compile
+    }
 
-    // ...
+    const bool operator==(const iterator& rhs) const // lhs, rhs iterators point to the same node (equal)
+    {
+        return curr == rhs.curr; // included so that incomplete lab code will compile
+    }
+    const bool operator!=(const iterator& rhs) const // lhs, rhs iterators do not point to the same node (not equal)
+    {
+        return curr != rhs.curr; // included so that incomplete lab code will compile
+    }
+
+    
 };
 
 //------------------------------------------------------------------------------
@@ -155,6 +178,11 @@ typename list<Elem>::iterator list<Elem>::begin()  // iterator to first element
 
 // ... add missing constant iterator begin here
 
+template<typename Elem> 
+const typename list<Elem>::const_iterator list<Elem>::begin_const() const  // iterator to first element
+{ 
+    return const_iterator(first); 
+}
 //------------------------------------------------------------------------------
 
 template<typename Elem> 
@@ -166,7 +194,11 @@ typename list<Elem>::iterator list<Elem>::end() // iterator to one beyond last e
 //--Q#3-------------------------------------------------------------------------
 
 // constant iterator to last element
-
+template<typename Elem> 
+const typename list<Elem>::const_iterator list<Elem>::end_const() const // iterator to one beyond last element
+{ 
+    return const_iterator(last); 
+}
 // ... add missing constant iterator end here
 
 //------------------------------------------------------------------------------
@@ -188,7 +220,7 @@ double* low_doubles(double* first, double* last)
     // return a pointer to the element in [first,last) that has the lowest value
 {
     double l = -1;
-    double* low;
+    double* low = &l;
     for(double* p = first; p!=last; ++p)
         if (*p < l) { low = p; l = *p; }
     return low;
@@ -197,7 +229,14 @@ double* low_doubles(double* first, double* last)
 //--Q#5-------------------------------------------------------------------------
 
 // implement templated low algorithm here
-
+template<typename T>
+T low(T first, T last)
+    // return a pointer to the element in [first,last) that has the lowest value
+{
+    for(T p = first; p!=last; ++p)
+        if (*p < *first) {first = p;}
+    return first;
+}
 // ...
 
 //------------------------------------------------------------------------------
@@ -229,7 +268,7 @@ int main()
 
     list<int> myList;
     int x;
-    while (cin >> x) myList.push_front(x);
+    while (cin >> x && x != -1) myList.push_front(x);
 
 	// Q#5 - low_doubles algorithm
 
@@ -248,20 +287,20 @@ int main()
 	// Q#5 - low algorithm
 
     // NOTE: uncomment code below once low algorithm definition is complete
+ 
+    lowa = low(&d[0], &d[9]); // min of array
+    cout << "low alg: double array min value is " << *lowa << endl << endl;
 
-    // lowa = low(&d[0], &d[9]); // min of array
-    // cout << "low alg: double array min value is " << *lowa << endl << endl;
+    lowv1 = low(&v[0], middle);          // min of vector first half
+    lowv2 = low(middle, &v[0]+v.size()); // min of vector second half
+    cout << "low alg: double vector min value first half is " << *lowv1 << endl;
+    cout << "low alg: double vector min value second half is " << *lowv2 << endl << endl;
 
-    // lowv1 = low(&v[0], middle);          // min of vector first half
-    // lowv2 = low(middle, &v[0]+v.size()); // min of vector second half
-    // cout << "low alg: double vector min value first half is " << *lowv1 << endl;
-    // cout << "low alg: double vector min value second half is " << *lowv2 << endl << endl;
-
-    // list<int>::iterator p = low(myList.begin(), myList.end()); // min of list
-    // if (p==myList.end())    // did we reach the end?
-    //     cout << "low alg: the list is empty";
-    // else
-    //     cout << "low alg: the lowest value in the list is " << *p << endl;
+    list<int>::iterator p = low(myList.begin(), myList.end()); // min of list
+    if (p==myList.end())    // did we reach the end?
+        cout << "low alg: the list is empty";
+    else
+        cout << "low alg: the lowest value in the list is " << *p << endl;
 
 
     return 0;
@@ -272,8 +311,18 @@ int main()
 // WRITTEN ANSWERS
 
 // Q#1
+// an stl container is an object that stores elements within dynamic memory with methods to access those methods.
+// additionally every container in the stl library has an iterator type which can be used to access individual elements as well as 
+// traverse the elements
+
 
 // Q#2
+// iterator is just a class which contains a pointer to data, algorithms can be generalized to work with any data type additionaly
+// algorithms can be decoupled from containers due to the versitility of the itterators passed in (can allow for various types of access to data: rw, r , etc.)
+
 
 // Q#5
+// both algorythms use pointer addition inorder to traverse the elements of the array, low_doubles makes use of local variables.
+// this is problomatic because the variable l is used to compare against array elements. In this case l happedned to be lower than
+// all elements in the first half of the array which is why an unexpected value is returned. low, however, functions as expected
 
