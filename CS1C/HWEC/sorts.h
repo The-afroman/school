@@ -153,6 +153,49 @@ void quickSort(int arr[], int low, int high)
     comps++;
 }
 
+void quickSortIterative(int arr[], int l, int h) 
+{ 
+    // Create an auxiliary stack 
+    int stack[h - l + 1];
+  
+    // initialize top of stack 
+    int top = -1; asigns++; 
+  
+    // push initial values of l and h to stack 
+    stack[++top] = l; asigns++; 
+    stack[++top] = h; asigns++;
+  
+    // Keep popping from stack while is not empty 
+    while (top >= 0) { 
+        comps++;
+        // Pop h and l 
+        h = stack[top--]; asigns++;
+        l = stack[top--]; asigns++;
+  
+        // Set pivot element at its correct position 
+        // in sorted array 
+        int p = partition(arr, l, h); 
+        asigns++;
+  
+        // If there are elements on left side of pivot, 
+        // then push left side to stack 
+        if (p - 1 > l) { 
+            stack[++top] = l; 
+            stack[++top] = p - 1; 
+        }
+        comps++;
+  
+        // If there are elements on right side of pivot, 
+        // then push right side to stack 
+        if (p + 1 < h) { 
+            stack[++top] = p + 1; 
+            stack[++top] = h; 
+        } 
+        comps++;
+    }
+    comps++; 
+}
+
 // Merges two subarrays of arr[]. 
 // First subarray is arr[l..m] 
 // Second subarray is arr[m+1..r] 

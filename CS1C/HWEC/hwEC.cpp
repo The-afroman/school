@@ -89,7 +89,7 @@ int main()
     cout << "******QUICK SORT******\n";
     printAr(list3, SIZE);
     totalClock = clock();
-    quickSort(list3, 0, SIZE-1);
+    quickSortIterative(list3, 0, SIZE-1);
     cout << "Sort time: " << 1000000000*(clock()-totalClock)/float(CLOCKS_PER_SEC) << " ns" << endl << endl; //outputs sort time in nano-seconds
     cout << "Comparisons: " << comps << endl << endl;
     cout << "Assignments: " << asigns << endl << endl;
@@ -170,7 +170,7 @@ int main()
     cout << "******QUICK SORT******\n";
     printAr(list2, SIZE);
     totalClock = clock();
-    quickSort(list2, 0, SIZE-1);
+    quickSortIterative(list2, 0, SIZE-1);
     cout << "Sort time: " << 1000000000*(clock()-totalClock)/float(CLOCKS_PER_SEC) << " ns" << endl << endl; //outputs sort time in nano-seconds
     cout << "Comparisons: " << comps << endl << endl;
     cout << "Assignments: " << asigns << endl << endl;
@@ -235,7 +235,7 @@ int main()
     cout << "******QUICK SORT******\n";
     printAr(list1, SIZE);
     totalClock = clock();
-    quickSort(list1, 0, SIZE-1);
+    quickSortIterative(list1, 0, SIZE-1);
     cout << "Sort time: " << 1000000000*(clock()-totalClock)/float(CLOCKS_PER_SEC) << " ns" << endl << endl; //outputs sort time in nano-seconds
     cout << "Comparisons: " << comps << endl << endl;
     cout << "Assignments: " << asigns << endl << endl;
