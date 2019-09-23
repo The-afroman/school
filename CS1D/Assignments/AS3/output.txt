@@ -1,0 +1,19 @@
+***PART A***
+Before pop:
+983.3 44.44 888.55 99.99 123.123 8.445
+Mark Alan Jennifer Sony Eric JoAnn Bill 
+
+***PART B***
+After pop:
+123.123 8.445 
+Eric JoAnn Bill 
+
+***PART C***
+Before pop:
+8.445 123.123 99.99 888.55 44.44 983.3 
+Bill JoAnn Eric Sony Jennifer Alan Mark 
+
+***PART D***
+After pop and pop_back:
+8.445 123.123
+Jennifer Alan Mark 
