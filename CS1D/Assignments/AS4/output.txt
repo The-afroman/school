@@ -1,0 +1,188 @@
+/**************************
+* Faris Hijazi
+* CS1D
+* Assignment 4
+**************************/
+
+/* 
+    DESCRIPTION:
+
+    Items are first stored in a binary search tree;
+    then contents of the tree are printed using the 
+    following traversals: in-order, post-order, pre-order, 
+    breadth-first.
+
+    Finally the tree is printed by level and parent child 
+    relationship
+*/
+
+enter value of root node
+19
+enter value of node
+13
+value entered in left
+enter value of node
+888
+value entered in right
+enter value of node
+109
+value entered in left
+enter value of node
+55
+value entered in left
+enter value of node
+118
+value entered in right
+enter value of node
+89
+value entered in right
+enter value of node
+33
+value entered in left
+enter value of node
+1001
+value entered in right
+enter value of node
+18
+value entered in right
+enter value of node
+44
+value entered in right
+enter value of node
+88
+value entered in left
+enter value of node
+12
+value entered in left
+enter value of node
+24
+value entered in left
+enter value of node
+49
+value entered in right
+enter value of node
+7
+value entered in left
+enter value of node
+25
+value entered in right
+enter value of node
+59
+value entered in left
+enter value of node
+28
+value entered in right
+
+ tree traversal: inorder
+7
+12
+13
+18
+19
+24
+25
+28
+33
+44
+49
+55
+59
+88
+89
+109
+118
+888
+1001
+
+ tree traversal: preorder
+19
+13
+12
+7
+18
+888
+109
+55
+33
+24
+25
+28
+44
+49
+89
+88
+59
+118
+1001
+
+ tree traversal: postorder
+7
+12
+18
+13
+28
+25
+24
+49
+44
+33
+59
+88
+89
+55
+118
+109
+1001
+888
+19
+
+ tree traversal: breadth first
+19 13 888 12 18 109 1001 7 55 118 33 89 24 44 88 25 49 59 28 
+
+ full binary tree
+level 1: 19 
+level 2: 13 888 
+level 3: 12 18 109 1001 
+level 4: 7 55 118 
+level 5: 33 89 
+level 6: 24 44 88 
+level 7: 25 49 59 
+level 8: 28 
+
+        1001
+       /
+     888
+       \
+           118
+          /
+        109
+          \
+              89
+                \
+                 88
+                   \
+                    59
+             /
+           55
+             \
+                    49
+                   /
+                 44
+                /
+              33
+                \
+                       28
+                      /
+                    25
+                   /
+                 24
+    /
+  19
+    \
+        18
+       /
+     13
+       \
+        12
+          \
+           7
