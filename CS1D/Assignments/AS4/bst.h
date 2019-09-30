@@ -131,12 +131,12 @@ void postorderIndented(nod* p, int indent)
             postorderIndented(p->r, indent+3);
         }
         if (indent) {
-            std::cout << std::setw(indent) << ' ';
+            cout << setw(indent) << ' ';
         }
-        if (p->r) std::cout<<" /\n" << std::setw(indent) << ' ';
-        std::cout<< p->d << "\n ";
+        if (p->r) cout<<" /\n" << setw(indent) << ' ';
+        cout<< p->d << "\n ";
         if(p->l) {
-            std::cout << std::setw(indent) << ' ' <<" \\\n";
+            cout << setw(indent) << ' ' <<" \\\n";
             postorderIndented(p->l, indent+3);
         }
     }
