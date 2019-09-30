@@ -6,7 +6,7 @@
  * SECTION 		: MW 5PM
  * DUE DATE		: 09/16/19
  *****************************************************************************/
-\
+
 /*
 deque, queue, stack assignment
 create, pop and pop_back from LinkedLists
