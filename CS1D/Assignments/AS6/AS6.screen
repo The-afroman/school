@@ -1,0 +1,109 @@
+/**************************
+* Faris Hijazi
+* CS1D
+* Assignment 6
+**************************/
+
+/*
+    DESCRIPTION:
+        two maps dh and qh are created, dh uses double hashing to 
+        deal with collisions while qh uses quadratic probing.
+        nodes are added to both maps and keys are deleted along the way.
+        The final maps are output at the end.
+*/
+
+
+removing key 41                                                                                                                                                                                                                                                                
+
+
+removing key 58                                                                                                                                                                                                                                                                
+
+
+removing key 72                                                                                                                                                                                                                                                                
+
+
+removing key 41                                                                                                                                                                                                                                                                
+
+
+removing key 41                                                                                                                                                                                                                                                                
+
+
+removing key 58                                                                                                                                                                                                                                                                
+
+
+removing key 72                                                                                                                                                                                                                                                                
+
+
+removing key 41                                                                                                                                                                                                                                                                
+
+
+FINAL QUADRATIC MAP                                                                                                                                                                                                                                                            
+
+
+QUADRATIC HASH MAP                                                                                                                                                                                                                                                             
+---------------                                                                                                                                                                                                                                                                
+0 --> 29 Dana Point                                                                                                                                                                                                                                                            
+1 --> 88 El Segundo                                                                                                                                                                                                                                                            
+2 --> 31 Los Angeles                                                                                                                                                                                                                                                           
+3 --> 32 San Diego                                                                                                                                                                                                                                                             
+4 --> 62 Laguna Hills                                                                                                                                                                                                                                                          
+5                                                                                                                                                                                                                                                                              
+6 --> 35 Tustin                                                                                                                                                                                                                                                                
+7                                                                                                                                                                                                                                                                              
+8 --> 60 Santa Ana                                                                                                                                                                                                                                                             
+9                                                                                                                                                                                                                                                                              
+10                                                                                                                                                                                                                                                                             
+11 --> 11 La Jolla                                                                                                                                                                                                                                                             
+12 --> 99 San Juan                                                                                                                                                                                                                                                             
+13 --> 42 Vista                                                                                                                                                                                                                                                                
+14                                                                                                                                                                                                                                                                             
+15 --> 44 Irvine                                                                                                                                                                                                                                                               
+16 --> 103 Oceanside                                                                                                                                                                                                                                                           
+17 --> 17 Orange                                                                                                                                                                                                                                                               
+18 --> 18 Laguna Niguel                                                                                                                                                                                                                                                        
+19 --> 19 Brea                                                                                                                                                                                                                                                                 
+20 --> 49 Anaheim                                                                                                                                                                                                                                                              
+21 --> 49 Laguna Beach                                                                                                                                                                                                                                                         
+22 --> 22 San Clemente                                                                                                                                                                                                                                                         
+23 --> 22 Aliso Viejo                                                                                                                                                                                                                                                          
+24 --> 18 Del Mar                                                                                                                                                                                                                                                              
+25                                                                                                                                                                                                                                                                             
+26 --> 49 San Diego                                                                                                                                                                                                                                                            
+27 --> 41 San Clemete                                                                                                                                                                                                                                                          
+28                                                                                                                                                                                                                                                                             
+
+
+FINAL DOUBLE MAP                                                                                                                                                                                                                                                               
+
+
+DOUBLE HASH MAP                                                                                                                                                                                                                                                                
+---------------
+0 --> 49 San Diego
+1 --> 22 Aliso Viejo
+2 --> 31 Los Angeles
+3 --> 32 San Diego
+4 --> 88 El Segundo
+5 --> 41 San Clemete
+6 --> 35 Tustin
+7 --> 60 Santa Ana
+8
+9
+10 --> 29 Dana Point
+11 --> 11 La Jolla
+12 --> 99 San Juan
+13 --> 42 Vista
+14
+15 --> 44 Irvine
+16 --> 103 Oceanside
+17 --> 17 Orange
+18 --> 18 Laguna Niguel
+19 --> 19 Brea
+20 --> 49 Anaheim
+21
+22 --> 22 San Clemente
+23 --> 49 Laguna Beach
+24
+25 --> 62 Laguna Hills
+26 --> 18 Del Mar
+27
+28
