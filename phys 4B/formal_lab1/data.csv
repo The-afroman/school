@@ -1,0 +1,4 @@
+R number,L1 (cm),L2 (cm),Rx experimental (ohms),Rx actual (ohms),percent difference
+12,21.5,78.5,273.89,270,1.44
+7,28,72,388.89,390,0.28
+4,73,27,2703.7,2700,0.13
