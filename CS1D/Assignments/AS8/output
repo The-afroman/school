@@ -1,0 +1,131 @@
+/**************************
+* Faris Hijazi
+* CS1D
+* Assignment 8
+**************************/
+
+*****************
+DESCRIPTION: 
+    perform a DFS starting at Chicago (always choose the edge with the smallest mileage).   
+    Identify the discovery edges and the back edges. What is the total distance travelled 
+    on the discovery edges? Use an Adjacency List structure. Output the Adjacency List. 
+                                
+                                THEN
+
+    perform a BFS starting at Chicago (always choose the edge with the smallest mileage).  
+    Identify the discovery edges and the cross edges. What is the total distance travelled
+    on the discovery edges? Use an Adjacency Matrix structure.  Output the Adjacency Matrix. 
+*****************
+
+ADJACENCY LIST:
+
+Node Chicago makes an edge with 
+        Node New York with weight = 214
+        Node Kansas City with weight = 533
+        Node Boston with weight = 983
+        Node Denver with weight = 1003
+        Node Seattle with weight = 2097
+
+Node Seattle makes an edge with 
+        Node San Francisco with weight = 807
+        Node Denver with weight = 1331
+        Node Chicago with weight = 2097
+
+Node Boston makes an edge with 
+        Node New York with weight = 214
+        Node Chicago with weight = 983
+
+Node Denver makes an edge with 
+        Node Kansas City with weight = 599
+        Node Chicago with weight = 1003
+        Node Los Angeles with weight = 1015
+        Node San Francisco with weight = 1267
+        Node Seattle with weight = 1331
+
+Node Houston makes an edge with 
+        Node Dallas with weight = 239
+        Node Atlanta with weight = 810
+        Node Miami with weight = 1187
+
+Node Los Angeles makes an edge with 
+        Node San Francisco with weight = 381
+        Node Denver with weight = 1015
+        Node Dallas with weight = 1435
+        Node Kansas City with weight = 1663
+
+Node Kansas City makes an edge with 
+        Node Dallas with weight = 496
+        Node Chicago with weight = 533
+        Node Denver with weight = 599
+        Node Atlanta with weight = 864
+        Node New York with weight = 1260
+        Node Los Angeles with weight = 1663
+
+Node Atlanta makes an edge with 
+        Node Miami with weight = 661
+        Node Dallas with weight = 781
+        Node Houston with weight = 810
+        Node Kansas City with weight = 864
+        Node New York with weight = 888
+
+Node Dallas makes an edge with 
+        Node Houston with weight = 239
+        Node Kansas City with weight = 496
+        Node Atlanta with weight = 781
+        Node Los Angeles with weight = 1435
+
+Node Miami makes an edge with 
+        Node Atlanta with weight = 661
+        Node Houston with weight = 1187
+
+Node San Francisco makes an edge with 
+        Node Los Angeles with weight = 381
+        Node Seattle with weight = 807
+        Node Denver with weight = 1267
+
+Node New York makes an edge with 
+        Node Chicago with weight = 214
+        Node Boston with weight = 214
+        Node Atlanta with weight = 888
+        Node Kansas City with weight = 1260
+
+
+
+DFS TRAVERSAL: Chicago New York Boston  BACK EDGE: Boston, New York
+Atlanta Miami Houston Dallas Kansas City Denver Los Angeles San Francisco Seattle 
+
+ADJACENCY MATRIX: 
+ROW/COL KEY: Chicago=0, Seattle=1, Boston=2, Denver=3, Houston=4, Los Angeles=5,
+Kansas City=6, Atlanta=7, Dallas=8, Miami=9, San Francisco=10, New York=11
+
+        0    1    2    3    4    5    6    7    8    9    10   11   
+
+
+0       0    2097 983  1003 0    0    533  0    0    0    0    787  
+
+1       2097 0    0    1331 0    0    0    0    0    0    807  0    
+
+2       983  0    0    0    0    0    0    0    0    0    0    214  
+
+3       1003 1331 0    0    0    1015 599  0    0    0    1267 0    
+
+4       0    0    0    0    0    0    0    810  239  1187 0    0    
+
+5       0    0    0    1015 0    0    1663 0    1435 0    381  0    
+
+6       533  0    0    599  0    1663 0    864  496  0    0    1260 
+
+7       0    0    0    0    810  0    864  0    781  661  0    888  
+
+8       0    0    0    0    239  1435 496  781  0    0    0    0    
+
+9       0    0    0    0    1187 0    0    661  0    0    0    0    
+
+10      0    807  0    1267 0    381  0    0    0    0    0    0    
+
+11      787  0    214  0    0    0    1260 888  0    0    0    0    
+
+
+BFS TRAVERSAL: Chicago Seattle Boston Denver Kansas City New York San Francisco Los Angeles Atlanta Dallas Houston Miami 
+
+DISTANCE: 10056
