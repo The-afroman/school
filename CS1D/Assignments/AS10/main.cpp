@@ -97,9 +97,12 @@ int main()
 	int w = gB.kruskalMST(cities);
 
 	cout << "\nMST mileage: " << w << "\n";
-
-
-	system("pause");
+	#if defined(__WIN32)
+		system("pause");
+	#else
+		system("read -p \"press ENTER to continue...\"");
+	#endif
+	
 	return 0;
 }
 
