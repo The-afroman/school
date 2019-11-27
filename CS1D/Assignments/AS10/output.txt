@@ -1,0 +1,137 @@
+// ===================================================
+// Program: Assignment 10 (A-star, Djikstra, MST)
+// ===================================================
+// Programmer: Garrett Geesink and Faris Hijazi
+// Class: CS 1D 5 PM class, Tues/Thurs
+// ===================================================
+// This program uses A-star pathfinding to find the shortest
+// distance through a graph of cities, and also finds the
+// Minimum Spanning Tree of the graph using Kruskal's algorithm
+// ===================================================
+
+================= Part 1 =======================
+ADJACENCY LIST:
+
+Node Atlanta makes an edge with 
+        Node Miami with weight = 661
+        Node Dallas with weight = 781
+        Node Houston with weight = 810
+        Node Kansas City with weight = 864
+        Node New York with weight = 888
+
+Node Boston makes an edge with 
+        Node New York with weight = 214
+        Node Chicago with weight = 983
+
+Node Chicago makes an edge with 
+        Node Kansas City with weight = 533
+        Node New York with weight = 787
+        Node Boston with weight = 983
+        Node Denver with weight = 1003
+        Node Seattle with weight = 2097
+
+Node Dallas makes an edge with 
+        Node Houston with weight = 239
+        Node Kansas City with weight = 496
+        Node Atlanta with weight = 781
+        Node Los Angeles with weight = 1435
+
+Node Denver makes an edge with 
+        Node Kansas City with weight = 599
+        Node Chicago with weight = 1003
+        Node Los Angeles with weight = 1015
+        Node San Francisco with weight = 1267
+        Node Seattle with weight = 1331
+
+Node Houston makes an edge with 
+        Node Dallas with weight = 239
+        Node Atlanta with weight = 810
+        Node Miami with weight = 1187
+
+Node Kansas City makes an edge with 
+        Node Dallas with weight = 496
+        Node Chicago with weight = 533
+        Node Denver with weight = 599
+        Node Atlanta with weight = 864
+        Node New York with weight = 1260
+        Node Los Angeles with weight = 1663
+
+Node Los Angeles makes an edge with 
+        Node San Francisco with weight = 381
+        Node Denver with weight = 1015
+        Node Dallas with weight = 1435
+        Node Kansas City with weight = 1663
+
+Node Miami makes an edge with 
+        Node Atlanta with weight = 661
+        Node Houston with weight = 1187
+
+Node New York makes an edge with 
+        Node Boston with weight = 214
+        Node Chicago with weight = 787
+        Node Atlanta with weight = 888
+        Node Kansas City with weight = 1260
+
+Node San Francisco makes an edge with 
+        Node Los Angeles with weight = 381
+        Node Seattle with weight = 807
+        Node Denver with weight = 1267
+
+Node Seattle makes an edge with 
+        Node San Francisco with weight = 807
+        Node Denver with weight = 1331
+        Node Chicago with weight = 2097
+
+___________PART A___________
+
+FROM Atlanta to Miami
+        Miami <-- Atlanta  -  DISTANCE: 661
+
+FROM Atlanta to Houston
+        Houston <-- Atlanta  -  DISTANCE: 810
+
+FROM Atlanta to Dallas
+        Dallas <-- Atlanta  -  DISTANCE: 781
+
+FROM Atlanta to Kansas City
+        Kansas City <-- Atlanta  -  DISTANCE: 864
+
+FROM Atlanta to New York
+        New York <-- Atlanta  -  DISTANCE: 888
+
+FROM Atlanta to Boston
+        Boston <-- New York <-- Atlanta  -  DISTANCE: 1102
+
+FROM Atlanta to Chicago
+        Chicago <-- Kansas City <-- Atlanta  -  DISTANCE: 1397
+
+FROM Atlanta to Denver
+        Denver <-- Kansas City <-- Atlanta  -  DISTANCE: 1463
+
+FROM Atlanta to Los Angeles
+        Los Angeles <-- Dallas <-- Atlanta  -  DISTANCE: 2216
+
+FROM Atlanta to San Francisco
+        San Francisco <-- Los Angeles <-- Dallas <-- Atlanta  -  DISTANCE: 2597
+
+FROM Atlanta to Seattle
+        Seattle <-- Denver <-- Kansas City <-- Atlanta  -  DISTANCE: 2794
+
+
+================= Part 2 =======================
+MST using Kruskal's algorithm:
+
+Boston -- New York  214
+Houston -- Dallas  239
+San Francisco -- Los Angeles  381
+Dallas -- Kansas City  496
+Kansas City -- Chicago  533
+Kansas City -- Denver  599
+Atlanta -- Miami  661
+Dallas -- Atlanta  781
+New York -- Chicago  787
+Seattle -- San Francisco  807
+Los Angeles -- Denver  1015
+
+MST mileage: 6513
+Press any key to continue . . .
