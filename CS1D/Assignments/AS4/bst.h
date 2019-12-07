@@ -128,7 +128,7 @@ void postorderIndented(nod* p, int indent)
 {
     if(p != NULL) {
         if(p->r) {
-            postorderIndented(p->r, indent+3);
+            postorderIndented(p->r, indent+10);
         }
         if (indent) {
             cout << setw(indent) << ' ';
@@ -137,7 +137,7 @@ void postorderIndented(nod* p, int indent)
         cout<< p->d << "\n ";
         if(p->l) {
             cout << setw(indent) << ' ' <<" \\\n";
-            postorderIndented(p->l, indent+3);
+            postorderIndented(p->l, indent+10);
         }
     }
 }

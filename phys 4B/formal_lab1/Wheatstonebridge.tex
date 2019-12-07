@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage{graphicx}
 \usepackage{titling}
 \usepackage{float}
@@ -84,7 +84,7 @@ Since voltage drops are related through Ohm's law (1):
 \end{equation}
 Resistance can be given by the following
 \begin{equation}
-R = \frac{\rho\L}{A}
+R = \frac{\rho L}{A}
 \end{equation}
 Using (3) and (4) Ratio of resistances is the same as ratio of lengths:
 \begin{equation}
@@ -117,12 +117,39 @@ example calculation:
 The purpose of the experiment was met the resistances of the unknown resistors was determined experimentally and the relationships of Ohm's law held true. The percent difference between the advertised and experimental values (273.89\(\Omega\), 388.89\(\Omega\), 2703.7\(\Omega\)) was 1.44, 0.28, and 0.13 percent for the three unknown resistors. This is well within the margin of error since the tollerance for the resistors was 5\%. The change in resistance as the resistors heated up was not taken into account and could have effected the actual resistance if sufficient time was given for the resistors to increase in temperature by a measureable amount. Aditionally neither the internal resistance of the battery nor the resistances of the wires used was taken into account which could have skewed values slightly but still well within the margin of error. The Galvanometer is a very sensitive instrument therefore induced currents from radio waves or other interference may have a minimal effect on the data collected.
 
 \section*{Extra credit}
-
+figure redraw with Galvanometer and battery swaped
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Extracredit}
+    \includegraphics[width=\textwidth]{labDiagramEC}
     \caption{Extra credit}
     \label{fig:Extra credit}
 \end{figure}
-
+use kirchhoff loop rule
+\begin{equation}
+-R_2 i_1 + R_x i_2 = 0
+\end{equation}
+\begin{equation}
+R_4 i_2 - R_3 i_1 = 0
+\end{equation}
+\begin{equation}
+i_1 = \frac{R_3}{R_4}i_2
+\end{equation}
+\begin{equation}
+i_1 = \frac{R_x}{R_2}i_2
+\end{equation}
+solve
+\begin{equation}
+\frac{R_x}{R_2} = \frac{R_3}{R_4}
+\end{equation}
+substitute with L3 and L4
+\begin{equation}
+    \frac{L3}{L4} = \frac{R3}{R4}
+\end{equation}
+\begin{equation}
+    R_x = \frac{R_3}{R_4}R2
+\end{equation}
+The final equation is the same as the original
+\begin{equation}
+    R_x = \frac{L_3}{L_4}R2
+\end{equation}
 \end{document}
