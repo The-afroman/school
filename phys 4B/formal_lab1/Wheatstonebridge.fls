@@ -1,0 +1,124 @@
+PWD /home/f/school/phys 4B/formal_lab1
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.tex
+OUTPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.log
+INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
+INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/share/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT /usr/share/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/share/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux
+INPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux
+OUTPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+OUTPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /home/f/school/phys 4B/formal_lab1/labsetup.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/labsetup.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/labsetup.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/labDiagram.png
+INPUT /home/f/school/phys 4B/formal_lab1/labDiagram.png
+INPUT /home/f/school/phys 4B/formal_lab1/labDiagram.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/f/school/phys 4B/formal_lab1/data.csv
+INPUT /home/f/school/phys 4B/formal_lab1/Extracredit.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/Extracredit.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/Extracredit.jpg
+INPUT /home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
