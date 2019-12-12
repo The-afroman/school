@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.17)  6 DEC 2019 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.31)  9 NOV 2019 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **"/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.tex"
 (/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.tex
-LaTeX2e <2019-10-01> patch level 1
+LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -28,13 +28,13 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
  (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
@@ -53,30 +53,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box28
 ) (/usr/share/texmf-dist/tex/latex/csvsimple/csvsimple.sty
-Package: csvsimple 2019/04/09 version 1.21 LaTeX CSV file processing
- (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks17
-\pgfutil@tempdima=\dimen105
-\pgfutil@tempdimb=\dimen106
- (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box29
- (/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
-)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks18
-\pgfkeys@temptoks=\toks19
+Package: csvsimple 2016/07/01 version 1.20 LaTeX CSV file processing
+ (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks20
+\pgfkeys@tmptoks=\toks19
 ))) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count89
 ) (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02b unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 72.
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
 )
 \csv@file=\read1
 \c@csvinputline=\count90
@@ -101,16 +91,16 @@ LaTeX Font Info:    ... okay on input line 11.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count93
-\scratchdimen=\dimen107
-\scratchbox=\box30
+\scratchdimen=\dimen105
+\scratchbox=\box29
 \nofMPsegments=\count94
 \nofMParguments=\count95
-\everyMPshowfont=\toks21
+\everyMPshowfont=\toks20
 \MPscratchCnt=\count96
-\MPscratchDim=\dimen108
+\MPscratchDim=\dimen106
 \MPnumerator=\count97
 \makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks22
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -131,7 +121,7 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
@@ -146,71 +136,63 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) ABD: EveryShipout initializing macros
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 13.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 15.
+(Font)              <6> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <7> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <5> on input line 15.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <10.95> on input line 29.
 <labsetup.jpg, id=10, 4047.12pt x 3035.34pt>
 File: labsetup.jpg Graphic file (type jpg)
 <use labsetup.jpg>
 Package pdftex.def Info: labsetup.jpg  used on input line 34.
-(pdftex.def)             Requested size: 390.0pt x 292.48238pt.
+(pdftex.def)             Requested size: 360.0pt x 269.97304pt.
  [1]
 <labDiagram.png, id=16, 374.73334pt x 149.05687pt>
 File: labDiagram.png Graphic file (type png)
 <use labDiagram.png>
 Package pdftex.def Info: labDiagram.png  used on input line 43.
-(pdftex.def)             Requested size: 390.0pt x 155.13374pt.
- [2 </home/f/school/phys 4B/formal_lab1/labsetup.jpg>]
-
-LaTeX Warning: Command \L invalid in math mode on input line 87.
-
-[3 </home/f/school/phys 4B/formal_lab1/labDiagram.png (PNG copy)>]
-Overfull \hbox (121.27196pt too wide) in paragraph at lines 114--115
+(pdftex.def)             Requested size: 360.0pt x 143.19986pt.
+ [2 </home/f/school/phys 4B/formal_lab1/labsetup.jpg> </home/f/school/phys 4B/formal_lab1/labDiagram.png (PNG copy)>] [3]
+Overfull \hbox (121.50018pt too wide) in paragraph at lines 114--115
 [][] 
  []
 
-[4]
-<Extracredit.jpg, id=29, 3035.34pt x 4047.12pt>
-File: Extracredit.jpg Graphic file (type jpg)
-<use Extracredit.jpg>
-Package pdftex.def Info: Extracredit.jpg  used on input line 123.
-(pdftex.def)             Requested size: 390.0pt x 519.96867pt.
- [5]
-Overfull \vbox (33.18533pt too high) has occurred while \output is active []
-
- [6 </home/f/school/phys 4B/formal_lab1/Extracredit.jpg>] (/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux) ) 
+<labDiagramEC.png, id=26, 374.73334pt x 149.05687pt>
+File: labDiagramEC.png Graphic file (type png)
+<use labDiagramEC.png>
+Package pdftex.def Info: labDiagramEC.png  used on input line 123.
+(pdftex.def)             Requested size: 360.0pt x 143.19986pt.
+[4] [5 </home/f/school/phys 4B/formal_lab1/labDiagramEC.png>] (/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.aux) ) 
 Here is how much of TeX's memory you used:
- 3236 strings out of 492167
- 58224 string characters out of 6131557
- 126013 words of memory out of 5000000
- 7544 multiletter control sequences out of 15000+600000
- 10032 words of font info for 35 fonts, out of 8000000 for 9000
+ 2875 strings out of 492623
+ 51592 string characters out of 6135668
+ 118202 words of memory out of 5000000
+ 6753 multiletter control sequences out of 15000+600000
+ 9119 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,48p,1083b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.pdf" (7 pages, 6418195 bytes).
+ 41i,8n,46p,1083b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/home/f/school/phys 4B/formal_lab1/Wheatstonebridge.pdf" (6 pages, 3622782 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

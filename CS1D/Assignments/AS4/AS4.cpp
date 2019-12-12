@@ -33,5 +33,5 @@ int main() {
    cout << "\n full binary tree\n";
    printTree(r);
    cout << "\n";
-   postorderIndented(r, 2);
+   postorderIndented(r, 10);
 }
