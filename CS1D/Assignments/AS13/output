@@ -1,0 +1,286 @@
+
+Description:
+/*
+"Use quick sort and choose different pivots"
+1.Pick the first element of the array. 
+2.Pick a random element from the array.
+3.Pick the middle element 
+
+Different data
+1.Already ordered
+2.Reverse ordered
+3.Randomly ordered 
+N=5000
+N=10000
+N=50000
+
+   Merge sort   Heap sort:
+ use N=50000, N=75000
+1.Already ordered
+2.Reverse ordered
+3.Randomly ordered
+
+Use the Radix sort algorithm to sort the following strings.acdes asdsd ksjtr  kerpt absqa zabaa rkdsb qqqqq kdfaa zedsd
+*/
+
+
+
+PART 1: 
+
+IN-ORDER: 
+                0 1 2 3 4  .... 4995 4996 4997 4998 4999 
+                0 1 2 3 4  .... 4995 4996 4997 4998 4999 
+
+                0 1 2 3 4  .... 9995 9996 9997 9998 9999 
+                0 1 2 3 4  .... 9995 9996 9997 9998 9999
+
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999
+                                RAND-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 3 ms
+                Statements: 202657
+        SIZE: 10000
+                Elapsed time: 6 ms
+                Statements: 464908
+        SIZE: 50000
+                Elapsed time: 33 ms
+                Statements: 2492378
+                                MIDDLE-PIVOT:
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 0 ms
+                Statements: 143961
+        SIZE: 10000
+                Elapsed time: 1 ms
+                Statements: 312894
+        SIZE: 50000
+                Elapsed time: 6 ms
+                Statements: 1878637
+                                FIRST-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 32 ms
+                Statements: 12522495
+        SIZE: 10000
+                Elapsed time: 131 ms
+                Statements: 50044995
+        SIZE: 50000
+                Elapsed time: 3239 ms
+                Statements: 1250224995
+REVERSE-ORDER: 
+                4999 4998 4997 4996 4995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 4995 4996 4997 4998 4999 
+
+                9999 9998 9997 9996 9995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 9995 9996 9997 9998 9999
+
+                49999 49998 49997 49996 49995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999
+                                RAND-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 3 ms
+                Statements: 208265
+        SIZE: 10000
+                Elapsed time: 7 ms
+                Statements: 440064
+        SIZE: 50000
+                Elapsed time: 36 ms
+                Statements: 2579432
+                                MIDDLE-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 0 ms
+                Statements: 154842
+        SIZE: 10000
+                Elapsed time: 1 ms
+                Statements: 335559
+        SIZE: 50000
+                Elapsed time: 6 ms
+                Statements: 1979678
+                                RAND-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 94 ms
+                Statements: 31272495
+        SIZE: 10000
+                Elapsed time: 374 ms
+                Statements: 125044995
+        SIZE: 50000
+                Elapsed time: 9339 ms
+                Statements: 3125224995
+RANDOM-ORDER: 
+                4459 4770 3591 2120 4364  .... 1277 3757 1986 1973 4615 
+                0 1 2 3 4  .... 4995 4996 4997 4998 4999
+
+                4459 4770 3591 7911 4364  .... 8822 82 3027 5672 1252 
+                0 1 2 3 4  .... 9995 9996 9997 9998 9999
+
+                12852 29549 44117 1319 9869  .... 1995 17855 24389 12238 26337 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999
+                                RAND-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 3 ms
+                Statements: 187979
+        SIZE: 10000
+
+                Elapsed time: 7 ms
+                Statements: 410284
+        SIZE: 50000
+                Elapsed time: 36 ms
+                Statements: 2687818
+                                MIDDLE-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 0 ms
+                Statements: 198262
+        SIZE: 10000
+                Elapsed time: 1 ms
+                Statements: 427864
+        SIZE: 50000
+                Elapsed time: 11 ms
+                Statements: 2658650
+                                FIRST-PIVOT: 
+________________________________________________________________________________
+        SIZE: 5000
+                Elapsed time: 0 ms
+                Statements: 208639
+        SIZE: 10000
+                Elapsed time: 1 ms
+                Statements: 421872
+        SIZE: 50000
+                Elapsed time: 10 ms
+                Statements: 2390982
+PART 2: 
+
+                                ORDERED: 
+________________________________________________________________________________
+HEAP SORT:
+        SIZE: 50000
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 18 ms
+                Statements: 7436278
+MERGE SORT:
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 7 ms
+                Statements: 3887842
+HEAP SORT
+        SIZE: 75000
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 29 ms
+                Statements: 11568840
+MERGE SORT
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 11 ms
+                Statements: 6000698
+                                REVERSE-ORDERED: 
+________________________________________________________________________________
+HEAP SORT:
+        SIZE: 50000
+                49999 49998 49997 49996 49995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 17 ms
+                Statements: 6705776
+MERGE SORT:
+                49999 49998 49997 49996 49995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 7 ms
+                Statements: 3887842
+HEAP SORT
+        SIZE: 75000
+                74999 74998 74997 74996 74995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 27 ms
+                Statements: 10498687
+MERGE SORT
+                74999 74998 74997 74996 74995  .... 4 3 2 1 0 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 11 ms
+                Statements: 6000698
+                                RANDOM-ORDERED: 
+________________________________________________________________________________
+HEAP SORT:
+        SIZE: 50000
+                12852 29549 44117 1319 9869  .... 1995 17855 24389 12238 26337 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 20 ms
+                Statements: 7083204
+MERGE SORT:
+                12852 29549 44117 1319 9869  .... 1995 17855 24389 12238 26337 
+                0 1 2 3 4  .... 49995 49996 49997 49998 49999 
+                Elapsed time: 9 ms
+                Statements: 3887842
+HEAP SORT
+        SIZE: 75000
+                54738 29549 44117 1319 9869  .... 8959 20653 69881 13093 44060 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 31 ms
+                Statements: 11031417
+MERGE SORT
+                54738 29549 44117 1319 9869  .... 8959 20653 69881 13093 44060 
+                0 1 2 3 4  .... 74995 74996 74997 74998 74999 
+                Elapsed time: 15 ms
+                Statements: 6000698
+
+PART 3:
+
+NOTE:
+only three passes of counting sort to perform radix  are required because my 
+implimentation uses the ascii value of characters whichis 2 digits (EX: a = 97)
+
+sorting : a c d e s 
+pass#: 1 desac
+pass#: 2 desac
+pass#: 3 acdes
+
+sorting : a s d s d 
+pass#: 1 ddssa
+pass#: 2 ddssa
+pass#: 3 addss
+
+sorting : k s j t r 
+pass#: 1 rsjtk
+pass#: 2 jkrst
+pass#: 3 jkrst
+
+sorting : k e r p t 
+pass#: 1 eprtk
+pass#: 2 ekprt
+pass#: 3 ekprt
+
+sorting : a b s q a 
+pass#: 1 qsaab
+pass#: 2 qsaab
+pass#: 3 aabqs
+
+sorting : z a b a a 
+pass#: 1 zaaab
+pass#: 2 zaaab
+pass#: 3 aaabz
+
+sorting : r k d s b 
+pass#: 1 drskb
+pass#: 2 dkrsb
+pass#: 3 bdkrs
+
+sorting : q q q q q 
+pass#: 1 qqqqq
+pass#: 2 qqqqq
+pass#: 3 qqqqq
+
+sorting : k d f a a 
+pass#: 1 dfkaa
+pass#: 2 dfkaa
+pass#: 3 aadfk
+
+sorting : z e d s d 
+pass#: 1 ddezs
+pass#: 2 ddesz
+pass#: 3 ddesz

@@ -1,0 +1,7 @@
+                            PART 1:
+The bigO for quick sort is best case O(nlog(n)) and average about nlog(n) 
+the observed worst case was about O(n^2).
+
+                            PART 2:
+The bigO for heap sort is about nlogn and average about nlogn the observed
+ worst case was about O(nlogn)

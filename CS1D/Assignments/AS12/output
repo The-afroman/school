@@ -1,0 +1,94 @@
+DESCRIPTION:
+/*
+    Generate a Huffman Code for the letters in some alphabet, one must start with a set of letters from the alphabet along with their frequencies.
+    a.  Print out the frequency table and the Huffman Code for each letter of the Gettysburg address.
+    b. Encode the Gettysburg address. 
+    c.  Print the encoded Gettysburg address.
+    d.  Decode your compressed file and print out the Gettysburg address.
+    e.  Print out the compression ratio that was achieved.
+*/
+
+
+ ______TEXT______
+Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate -- we cannot consecrate -- we cannot hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
+
+______FREQUENCIES______
+F 1
+o 93
+u 21
+r 79
+  274
+s 44
+c 31
+e 165
+a 102
+n 76
+d 58
+v 24
+y 10
+g 27
+f 26
+t 124
+h 80
+b 13
+i 65
+, 22
+w 26
+L 1
+p 15
+l 41
+m 13
+q 1
+. 10
+N 1
+W 2
+- 15
+I 3
+B 1
+T 2
+k 3
+G 1
+
+______HUFFMAN_CODE______
+ : 00
+r: 0100
+h: 0101
+e: 011
+l: 10000
+u: 100010
+,: 100011
+o: 1001
+s: 10100
+v: 101010
+f: 101011
+a: 1011
+w: 110000
+m: 1100010
+b: 1100011
+g: 110010
+p: 1100110
+-: 1100111
+d: 11010
+i: 11011
+t: 1110
+c: 111100
+k: 111101000
+W: 1111010010
+T: 1111010011
+F: 11110101000
+q: 11110101001
+N: 11110101010
+L: 11110101011
+B: 11110101100
+G: 11110101101
+I: 1111010111
+y: 11110110
+.: 11110111
+n: 11111
+
+Decoded Text:
+
+Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate -- we cannot consecrate -- we cannot hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
+
+compression ratio in bits: 11760 / 6152
+1.91157 times compression
