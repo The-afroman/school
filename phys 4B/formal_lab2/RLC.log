@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.17)  7 DEC 2019 07:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.27)  7 DEC 2019 10:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -181,13 +181,13 @@ Package pdftex.def Info: graph1.png  used on input line 127.
 Here is how much of TeX's memory you used:
  3206 strings out of 492167
  57370 string characters out of 6131557
- 126994 words of memory out of 5000000
+ 127014 words of memory out of 5000000
  7513 multiletter control sequences out of 15000+600000
  9416 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,9n,48p,806b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "/home/f/school/phys 4B/formal_lab2/RLC.pdf" (6 pages, 258273 bytes).
+Output written on "/home/f/school/phys 4B/formal_lab2/RLC.pdf" (6 pages, 259002 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
